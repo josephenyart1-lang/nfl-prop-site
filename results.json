@@ -1,0 +1,63 @@
+{
+ "generated_at": "2026-10-19 19:53 UTC",
+ "test_seasons": "2024-2026",
+ "markets": [
+  {
+   "market": "Pass attempts",
+   "who": "quarterbacks",
+   "games_tested": 1048,
+   "typical_value": 32.7,
+   "model_error": 6.08,
+   "naive_error": 6.28,
+   "flat_error": 6.57,
+   "ratio": 0.924,
+   "beats_naive_by": 0.203,
+   "typical_miss": 7.77
+  },
+  {
+   "market": "Carries",
+   "who": "running backs",
+   "games_tested": 2186,
+   "typical_value": 11.5,
+   "model_error": 3.92,
+   "naive_error": 3.94,
+   "flat_error": 5.33,
+   "ratio": 0.736,
+   "beats_naive_by": 0.015,
+   "typical_miss": 5.19
+  },
+  {
+   "market": "Targets",
+   "who": "receivers and backs",
+   "games_tested": 6706,
+   "typical_value": 5.1,
+   "model_error": 1.84,
+   "naive_error": 1.89,
+   "flat_error": 2.4,
+   "ratio": 0.766,
+   "beats_naive_by": 0.047,
+   "typical_miss": 2.45
+  },
+  {
+   "market": "Receptions",
+   "who": "receivers and backs",
+   "games_tested": 6706,
+   "typical_value": 3.5,
+   "model_error": 1.48,
+   "naive_error": 1.52,
+   "flat_error": 1.77,
+   "ratio": 0.834,
+   "beats_naive_by": 0.044,
+   "typical_miss": 1.99
+  }
+ ],
+ "bet_record": {
+  "recorded": 2,
+  "settled": 0,
+  "won": 0,
+  "lost": 0,
+  "pushed": 0,
+  "expected_wins": null,
+  "profit": null
+ }
+}

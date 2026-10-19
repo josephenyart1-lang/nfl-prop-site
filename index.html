@@ -2,48 +2,133 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>NFL prop model</title>
+<meta name="description" content="Predicted passing, receiving and rushing volume for upcoming NFL games, with the model's measured accuracy on unseen seasons.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <header>
-    <h1>NFL prop model</h1>
-    <p class="sub">Predicted volume for quarterbacks, receivers and running
-      backs, against the lines on offer. Built from public nflverse data.</p>
-    <p class="stamp" id="stamp"></p>
-  </header>
+<div class="shell">
 
-  <section>
-    <h2>What every leg has to clear</h2>
-    <p class="note">A multi-pick entry pays only if all of it lands, so the
-      bar is per leg. A single bet at a sportsbook needs 52.4%.</p>
-    <div class="bar" id="bar"></div>
-  </section>
+  <aside class="rail">
+    <div class="brand"><span class="dot"></span> NFL prop model</div>
+    <nav>
+      <a href="#board" class="on">Board</a>
+      <a href="#results">Results</a>
+      <a href="#method">Method</a>
+    </nav>
+    <div class="note">
+      <span class="badge">Model only</span>
+      Estimates, not advice. Not shown to beat a sportsbook.
+      Built from public nflverse data.
+    </div>
+  </aside>
 
-  <section>
-    <h2>This week</h2>
-    <div id="slate"></div>
-    <p class="note" id="empty" hidden>Nothing priced yet this week.</p>
-  </section>
+  <main class="main">
 
-  <section class="caveat">
-    <h2>Read this before believing any of it</h2>
-    <p>These are model predictions, not advice, and the model has not been
-      shown to beat a sportsbook. Measured against unseen seasons it is a
-      little better than guessing a player's recent average and no more. Its
-      typical miss is around 7.6 pass attempts, 2.4 targets and 5 carries,
-      against lines that sit near 33, 5 and 12.</p>
-    <p>It also cannot see an injury, a depth-chart change or a snap count. In
-      the week this was first published it had a running back at 6.3 carries
-      whose line was 13.5, because it had not noticed he had become the lead
-      back. Where the model disagrees loudly with a line, the model is
-      usually the one that is wrong.</p>
-    <p>Nothing here is a recommendation to bet. If you do, risk only what you
-      can lose.</p>
-  </section>
-</main>
+    <!-- ------------------------------------------------------- board -->
+    <section class="page on" id="page-board">
+      <div class="topline">
+        <span class="eyebrow">This week</span>
+        <span class="stamp" id="stamp">&mdash;</span>
+      </div>
+      <h1>Board</h1>
+      <p class="lede">Every pick with a real line against it, grouped by game.
+        A game holding both a quarterback and one of his own receivers is
+        marked stackable: those two move together, which is the one pairing
+        that helps a multi-pick entry.</p>
+
+      <div class="tiles" id="board-tiles"></div>
+      <div class="callout" id="board-warning" hidden></div>
+
+      <h2>Legs</h2>
+      <div class="filters" id="board-filters"></div>
+      <div id="board"></div>
+
+      <h2>What every leg has to clear</h2>
+      <p class="lede">An entry pays only if all of it lands, so the bar is per
+        leg. A single bet at a sportsbook needs 52.4%.</p>
+      <div class="tiles" id="entry-bar"></div>
+    </section>
+
+    <!-- ----------------------------------------------------- results -->
+    <section class="page" id="page-results">
+      <div class="topline">
+        <span class="eyebrow">Measured, not claimed</span>
+        <span class="stamp" id="built">&mdash;</span>
+      </div>
+      <h1>Results</h1>
+      <p class="lede">Two different things get called results, and mixing them
+        up is how a model gets oversold. Accuracy is how close the predictions
+        land. The record is whether the bets won. Only the second could show
+        an edge.</p>
+
+      <h2>The record</h2>
+      <div class="tiles" id="record-tiles"></div>
+      <div class="callout">
+        <strong>Read the record before the profit.</strong> Over a few dozen
+        bets the money is mostly luck, but the probabilities should still come
+        out right: if the model says 57% twenty times, it should win about
+        eleven. Below 30 settled bets none of this means much.
+      </div>
+
+      <h2>Accuracy on unseen seasons</h2>
+      <p class="lede">Average miss per game, on seasons the model was never
+        fitted to. Lower is better. The bar shows how much of a flat guess's
+        error each model removes.</p>
+      <div class="scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Market</th><th>Games</th><th>Model</th>
+              <th>His own average</th><th>Flat guess</th><th>Better by</th>
+            </tr>
+          </thead>
+          <tbody id="accuracy"></tbody>
+        </table>
+      </div>
+      <div class="callout" id="results-note"></div>
+      <div id="results-body"></div>
+    </section>
+
+    <!-- ------------------------------------------------------ method -->
+    <section class="page" id="page-method">
+      <div class="topline"><span class="eyebrow">How it works</span></div>
+      <h1>Method</h1>
+      <div class="prose">
+        <p><strong>Train on the past, test on the future.</strong> Decisions
+          are made by predicting each season from the seasons before it alone.
+          <span id="method-seasons">2024-2026</span> is read once, at the end,
+          and never used to choose anything. No split is random.</p>
+
+        <p><strong>Volume splits into role and pace.</strong> A receiver's
+          share of his team's targets is stable; his team's passing volume is
+          not. Share correlates 0.55 with his next game, against 0.25 for a
+          quarterback's attempts and 0.72 for a back's share of carries. So
+          share and volume are predicted apart and multiplied.</p>
+
+        <p><strong>Probabilities come from real misses, not a bell curve.</strong>
+          The model's errors lean right: a quarterback can throw twenty more
+          than expected chasing a game, but not twenty fewer without getting
+          hurt. A normal curve would price both tails wrong, so the actual
+          distribution of past misses is used instead.</p>
+
+        <p><strong>What it cannot see.</strong> Injuries, depth-chart changes
+          and snap counts. In the week this page was first published it had a
+          running back at 6.3 carries against a line of 13.5, because it had
+          not noticed he was now the lead back. Where the model disagrees
+          loudly with a line, the model is usually the one that is wrong.</p>
+
+        <p><strong>What it has not shown.</strong> That it beats a sportsbook.
+          Against a bookmaker's own implied probabilities it currently sits
+          several points high on pass attempts and targets, which is a lean to
+          correct rather than an edge to take. Nothing here is a recommendation
+          to bet. If you do, risk only what you can lose.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
 <script src="app.js"></script>
 </body>
 </html>
