@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19 21:10 UTC",
+ "generated_at": "2026-10-19 21:41 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -7,72 +7,72 @@
    "who": "quarterbacks",
    "games_tested": 1048,
    "typical_value": 32.7,
-   "model_error": 6.08,
+   "model_error": 6.06,
    "naive_error": 6.28,
    "flat_error": 6.57,
-   "ratio": 0.924,
-   "beats_naive_by": 0.203,
-   "typical_miss": 7.77,
+   "ratio": 0.922,
+   "beats_naive_by": 0.22,
+   "typical_miss": 7.7,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 3592,
-     "said": 0.0718,
-     "happened": 0.0749
+     "cases": 3633,
+     "said": 0.072,
+     "happened": 0.0768
     },
     {
      "band": "10%-20%",
-     "cases": 3760,
-     "said": 0.1467,
-     "happened": 0.142
+     "cases": 3795,
+     "said": 0.1462,
+     "happened": 0.1455
     },
     {
      "band": "20%-30%",
-     "cases": 2390,
-     "said": 0.2519,
-     "happened": 0.2226
+     "cases": 2403,
+     "said": 0.2509,
+     "happened": 0.2297
     },
     {
      "band": "30%-40%",
-     "cases": 2283,
-     "said": 0.3461,
-     "happened": 0.3184
+     "cases": 2294,
+     "said": 0.347,
+     "happened": 0.3326
     },
     {
      "band": "40%-50%",
-     "cases": 2246,
-     "said": 0.4487,
-     "happened": 0.4243
+     "cases": 2164,
+     "said": 0.4489,
+     "happened": 0.4325
     },
     {
      "band": "50%-60%",
-     "cases": 1808,
-     "said": 0.5485,
-     "happened": 0.521
+     "cases": 1844,
+     "said": 0.5479,
+     "happened": 0.5266
     },
     {
      "band": "60%-70%",
-     "cases": 2213,
-     "said": 0.6531,
-     "happened": 0.629
+     "cases": 2186,
+     "said": 0.6517,
+     "happened": 0.6423
     },
     {
      "band": "70%-80%",
-     "cases": 2327,
-     "said": 0.7508,
-     "happened": 0.7456
+     "cases": 2334,
+     "said": 0.7504,
+     "happened": 0.7524
     },
     {
      "band": "80%-90%",
-     "cases": 3225,
-     "said": 0.8505,
-     "happened": 0.8521
+     "cases": 3300,
+     "said": 0.8514,
+     "happened": 0.8597
     },
     {
      "band": "90%-100%",
-     "cases": 2356,
-     "said": 0.9263,
-     "happened": 0.9291
+     "cases": 2247,
+     "said": 0.926,
+     "happened": 0.9315
     }
    ]
   },
