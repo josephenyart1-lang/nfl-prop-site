@@ -217,15 +217,17 @@ function buildResults() {
     return;
   }
 
-  const rec = r.bet_record || {};
+  const rec = r.prop_record || {};
   const tiles = $("record-tiles");
-  tile(tiles, "Paper bets recorded", rec.recorded ?? 0, "nothing staked");
+  tile(tiles, "Player props recorded", rec.recorded ?? 0,
+    rec.weeks ? "across " + rec.weeks + (rec.weeks === 1 ? " week" : " weeks")
+      : "nothing staked");
   tile(tiles, "Settled", rec.settled ?? 0,
     rec.settled ? "graded against results" : "no games played yet");
-  tile(tiles, "Record", rec.settled ? rec.won + "–" + rec.lost : "—",
-    "won / lost");
+  tile(tiles, "Model right", rec.settled ? rec.right + "–" + rec.wrong : "—",
+    "right / wrong");
   tile(tiles, "Claimed vs actual",
-    rec.expected_wins != null ? rec.won + " vs " + rec.expected_wins : "—",
+    rec.expected_right != null ? rec.right + " vs " + rec.expected_right : "—",
     "the number that matters");
 
   const table = $("accuracy");

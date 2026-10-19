@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19 21:41 UTC",
+ "generated_at": "2026-10-19 21:55 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -299,13 +299,18 @@
    ]
   }
  ],
- "bet_record": {
-  "recorded": 2,
+ "prop_record": {
+  "recorded": 10,
   "settled": 0,
-  "won": 0,
-  "lost": 0,
+  "right": 0,
+  "wrong": 0,
   "pushed": 0,
-  "expected_wins": null,
-  "profit": null
+  "expected_right": null,
+  "markets": [
+   "carries",
+   "pass_attempts",
+   "targets"
+  ],
+  "weeks": 1
  }
 }
