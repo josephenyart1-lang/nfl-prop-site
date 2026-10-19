@@ -1,0 +1,152 @@
+{
+ "generated_at": "2026-10-19 16:40 UTC",
+ "as_of": "2026-10-19 16:27",
+ "selections": [
+  {
+   "week": 6,
+   "gameday": "2026-10-19",
+   "game": "WAS at SF",
+   "player": "Austin Ekeler",
+   "position": "RB",
+   "market": "carries",
+   "model": 8.4,
+   "underdog_line": 5.5,
+   "our_side": "Higher",
+   "last_played": "2026-10-11"
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-19",
+   "game": "WAS at SF",
+   "player": "Terry McLaurin",
+   "position": "WR",
+   "market": "targets",
+   "model": 7.3,
+   "underdog_line": 6.5,
+   "our_side": "Higher",
+   "last_played": "2026-10-11"
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-19",
+   "game": "WAS at SF",
+   "player": "George Kittle",
+   "position": "TE",
+   "market": "targets",
+   "model": 7.6,
+   "underdog_line": 7.5,
+   "our_side": "Higher",
+   "last_played": "2026-10-11"
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-19",
+   "game": "WAS at SF",
+   "player": "Christian McCaffrey",
+   "position": "RB",
+   "market": "targets",
+   "model": 6.4,
+   "underdog_line": 6.5,
+   "our_side": "Higher",
+   "last_played": "2026-10-11"
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-19",
+   "game": "WAS at SF",
+   "player": "Jayden Daniels",
+   "position": "QB",
+   "market": "pass_attempts",
+   "model": 32.6,
+   "underdog_line": 30.5,
+   "our_side": "Higher",
+   "last_played": "2026 wk5"
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-19",
+   "game": "WAS at SF",
+   "player": "Rachaad White",
+   "position": "RB",
+   "market": "targets",
+   "model": 3.2,
+   "underdog_line": 3.5,
+   "our_side": "Higher",
+   "last_played": "2026-10-11"
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-19",
+   "game": "WAS at SF",
+   "player": "Christian McCaffrey",
+   "position": "RB",
+   "market": "carries",
+   "model": 14.3,
+   "underdog_line": 14.5,
+   "our_side": "Higher",
+   "last_played": "2026-10-11"
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-19",
+   "game": "WAS at SF",
+   "player": "Brock Purdy",
+   "position": "QB",
+   "market": "pass_attempts",
+   "model": 32.1,
+   "underdog_line": 30.5,
+   "our_side": "Higher",
+   "last_played": "2026 wk5"
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-19",
+   "game": "WAS at SF",
+   "player": "Mike Evans",
+   "position": "WR",
+   "market": "targets",
+   "model": 7.6,
+   "underdog_line": 8.5,
+   "our_side": "Lower",
+   "last_played": "2026-10-11"
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-19",
+   "game": "WAS at SF",
+   "player": "Rachaad White",
+   "position": "RB",
+   "market": "carries",
+   "model": 6.3,
+   "underdog_line": 13.5,
+   "our_side": "Lower",
+   "last_played": "2026-10-11"
+  }
+ ],
+ "entry_bar": [
+  {
+   "legs": 2,
+   "multiplier": 3.0,
+   "unrelated": 0.5774,
+   "stacked": 0.5215
+  },
+  {
+   "legs": 3,
+   "multiplier": 6.0,
+   "unrelated": 0.5503,
+   "stacked": 0.4694
+  },
+  {
+   "legs": 4,
+   "multiplier": 10.0,
+   "unrelated": 0.5623,
+   "stacked": 0.4733
+  },
+  {
+   "legs": 5,
+   "multiplier": 20.0,
+   "unrelated": 0.5493,
+   "stacked": 0.4528
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NFL prop model</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>NFL prop model</h1>
+    <p class="sub">Predicted volume for quarterbacks, receivers and running
+      backs, against the lines on offer. Built from public nflverse data.</p>
+    <p class="stamp" id="stamp"></p>
+  </header>
+
+  <section>
+    <h2>What every leg has to clear</h2>
+    <p class="note">A multi-pick entry pays only if all of it lands, so the
+      bar is per leg. A single bet at a sportsbook needs 52.4%.</p>
+    <div class="bar" id="bar"></div>
+  </section>
+
+  <section>
+    <h2>This week</h2>
+    <div id="slate"></div>
+    <p class="note" id="empty" hidden>Nothing priced yet this week.</p>
+  </section>
+
+  <section class="caveat">
+    <h2>Read this before believing any of it</h2>
+    <p>These are model predictions, not advice, and the model has not been
+      shown to beat a sportsbook. Measured against unseen seasons it is a
+      little better than guessing a player's recent average and no more. Its
+      typical miss is around 7.6 pass attempts, 2.4 targets and 5 carries,
+      against lines that sit near 33, 5 and 12.</p>
+    <p>It also cannot see an injury, a depth-chart change or a snap count. In
+      the week this was first published it had a running back at 6.3 carries
+      whose line was 13.5, because it had not noticed he had become the lead
+      back. Where the model disagrees loudly with a line, the model is
+      usually the one that is wrong.</p>
+    <p>Nothing here is a recommendation to bet. If you do, risk only what you
+      can lose.</p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

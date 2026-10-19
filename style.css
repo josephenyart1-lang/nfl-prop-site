@@ -1,0 +1,47 @@
+:root {
+  --bg: #fbfaf8; --panel: #ffffff; --fg: #1b1a18; --muted: #6a665f;
+  --line: #e4e0d8; --accent: #16603f; --warn: #9a5b12;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15171a; --panel: #1d2024; --fg: #eceae6; --muted: #9b968d;
+    --line: #2c3036; --accent: #6fc39a; --warn: #d9a05b;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.55 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main { max-width: 46rem; margin: 0 auto; padding: 2rem max(1rem, env(safe-area-inset-left)) 4rem; }
+h1 { font-size: 1.6rem; margin: 0 0 .3rem; letter-spacing: -0.01em; }
+h2 { font-size: 1.05rem; margin: 2.2rem 0 .4rem; }
+.sub { color: var(--muted); margin: 0 0 .6rem; max-width: 36rem; }
+.stamp { color: var(--muted); font-size: .82rem; margin: 0; }
+.note { color: var(--muted); font-size: .85rem; margin: 0 0 .9rem; max-width: 38rem; }
+.bar { display: grid; grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); gap: .6rem; }
+.cell { background: var(--panel); border: 1px solid var(--line); border-radius: .6rem;
+  padding: .75rem; text-align: center; }
+.cell .legs { font-size: .78rem; color: var(--muted); }
+.cell .need { font-size: 1.3rem; font-variant-numeric: tabular-nums; }
+.cell .alt { font-size: .76rem; color: var(--muted); }
+.fixture { background: var(--panel); border: 1px solid var(--line);
+  border-radius: .6rem; margin-bottom: .7rem; overflow: hidden; }
+.fixture h3 { margin: 0; padding: .7rem .9rem; font-size: .95rem;
+  border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: .5rem; }
+.fixture h3 .when { color: var(--muted); font-weight: 400; font-size: .82rem; }
+.leg { display: flex; justify-content: space-between; gap: .75rem;
+  padding: .6rem .9rem; border-bottom: 1px solid var(--line); }
+.leg:last-child { border-bottom: 0; }
+.leg .name { font-weight: 500; }
+.leg .what { color: var(--muted); font-size: .8rem; }
+.leg .nums { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.leg .side { font-size: 1.05rem; }
+.leg .model { color: var(--muted); font-size: .8rem; }
+.caveat { margin-top: 2.5rem; border-left: 3px solid var(--warn);
+  background: var(--panel); border-radius: 0 .6rem .6rem 0; padding: .9rem 1rem; }
+.caveat h2 { margin-top: 0; }
+.caveat p { font-size: .88rem; color: var(--muted); max-width: 40rem; }
+table { width: 100%; }
