@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19 21:55 UTC",
+ "generated_at": "2026-10-19 22:26 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -300,7 +300,7 @@
   }
  ],
  "prop_record": {
-  "recorded": 10,
+  "recorded": 27,
   "settled": 0,
   "right": 0,
   "wrong": 0,
@@ -309,8 +309,9 @@
   "markets": [
    "carries",
    "pass_attempts",
+   "receptions",
    "targets"
   ],
-  "weeks": 1
+  "weeks": 2
  }
 }
