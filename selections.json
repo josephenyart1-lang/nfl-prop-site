@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-19 19:56 UTC",
- "as_of": "2026-10-19 16:27",
+ "generated_at": "2026-10-19 21:16 UTC",
+ "as_of": "2026-10-19 21:14",
  "selections": [
   {
    "week": 6,
@@ -30,6 +30,30 @@
    "week": 6,
    "gameday": "2026-10-19",
    "game": "WAS at SF",
+   "player": "Jayden Daniels",
+   "position": "QB",
+   "market": "pass_attempts",
+   "model": 32.6,
+   "underdog_line": 30.5,
+   "our_side": "Higher",
+   "last_played": "2026 wk5"
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-19",
+   "game": "WAS at SF",
+   "player": "Brock Purdy",
+   "position": "QB",
+   "market": "pass_attempts",
+   "model": 32.1,
+   "underdog_line": 30.5,
+   "our_side": "Higher",
+   "last_played": "2026 wk5"
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-19",
+   "game": "WAS at SF",
    "player": "George Kittle",
    "position": "TE",
    "market": "targets",
@@ -47,20 +71,8 @@
    "market": "targets",
    "model": 6.4,
    "underdog_line": 6.5,
-   "our_side": "Higher",
+   "our_side": "Lower",
    "last_played": "2026-10-11"
-  },
-  {
-   "week": 6,
-   "gameday": "2026-10-19",
-   "game": "WAS at SF",
-   "player": "Jayden Daniels",
-   "position": "QB",
-   "market": "pass_attempts",
-   "model": 32.6,
-   "underdog_line": 30.5,
-   "our_side": "Higher",
-   "last_played": "2026 wk5"
   },
   {
    "week": 6,
@@ -71,7 +83,7 @@
    "market": "targets",
    "model": 3.2,
    "underdog_line": 3.5,
-   "our_side": "Higher",
+   "our_side": "Lower",
    "last_played": "2026-10-11"
   },
   {
@@ -83,20 +95,8 @@
    "market": "carries",
    "model": 14.3,
    "underdog_line": 14.5,
-   "our_side": "Higher",
+   "our_side": "Lower",
    "last_played": "2026-10-11"
-  },
-  {
-   "week": 6,
-   "gameday": "2026-10-19",
-   "game": "WAS at SF",
-   "player": "Brock Purdy",
-   "position": "QB",
-   "market": "pass_attempts",
-   "model": 32.1,
-   "underdog_line": 30.5,
-   "our_side": "Higher",
-   "last_played": "2026 wk5"
   },
   {
    "week": 6,

@@ -6,13 +6,21 @@
   --panel-2: #16212e;
   --line: #1f2d3c;
   --fg: #e7eef5;
-  --muted: #8296a8;
-  --dim: #5c6f80;
+  --muted: #8da0b0;
+  --dim: #7b8fa0;
   --accent: #27e0a4;
   --accent-dim: #1a9b73;
   --good: #27e0a4;
   --bad: #ff7a6b;
   --warn: #e0a83c;
+  /* One colour per market on the calibration chart, in the order
+     export_results.py writes them. Four hues rather than four shades, so
+     they stay apart for a red-green colourblind reader; each also clears
+     3:1 against the background, the threshold for a graphical object. */
+  --s1: #27e0a4;   /* pass attempts */
+  --s2: #e0a83c;   /* carries       */
+  --s3: #6ba8ff;   /* targets       */
+  --s4: #c49bff;   /* receptions    */
   color-scheme: dark;
 }
 
@@ -145,6 +153,30 @@ td.text { white-space: normal; font-variant-numeric: normal; }
 .bar-cell { min-width: 7rem; }
 .bar-track { background: var(--panel-2); border-radius: 2rem; height: .4rem; overflow: hidden; }
 .bar-fill { background: var(--accent); height: 100%; border-radius: 2rem; }
+
+/* ------------------------------------------------------------- chart --- */
+.chart { margin: .2rem 0 1rem; }
+.chart svg { width: 100%; max-width: 25rem; height: auto; display: block; }
+.chart .tick { fill: var(--dim); font-size: 10px; font-family: inherit; }
+.chart .tick.diag { fill: var(--dim); font-size: 9px; letter-spacing: .04em; }
+.chart .axis {
+  fill: var(--muted); font-size: 10.5px; font-family: inherit;
+  letter-spacing: .03em;
+}
+.chart circle { cursor: help; }
+.legend {
+  display: flex; flex-wrap: wrap; gap: .25rem 1.1rem;
+  margin: .5rem 0 0; font-size: .76rem; color: var(--muted); max-width: 25rem;
+}
+.legend span { display: inline-flex; align-items: center; gap: .4rem; }
+.legend i { width: .8rem; height: .2rem; border-radius: 2rem; flex: none; }
+.legend i.dash {
+  height: 0; border-radius: 0; border-top: 2px dashed var(--muted);
+}
+.legend i.band {
+  height: .55rem; border-radius: .15rem; background: var(--accent); opacity: .3;
+}
+.legend b { font-weight: 400; }
 
 .prose { color: var(--muted); font-size: .88rem; max-width: 44rem; }
 .prose p { margin: 0 0 .8rem; }

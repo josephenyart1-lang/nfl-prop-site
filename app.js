@@ -30,6 +30,7 @@ function boot() {
   buildNav();
   buildBoard();
   buildResults();
+  buildCalibration();
   buildMethod();
   show(location.hash.replace("#", "") || "board");
 }
@@ -274,3 +275,137 @@ function tile(into, label, value, foot) {
   el.querySelector(".foot").textContent = foot || "";
   into.appendChild(el);
 }
+
+/* ------------------------------------------------------- calibration --- */
+/* One colour per market, in the order export_results writes them. */
+const SERIES = ["var(--s1)", "var(--s2)", "var(--s3)", "var(--s4)"];
+const SVG_NS = "http://www.w3.org/2000/svg";
+
+function svgNode(name, attrs) {
+  const el = document.createElementNS(SVG_NS, name);
+  for (const key in attrs) el.setAttribute(key, attrs[key]);
+  return el;
+}
+
+function label(svg, text, attrs) {
+  const el = svgNode("text", attrs);
+  el.textContent = text;          /* never innerHTML, even for our own data */
+  svg.appendChild(el);
+  return el;
+}
+
+function buildCalibration() {
+  const host = $("calibration");
+  const note = $("calibration-note");
+  const markets = ((DATA.results && DATA.results.markets) || [])
+    .filter((m) => (m.calibration || []).length);
+  if (!markets.length) {
+    host.innerHTML = '<p class="empty">Calibration has not been measured yet.</p>';
+    note.hidden = true;
+    return;
+  }
+
+  /* A square plot, because both axes are the same thing and the diagonal
+     has to look like 45 degrees for the chart to be readable at a glance. */
+  const SIDE = 300, L = 44, T = 10, R = 12, B = 46;
+  const W = L + SIDE + R, H = T + SIDE + B;
+  const x = (p) => L + p * SIDE;
+  const y = (p) => T + (1 - p) * SIDE;
+
+  const svg = svgNode("svg", {
+    viewBox: "0 0 " + W + " " + H, role: "img",
+    "aria-label": "What the model said, against how often it happened, " +
+      "for each market. A perfectly honest model sits on the diagonal.",
+  });
+
+  for (let i = 0; i <= 4; i++) {
+    const p = i / 4;
+    svg.appendChild(svgNode("line", { x1: x(0), y1: y(p), x2: x(1), y2: y(p),
+      stroke: "var(--line)", "stroke-width": 1 }));
+    svg.appendChild(svgNode("line", { x1: x(p), y1: y(0), x2: x(p), y2: y(1),
+      stroke: "var(--line)", "stroke-width": 1 }));
+    label(svg, p * 100 + "%", { x: x(0) - 8, y: y(p) + 3.5,
+      "text-anchor": "end", class: "tick" });
+    label(svg, p * 100 + "%", { x: x(p), y: y(0) + 17,
+      "text-anchor": "middle", class: "tick" });
+  }
+
+  /* Well calibrated lines all land on the diagonal, which makes four honest
+     markets look like one line and says nothing about how close is close.
+     The band is everything within five points of honest, so the eye has
+     something to measure against. Drawn before the data, to sit under it. */
+  svg.appendChild(svgNode("polygon", {
+    points: [[0, 0.05], [0.95, 1], [1, 1], [1, 0.95], [0.05, 0], [0, 0]]
+      .map((p) => x(p[0]).toFixed(1) + "," + y(p[1]).toFixed(1)).join(" "),
+    fill: "var(--accent)", "fill-opacity": 0.1,
+  }));
+  svg.appendChild(svgNode("line", { x1: x(0), y1: y(0), x2: x(1), y2: y(1),
+    stroke: "var(--muted)", "stroke-width": 1.5, "stroke-dasharray": "5 4" }));
+
+  label(svg, "the model said", { x: x(0.5), y: H - 6,
+    "text-anchor": "middle", class: "axis" });
+  label(svg, "it happened this often", { x: 12, y: y(0.5),
+    "text-anchor": "middle", class: "axis",
+    transform: "rotate(-90 12 " + y(0.5) + ")" });
+
+  markets.forEach((market, i) => {
+    const colour = SERIES[i % SERIES.length];
+    const points = market.calibration
+      .map((r) => x(r.said).toFixed(1) + "," + y(r.happened).toFixed(1))
+      .join(" ");
+    svg.appendChild(svgNode("polyline", { points, fill: "none", stroke: colour,
+      "stroke-width": 2, "stroke-linejoin": "round" }));
+    market.calibration.forEach((r) => {
+      const dot = svgNode("circle", { cx: x(r.said).toFixed(1),
+        cy: y(r.happened).toFixed(1), r: 3, fill: colour });
+      const title = svgNode("title", {});
+      title.textContent = market.market + ": said " + pct(r.said) +
+        ", happened " + pct(r.happened) + " over " +
+        r.cases.toLocaleString() + " cases";
+      dot.appendChild(title);
+      svg.appendChild(dot);
+    });
+  });
+
+  host.textContent = "";
+  host.appendChild(svg);
+
+  const legend = document.createElement("div");
+  legend.className = "legend";
+  markets.forEach((market, i) => {
+    const item = document.createElement("span");
+    item.innerHTML = '<i></i><b></b>';
+    item.querySelector("i").style.background = SERIES[i % SERIES.length];
+    item.querySelector("b").textContent = market.market;
+    legend.appendChild(item);
+  });
+  [["perfectly honest", "dash"], ["within 5 points", "band"]].forEach((pair) => {
+    const item = document.createElement("span");
+    item.innerHTML = '<i class="' + pair[1] + '"></i><b></b>';
+    item.querySelector("b").textContent = pair[0];
+    legend.appendChild(item);
+  });
+  host.appendChild(legend);
+
+  /* The headline number is the worst single band, not the average, because
+     an average over ten bands hides the one that would cost money. */
+  let worst = { off: 0 };
+  let cases = 0;
+  markets.forEach((m) => m.calibration.forEach((r) => {
+    cases += r.cases;
+    const off = Math.abs(r.happened - r.said);
+    if (off > worst.off) worst = { off, band: r.band, market: m.market };
+  }));
+  note.hidden = false;
+  note.innerHTML =
+    "<strong>Worst band is off by " + (worst.off * 100).toFixed(1) +
+    " points</strong> (" + worst.market.toLowerCase() + ", claims of " +
+    worst.band + "), measured over " + cases.toLocaleString() +
+    " priced cases. That is close enough to take the probabilities at face " +
+    "value &mdash; but being honest about its own uncertainty is not an " +
+    "edge. A sportsbook is well calibrated too, and charges for the " +
+    "privilege. Beating one needs the model to be right where the book is " +
+    "wrong, which this has not shown.";
+}
+
+function pct(p) { return (p * 100).toFixed(0) + "%"; }

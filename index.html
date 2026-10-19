@@ -4,7 +4,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>NFL prop model</title>
-<meta name="description" content="Predicted passing, receiving and rushing volume for upcoming NFL games, with the model's measured accuracy on unseen seasons.">
+<meta name="description" content="Predicted passing, receiving and rushing volume for upcoming NFL games, with the model's error measured on seasons it never saw.">
+<link rel="canonical" href="https://nfl-prop-site.pages.dev/">
+
+<!-- The tab and home-screen icon. The SVG covers every current browser; the
+     PNG is only because iOS will not use an SVG for a home-screen icon. -->
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0a1017">
+
+<!-- What a chat app shows when the link is pasted. Without these it shows a
+     bare URL, which reads like a broken link. og:image has to be absolute. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NFL prop model">
+<meta property="og:url" content="https://nfl-prop-site.pages.dev/">
+<meta property="og:title" content="Predicted NFL player volume">
+<meta property="og:description" content="Predicted passing, receiving and rushing volume for upcoming NFL games, with the model's error measured on seasons it never saw.">
+<meta property="og:image" content="https://nfl-prop-site.pages.dev/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="NFL prop model: predicted passing, receiving and rushing volume.">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -88,6 +110,17 @@
         </table>
       </div>
       <div class="callout" id="results-note"></div>
+
+      <h2>Are the stated chances honest?</h2>
+      <p class="lede">Landing close is one thing; quoting an honest price is
+        another. A model that says 70% should be right about seven times in
+        ten. Every game in the test seasons was priced against a spread of
+        made-up lines above and below its own prediction, which sweeps the
+        whole range from near-certain to near-hopeless, and the claims were
+        then sorted into bands and checked against what actually happened. On
+        the diagonal is perfect; below it the model is overconfident.</p>
+      <div class="chart" id="calibration"></div>
+      <div class="callout" id="calibration-note"></div>
       <div id="results-body"></div>
     </section>
 
