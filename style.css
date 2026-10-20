@@ -111,7 +111,16 @@ h2 { font-size: 1.02rem; margin: 2rem 0 .7rem; font-weight: 600; letter-spacing:
 .chip:hover { color: var(--fg); border-color: #2b3d4f; }
 .chip.on { background: var(--accent); color: #05231a; border-color: var(--accent); font-weight: 600; }
 /* The games inside the chosen week: a second, quieter row under it. */
-.filters.games { margin-top: -.5rem; }
+/* The week row sits above a rule, the games below it. They were pulled
+   together by a negative margin before, which on a phone -- where both
+   rows wrap -- left four lines of buttons with no telling where the weeks
+   ended and the games began. */
+#board-filters { margin-bottom: .75rem; }
+.filters.games {
+  margin-top: 0;
+  padding-top: .8rem;
+  border-top: 1px solid var(--line);
+}
 .filters.games .chip { font-size: .76rem; padding: .28rem .65rem; }
 .filters.games .chip.on {
   background: var(--panel-2); color: var(--accent);
@@ -270,6 +279,8 @@ tr.outcome-void td { color: var(--dim); }
   .rail a { border-left: 0; border-bottom: 2px solid transparent; white-space: nowrap; padding: .4rem .6rem; }
   .rail a.on { border-left: 0; border-bottom-color: var(--accent); }
   .rail .note { display: none; }
+  #board-filters { margin-bottom: .85rem; }
+  .filters.games { padding-top: .9rem; }
   .main { padding: 1.2rem 1rem 3rem; }
   h1 { font-size: 1.5rem; }
   .tile .value { font-size: 1.3rem; }
