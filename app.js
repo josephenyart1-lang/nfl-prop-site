@@ -4,7 +4,7 @@ const PRETTY = {
   targets: "targets", receptions: "receptions",
 };
 let DATA = null;
-let filter = { market: "all", day: "all" };
+let filter = { week: "all" };
 /* What a single leg of a 2-pick entry has to clear to be worth including.
    Read from the entry bar rather than hardcoded, so it follows Underdog's
    payouts if they change. */
@@ -97,17 +97,17 @@ function buildBoard() {
       "A market is not wrong in one direction on every player at once.";
   }
 
-  const days = [...new Set(legs.map((l) => l.gameday))].sort();
+  /* Week is the only filter. Slicing by market cut a game into four lists
+     and hid the thing worth seeing, which is everything one game offers in
+     one place -- a quarterback beside his own receivers is the one pairing
+     that helps a multi-pick entry, and a market filter breaks that up. */
+  const weeks = [...new Set(legs.map((l) => l.week))]
+    .filter((w) => w != null && w !== "")
+    .sort((a, b) => Number(a) - Number(b));
   const chips = $("board-filters");
-  chipFor(chips, "market", "all", "All markets");
-  MARKETS.filter((m) => legs.some((l) => l.market === m))
-    .forEach((m) => chipFor(chips, "market", m, PRETTY[m]));
-  if (days.length > 1) {
-    const gap = document.createElement("span");
-    gap.style.width = ".6rem";
-    chips.appendChild(gap);
-    chipFor(chips, "day", "all", "All days");
-    days.forEach((d) => chipFor(chips, "day", d, niceDate(d)));
+  if (weeks.length > 1) {
+    chipFor(chips, "week", "all", "All weeks");
+    weeks.forEach((w) => chipFor(chips, "week", String(w), "Week " + w));
   }
   drawBoard();
 
@@ -130,10 +130,6 @@ function chipFor(into, kind, value, label) {
   b.textContent = label;
   b.addEventListener("click", () => {
     filter[kind] = value;
-    into.parentElement.querySelectorAll(".chip").forEach((c) => c.classList.remove("on"));
-    [...into.querySelectorAll(".chip")].forEach((c) => {
-      // re-mark the active chip in each group
-    });
     refreshChips();
     drawBoard();
   });
@@ -152,11 +148,12 @@ function drawBoard() {
   const root = $("board");
   root.textContent = "";
   let legs = DATA.selections.selections || [];
-  if (filter.market !== "all") legs = legs.filter((l) => l.market === filter.market);
-  if (filter.day !== "all") legs = legs.filter((l) => l.gameday === filter.day);
+  if (filter.week !== "all") {
+    legs = legs.filter((l) => String(l.week) === String(filter.week));
+  }
 
   if (!legs.length) {
-    root.innerHTML = '<p class="empty">Nothing matches that filter.</p>';
+    root.innerHTML = '<p class="empty">Nothing in that week.</p>';
     return;
   }
 
@@ -300,6 +297,8 @@ function buildResults() {
     rec.expected_right != null ? rec.right + " vs " + rec.expected_right : "—",
     "the number that matters");
 
+  drawByGame(rec.games || []);
+
   const table = $("accuracy");
   const best = Math.max(...r.markets.map((m) => 1 - m.ratio));
   r.markets.forEach((m) => {
@@ -329,6 +328,36 @@ function buildResults() {
     Math.max(...r.markets.map((m) => m.beats_naive_by)).toFixed(2) +
     " per game, which is small against misses of " +
     r.markets.map((m) => m.typical_miss.toFixed(1)).join(", ") + ".";
+}
+
+function drawByGame(games) {
+  const body = $("by-game");
+  if (!body) return;
+  body.textContent = "";
+  if (!games.length) {
+    const row = body.insertRow();
+    const cell = row.insertCell();
+    cell.colSpan = 7;
+    cell.className = "text";
+    cell.textContent = "No props recorded yet.";
+    return;
+  }
+  games.forEach((g) => {
+    const row = body.insertRow();
+    const cells = [];
+    for (let i = 0; i < 7; i++) cells.push(row.insertCell());
+    cells[0].textContent = g.week ? "Week " + g.week : "—";
+    cells[1].textContent = g.game;
+    cells[1].className = "text";
+    cells[2].textContent = g.recorded;
+    cells[3].textContent = g.settled;
+    /* Nothing is claimed about a game that has not been played, so a dash
+       rather than a zero: 0-0 reads like the model got everything wrong. */
+    cells[4].textContent = g.settled ? g.right : "—";
+    cells[5].textContent = g.settled ? g.wrong : "—";
+    cells[6].textContent = g.expected_right != null ? g.expected_right : "—";
+    if (!g.settled) row.className = "pending";
+  });
 }
 
 /* ------------------------------------------------------------ method --- */

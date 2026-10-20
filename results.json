@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19 22:26 UTC",
+ "generated_at": "2026-10-20 03:15 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -312,6 +312,30 @@
    "receptions",
    "targets"
   ],
-  "weeks": 2
+  "weeks": 2,
+  "games": [
+   {
+    "week": "6",
+    "gameday": "2026-10-19",
+    "game": "WAS at SF",
+    "recorded": 10,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "recorded": 17,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   }
+  ]
  }
 }

@@ -169,6 +169,10 @@ td {
 }
 tr:last-child td { border-bottom: 0; }
 td.text { white-space: normal; font-variant-numeric: normal; }
+/* A game not yet played: shown, but not competing for attention with one
+   that has a result. */
+tr.pending td { color: var(--dim); }
+tr.pending td.text { color: var(--muted); }
 .bar-cell { min-width: 7rem; }
 .bar-track { background: var(--panel-2); border-radius: 2rem; height: .4rem; overflow: hidden; }
 .bar-fill { background: var(--accent); height: 100%; border-radius: 2rem; }
