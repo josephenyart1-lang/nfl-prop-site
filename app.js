@@ -303,7 +303,9 @@ function buildResults() {
     rec.weeks ? "across " + rec.weeks + (rec.weeks === 1 ? " week" : " weeks")
       : "nothing staked");
   tile(tiles, "Settled", rec.settled ?? 0,
-    rec.settled ? "graded against results" : "no games played yet");
+    rec.voided ? rec.voided + (rec.voided === 1 ? " void" : " voided")
+                 + ", not counted"
+      : (rec.settled ? "graded against results" : "no games played yet"));
   tile(tiles, "Model right", rec.settled ? rec.right + "–" + rec.wrong : "—",
     "right / wrong");
   tile(tiles, "Claimed vs actual",
@@ -350,7 +352,7 @@ function drawByGame(games) {
   if (!games.length) {
     const row = body.insertRow();
     const cell = row.insertCell();
-    cell.colSpan = 7;
+    cell.colSpan = 8;
     cell.className = "text";
     cell.textContent = "No props recorded yet.";
     return;
@@ -358,7 +360,7 @@ function drawByGame(games) {
   games.forEach((g) => {
     const row = body.insertRow();
     const cells = [];
-    for (let i = 0; i < 7; i++) cells.push(row.insertCell());
+    for (let i = 0; i < 8; i++) cells.push(row.insertCell());
     cells[0].textContent = g.week ? "Week " + g.week : "—";
     cells[1].textContent = g.game;
     cells[1].className = "text";
@@ -368,7 +370,8 @@ function drawByGame(games) {
        rather than a zero: 0-0 reads like the model got everything wrong. */
     cells[4].textContent = g.settled ? g.right : "—";
     cells[5].textContent = g.settled ? g.wrong : "—";
-    cells[6].textContent = g.expected_right != null ? g.expected_right : "—";
+    cells[6].textContent = g.voided ? g.voided : "—";
+    cells[7].textContent = g.expected_right != null ? g.expected_right : "—";
     if (!g.settled) row.className = "pending";
   });
 }
