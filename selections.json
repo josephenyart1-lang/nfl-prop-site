@@ -1,5 +1,1358 @@
 {
- "generated_at": "2026-10-20 16:56 UTC",
+ "schedule": [
+  {
+   "week": 6,
+   "gameday": "2026-10-15",
+   "kickoff": "20:15",
+   "game": "SEA at DEN",
+   "played": true
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-18",
+   "kickoff": "09:30",
+   "game": "HOU at JAX",
+   "played": true
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-18",
+   "kickoff": "13:00",
+   "game": "BAL at CLE",
+   "played": true
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-18",
+   "kickoff": "13:00",
+   "game": "CAR at PHI",
+   "played": true
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-18",
+   "kickoff": "13:00",
+   "game": "CHI at ATL",
+   "played": true
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-18",
+   "kickoff": "13:00",
+   "game": "NO at NYG",
+   "played": true
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-18",
+   "kickoff": "13:00",
+   "game": "NYJ at NE",
+   "played": true
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-18",
+   "kickoff": "13:00",
+   "game": "PIT at TB",
+   "played": true
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-18",
+   "kickoff": "13:00",
+   "game": "TEN at IND",
+   "played": true
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-18",
+   "kickoff": "16:05",
+   "game": "ARI at LA",
+   "played": true
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-18",
+   "kickoff": "16:25",
+   "game": "BUF at LV",
+   "played": true
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-18",
+   "kickoff": "16:25",
+   "game": "LAC at KC",
+   "played": true
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-18",
+   "kickoff": "20:20",
+   "game": "DAL at GB",
+   "played": true
+  },
+  {
+   "week": 6,
+   "gameday": "2026-10-19",
+   "kickoff": "20:15",
+   "game": "WAS at SF",
+   "played": true
+  },
+  {
+   "week": 7,
+   "gameday": "2026-10-22",
+   "kickoff": "20:15",
+   "game": "NE at CHI",
+   "played": false
+  },
+  {
+   "week": 7,
+   "gameday": "2026-10-25",
+   "kickoff": "09:30",
+   "game": "PIT at NO",
+   "played": false
+  },
+  {
+   "week": 7,
+   "gameday": "2026-10-25",
+   "kickoff": "13:00",
+   "game": "CIN at BAL",
+   "played": false
+  },
+  {
+   "week": 7,
+   "gameday": "2026-10-25",
+   "kickoff": "13:00",
+   "game": "CLE at TEN",
+   "played": false
+  },
+  {
+   "week": 7,
+   "gameday": "2026-10-25",
+   "kickoff": "13:00",
+   "game": "IND at MIN",
+   "played": false
+  },
+  {
+   "week": 7,
+   "gameday": "2026-10-25",
+   "kickoff": "13:00",
+   "game": "MIA at NYJ",
+   "played": false
+  },
+  {
+   "week": 7,
+   "gameday": "2026-10-25",
+   "kickoff": "13:00",
+   "game": "NYG at HOU",
+   "played": false
+  },
+  {
+   "week": 7,
+   "gameday": "2026-10-25",
+   "kickoff": "13:00",
+   "game": "SF at ATL",
+   "played": false
+  },
+  {
+   "week": 7,
+   "gameday": "2026-10-25",
+   "kickoff": "13:00",
+   "game": "TB at CAR",
+   "played": false
+  },
+  {
+   "week": 7,
+   "gameday": "2026-10-25",
+   "kickoff": "16:05",
+   "game": "DEN at ARI",
+   "played": false
+  },
+  {
+   "week": 7,
+   "gameday": "2026-10-25",
+   "kickoff": "16:25",
+   "game": "GB at DET",
+   "played": false
+  },
+  {
+   "week": 7,
+   "gameday": "2026-10-25",
+   "kickoff": "16:25",
+   "game": "LA at LV",
+   "played": false
+  },
+  {
+   "week": 7,
+   "gameday": "2026-10-25",
+   "kickoff": "20:20",
+   "game": "KC at SEA",
+   "played": false
+  },
+  {
+   "week": 7,
+   "gameday": "2026-10-26",
+   "kickoff": "20:15",
+   "game": "DAL at PHI",
+   "played": false
+  },
+  {
+   "week": 8,
+   "gameday": "2026-10-29",
+   "kickoff": "20:15",
+   "game": "CAR at GB",
+   "played": false
+  },
+  {
+   "week": 8,
+   "gameday": "2026-11-01",
+   "kickoff": "13:00",
+   "game": "ARI at DAL",
+   "played": false
+  },
+  {
+   "week": 8,
+   "gameday": "2026-11-01",
+   "kickoff": "13:00",
+   "game": "ATL at TB",
+   "played": false
+  },
+  {
+   "week": 8,
+   "gameday": "2026-11-01",
+   "kickoff": "13:00",
+   "game": "BAL at BUF",
+   "played": false
+  },
+  {
+   "week": 8,
+   "gameday": "2026-11-01",
+   "kickoff": "13:00",
+   "game": "CLE at PIT",
+   "played": false
+  },
+  {
+   "week": 8,
+   "gameday": "2026-11-01",
+   "kickoff": "13:00",
+   "game": "IND at JAX",
+   "played": false
+  },
+  {
+   "week": 8,
+   "gameday": "2026-11-01",
+   "kickoff": "13:00",
+   "game": "LV at NYJ",
+   "played": false
+  },
+  {
+   "week": 8,
+   "gameday": "2026-11-01",
+   "kickoff": "13:00",
+   "game": "MIN at DET",
+   "played": false
+  },
+  {
+   "week": 8,
+   "gameday": "2026-11-01",
+   "kickoff": "13:00",
+   "game": "TEN at CIN",
+   "played": false
+  },
+  {
+   "week": 8,
+   "gameday": "2026-11-01",
+   "kickoff": "16:05",
+   "game": "LAC at LA",
+   "played": false
+  },
+  {
+   "week": 8,
+   "gameday": "2026-11-01",
+   "kickoff": "16:25",
+   "game": "KC at DEN",
+   "played": false
+  },
+  {
+   "week": 8,
+   "gameday": "2026-11-01",
+   "kickoff": "16:25",
+   "game": "NE at MIA",
+   "played": false
+  },
+  {
+   "week": 8,
+   "gameday": "2026-11-01",
+   "kickoff": "20:20",
+   "game": "PHI at WAS",
+   "played": false
+  },
+  {
+   "week": 8,
+   "gameday": "2026-11-02",
+   "kickoff": "20:15",
+   "game": "CHI at SEA",
+   "played": false
+  },
+  {
+   "week": 9,
+   "gameday": "2026-11-05",
+   "kickoff": "20:15",
+   "game": "JAX at BAL",
+   "played": false
+  },
+  {
+   "week": 9,
+   "gameday": "2026-11-08",
+   "kickoff": "09:30",
+   "game": "CIN at ATL",
+   "played": false
+  },
+  {
+   "week": 9,
+   "gameday": "2026-11-08",
+   "kickoff": "13:00",
+   "game": "CLE at NO",
+   "played": false
+  },
+  {
+   "week": 9,
+   "gameday": "2026-11-08",
+   "kickoff": "13:00",
+   "game": "DAL at IND",
+   "played": false
+  },
+  {
+   "week": 9,
+   "gameday": "2026-11-08",
+   "kickoff": "13:00",
+   "game": "DEN at CAR",
+   "played": false
+  },
+  {
+   "week": 9,
+   "gameday": "2026-11-08",
+   "kickoff": "13:00",
+   "game": "DET at MIA",
+   "played": false
+  },
+  {
+   "week": 9,
+   "gameday": "2026-11-08",
+   "kickoff": "13:00",
+   "game": "LA at WAS",
+   "played": false
+  },
+  {
+   "week": 9,
+   "gameday": "2026-11-08",
+   "kickoff": "13:00",
+   "game": "NYG at PHI",
+   "played": false
+  },
+  {
+   "week": 9,
+   "gameday": "2026-11-08",
+   "kickoff": "13:00",
+   "game": "NYJ at KC",
+   "played": false
+  },
+  {
+   "week": 9,
+   "gameday": "2026-11-08",
+   "kickoff": "16:05",
+   "game": "HOU at LAC",
+   "played": false
+  },
+  {
+   "week": 9,
+   "gameday": "2026-11-08",
+   "kickoff": "16:05",
+   "game": "LV at SF",
+   "played": false
+  },
+  {
+   "week": 9,
+   "gameday": "2026-11-08",
+   "kickoff": "16:25",
+   "game": "ARI at SEA",
+   "played": false
+  },
+  {
+   "week": 9,
+   "gameday": "2026-11-08",
+   "kickoff": "16:25",
+   "game": "GB at NE",
+   "played": false
+  },
+  {
+   "week": 9,
+   "gameday": "2026-11-08",
+   "kickoff": "20:20",
+   "game": "TB at CHI",
+   "played": false
+  },
+  {
+   "week": 9,
+   "gameday": "2026-11-09",
+   "kickoff": "20:15",
+   "game": "BUF at MIN",
+   "played": false
+  },
+  {
+   "week": 10,
+   "gameday": "2026-11-12",
+   "kickoff": "20:15",
+   "game": "WAS at NYG",
+   "played": false
+  },
+  {
+   "week": 10,
+   "gameday": "2026-11-15",
+   "kickoff": "09:30",
+   "game": "NE at DET",
+   "played": false
+  },
+  {
+   "week": 10,
+   "gameday": "2026-11-15",
+   "kickoff": "13:00",
+   "game": "BUF at NYJ",
+   "played": false
+  },
+  {
+   "week": 10,
+   "gameday": "2026-11-15",
+   "kickoff": "13:00",
+   "game": "CAR at NO",
+   "played": false
+  },
+  {
+   "week": 10,
+   "gameday": "2026-11-15",
+   "kickoff": "13:00",
+   "game": "HOU at CLE",
+   "played": false
+  },
+  {
+   "week": 10,
+   "gameday": "2026-11-15",
+   "kickoff": "13:00",
+   "game": "JAX at TEN",
+   "played": false
+  },
+  {
+   "week": 10,
+   "gameday": "2026-11-15",
+   "kickoff": "13:00",
+   "game": "KC at ATL",
+   "played": false
+  },
+  {
+   "week": 10,
+   "gameday": "2026-11-15",
+   "kickoff": "13:00",
+   "game": "MIA at IND",
+   "played": false
+  },
+  {
+   "week": 10,
+   "gameday": "2026-11-15",
+   "kickoff": "13:00",
+   "game": "MIN at GB",
+   "played": false
+  },
+  {
+   "week": 10,
+   "gameday": "2026-11-15",
+   "kickoff": "16:05",
+   "game": "LA at ARI",
+   "played": false
+  },
+  {
+   "week": 10,
+   "gameday": "2026-11-15",
+   "kickoff": "16:05",
+   "game": "SEA at LV",
+   "played": false
+  },
+  {
+   "week": 10,
+   "gameday": "2026-11-15",
+   "kickoff": "16:25",
+   "game": "SF at DAL",
+   "played": false
+  },
+  {
+   "week": 10,
+   "gameday": "2026-11-15",
+   "kickoff": "20:20",
+   "game": "PIT at CIN",
+   "played": false
+  },
+  {
+   "week": 10,
+   "gameday": "2026-11-16",
+   "kickoff": "20:15",
+   "game": "LAC at BAL",
+   "played": false
+  },
+  {
+   "week": 11,
+   "gameday": "2026-11-19",
+   "kickoff": "20:15",
+   "game": "IND at HOU",
+   "played": false
+  },
+  {
+   "week": 11,
+   "gameday": "2026-11-22",
+   "kickoff": "13:00",
+   "game": "ARI at KC",
+   "played": false
+  },
+  {
+   "week": 11,
+   "gameday": "2026-11-22",
+   "kickoff": "13:00",
+   "game": "BAL at CAR",
+   "played": false
+  },
+  {
+   "week": 11,
+   "gameday": "2026-11-22",
+   "kickoff": "13:00",
+   "game": "JAX at NYG",
+   "played": false
+  },
+  {
+   "week": 11,
+   "gameday": "2026-11-22",
+   "kickoff": "13:00",
+   "game": "MIA at BUF",
+   "played": false
+  },
+  {
+   "week": 11,
+   "gameday": "2026-11-22",
+   "kickoff": "13:00",
+   "game": "NO at CHI",
+   "played": false
+  },
+  {
+   "week": 11,
+   "gameday": "2026-11-22",
+   "kickoff": "13:00",
+   "game": "TB at DET",
+   "played": false
+  },
+  {
+   "week": 11,
+   "gameday": "2026-11-22",
+   "kickoff": "13:00",
+   "game": "TEN at DAL",
+   "played": false
+  },
+  {
+   "week": 11,
+   "gameday": "2026-11-22",
+   "kickoff": "16:05",
+   "game": "NYJ at LAC",
+   "played": false
+  },
+  {
+   "week": 11,
+   "gameday": "2026-11-22",
+   "kickoff": "16:25",
+   "game": "LV at DEN",
+   "played": false
+  },
+  {
+   "week": 11,
+   "gameday": "2026-11-22",
+   "kickoff": "16:25",
+   "game": "PIT at PHI",
+   "played": false
+  },
+  {
+   "week": 11,
+   "gameday": "2026-11-22",
+   "kickoff": "20:20",
+   "game": "MIN at SF",
+   "played": false
+  },
+  {
+   "week": 11,
+   "gameday": "2026-11-23",
+   "kickoff": "20:15",
+   "game": "CIN at WAS",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-25",
+   "kickoff": "20:00",
+   "game": "GB at LA",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-26",
+   "kickoff": "13:00",
+   "game": "CHI at DET",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-26",
+   "kickoff": "16:30",
+   "game": "PHI at DAL",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-26",
+   "kickoff": "20:20",
+   "game": "KC at BUF",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-27",
+   "kickoff": "15:00",
+   "game": "DEN at PIT",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-29",
+   "kickoff": "13:00",
+   "game": "ATL at MIN",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-29",
+   "kickoff": "13:00",
+   "game": "BAL at HOU",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-29",
+   "kickoff": "13:00",
+   "game": "LV at CLE",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-29",
+   "kickoff": "13:00",
+   "game": "NO at CIN",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-29",
+   "kickoff": "13:00",
+   "game": "NYG at IND",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-29",
+   "kickoff": "13:00",
+   "game": "NYJ at MIA",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-29",
+   "kickoff": "16:05",
+   "game": "TEN at JAX",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-29",
+   "kickoff": "16:25",
+   "game": "SEA at SF",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-29",
+   "kickoff": "16:25",
+   "game": "WAS at ARI",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-29",
+   "kickoff": "20:20",
+   "game": "NE at LAC",
+   "played": false
+  },
+  {
+   "week": 12,
+   "gameday": "2026-11-30",
+   "kickoff": "20:15",
+   "game": "CAR at TB",
+   "played": false
+  },
+  {
+   "week": 13,
+   "gameday": "2026-12-03",
+   "kickoff": "20:15",
+   "game": "KC at LA",
+   "played": false
+  },
+  {
+   "week": 13,
+   "gameday": "2026-12-06",
+   "kickoff": "13:00",
+   "game": "CIN at CLE",
+   "played": false
+  },
+  {
+   "week": 13,
+   "gameday": "2026-12-06",
+   "kickoff": "13:00",
+   "game": "DET at ATL",
+   "played": false
+  },
+  {
+   "week": 13,
+   "gameday": "2026-12-06",
+   "kickoff": "13:00",
+   "game": "GB at NO",
+   "played": false
+  },
+  {
+   "week": 13,
+   "gameday": "2026-12-06",
+   "kickoff": "13:00",
+   "game": "JAX at CHI",
+   "played": false
+  },
+  {
+   "week": 13,
+   "gameday": "2026-12-06",
+   "kickoff": "13:00",
+   "game": "LAC at TB",
+   "played": false
+  },
+  {
+   "week": 13,
+   "gameday": "2026-12-06",
+   "kickoff": "13:00",
+   "game": "SF at NYG",
+   "played": false
+  },
+  {
+   "week": 13,
+   "gameday": "2026-12-06",
+   "kickoff": "13:00",
+   "game": "WAS at TEN",
+   "played": false
+  },
+  {
+   "week": 13,
+   "gameday": "2026-12-06",
+   "kickoff": "16:05",
+   "game": "MIA at DEN",
+   "played": false
+  },
+  {
+   "week": 13,
+   "gameday": "2026-12-06",
+   "kickoff": "16:05",
+   "game": "PHI at ARI",
+   "played": false
+  },
+  {
+   "week": 13,
+   "gameday": "2026-12-06",
+   "kickoff": "16:25",
+   "game": "BUF at NE",
+   "played": false
+  },
+  {
+   "week": 13,
+   "gameday": "2026-12-06",
+   "kickoff": "16:25",
+   "game": "CAR at MIN",
+   "played": false
+  },
+  {
+   "week": 13,
+   "gameday": "2026-12-06",
+   "kickoff": "20:20",
+   "game": "HOU at PIT",
+   "played": false
+  },
+  {
+   "week": 13,
+   "gameday": "2026-12-07",
+   "kickoff": "20:15",
+   "game": "DAL at SEA",
+   "played": false
+  },
+  {
+   "week": 14,
+   "gameday": "2026-12-10",
+   "kickoff": "20:15",
+   "game": "MIN at NE",
+   "played": false
+  },
+  {
+   "week": 14,
+   "gameday": "2026-12-13",
+   "kickoff": "13:00",
+   "game": "ATL at CLE",
+   "played": false
+  },
+  {
+   "week": 14,
+   "gameday": "2026-12-13",
+   "kickoff": "13:00",
+   "game": "CHI at MIA",
+   "played": false
+  },
+  {
+   "week": 14,
+   "gameday": "2026-12-13",
+   "kickoff": "13:00",
+   "game": "DEN at NYJ",
+   "played": false
+  },
+  {
+   "week": 14,
+   "gameday": "2026-12-13",
+   "kickoff": "13:00",
+   "game": "HOU at WAS",
+   "played": false
+  },
+  {
+   "week": 14,
+   "gameday": "2026-12-13",
+   "kickoff": "13:00",
+   "game": "IND at PHI",
+   "played": false
+  },
+  {
+   "week": 14,
+   "gameday": "2026-12-13",
+   "kickoff": "13:00",
+   "game": "NO at CAR",
+   "played": false
+  },
+  {
+   "week": 14,
+   "gameday": "2026-12-13",
+   "kickoff": "13:00",
+   "game": "TB at BAL",
+   "played": false
+  },
+  {
+   "week": 14,
+   "gameday": "2026-12-13",
+   "kickoff": "13:00",
+   "game": "TEN at DET",
+   "played": false
+  },
+  {
+   "week": 14,
+   "gameday": "2026-12-13",
+   "kickoff": "16:05",
+   "game": "LAC at LV",
+   "played": false
+  },
+  {
+   "week": 14,
+   "gameday": "2026-12-13",
+   "kickoff": "16:25",
+   "game": "KC at CIN",
+   "played": false
+  },
+  {
+   "week": 14,
+   "gameday": "2026-12-13",
+   "kickoff": "16:25",
+   "game": "LA at SF",
+   "played": false
+  },
+  {
+   "week": 14,
+   "gameday": "2026-12-13",
+   "kickoff": "16:25",
+   "game": "NYG at SEA",
+   "played": false
+  },
+  {
+   "week": 14,
+   "gameday": "2026-12-13",
+   "kickoff": "20:20",
+   "game": "BUF at GB",
+   "played": false
+  },
+  {
+   "week": 14,
+   "gameday": "2026-12-14",
+   "kickoff": "20:15",
+   "game": "PIT at JAX",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-17",
+   "kickoff": "20:15",
+   "game": "SF at LAC",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-19",
+   "kickoff": "17:00",
+   "game": "SEA at PHI",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-19",
+   "kickoff": "20:20",
+   "game": "CHI at BUF",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-20",
+   "kickoff": "13:00",
+   "game": "ATL at WAS",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-20",
+   "kickoff": "13:00",
+   "game": "BAL at PIT",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-20",
+   "kickoff": "13:00",
+   "game": "CIN at CAR",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-20",
+   "kickoff": "13:00",
+   "game": "CLE at NYG",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-20",
+   "kickoff": "13:00",
+   "game": "IND at TEN",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-20",
+   "kickoff": "13:00",
+   "game": "JAX at HOU",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-20",
+   "kickoff": "13:00",
+   "game": "MIA at GB",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-20",
+   "kickoff": "13:00",
+   "game": "NO at TB",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-20",
+   "kickoff": "16:05",
+   "game": "NYJ at ARI",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-20",
+   "kickoff": "16:25",
+   "game": "DAL at LA",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-20",
+   "kickoff": "16:25",
+   "game": "DEN at LV",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-20",
+   "kickoff": "20:20",
+   "game": "DET at MIN",
+   "played": false
+  },
+  {
+   "week": 15,
+   "gameday": "2026-12-21",
+   "kickoff": "20:15",
+   "game": "NE at KC",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-24",
+   "kickoff": "20:15",
+   "game": "HOU at PHI",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-25",
+   "kickoff": "13:00",
+   "game": "GB at CHI",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-25",
+   "kickoff": "16:30",
+   "game": "BUF at DEN",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-25",
+   "kickoff": "20:15",
+   "game": "LA at SEA",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-27",
+   "kickoff": "13:00",
+   "game": "ARI at NO",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-27",
+   "kickoff": "13:00",
+   "game": "CAR at PIT",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-27",
+   "kickoff": "13:00",
+   "game": "CIN at IND",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-27",
+   "kickoff": "13:00",
+   "game": "CLE at BAL",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-27",
+   "kickoff": "13:00",
+   "game": "LAC at MIA",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-27",
+   "kickoff": "13:00",
+   "game": "NE at NYJ",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-27",
+   "kickoff": "13:00",
+   "game": "TB at ATL",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-27",
+   "kickoff": "13:00",
+   "game": "WAS at MIN",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-27",
+   "kickoff": "16:05",
+   "game": "TEN at LV",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-27",
+   "kickoff": "16:25",
+   "game": "SF at KC",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-27",
+   "kickoff": "20:20",
+   "game": "JAX at DAL",
+   "played": false
+  },
+  {
+   "week": 16,
+   "gameday": "2026-12-28",
+   "kickoff": "20:15",
+   "game": "NYG at DET",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2026-12-31",
+   "kickoff": "20:15",
+   "game": "BAL at CIN",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2027-01-03",
+   "kickoff": "13:00",
+   "game": "BUF at MIA",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2027-01-03",
+   "kickoff": "13:00",
+   "game": "DEN at NE",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2027-01-03",
+   "kickoff": "13:00",
+   "game": "IND at CLE",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2027-01-03",
+   "kickoff": "13:00",
+   "game": "KC at LAC",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2027-01-03",
+   "kickoff": "13:00",
+   "game": "LA at TB",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2027-01-03",
+   "kickoff": "13:00",
+   "game": "MIN at NYJ",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2027-01-03",
+   "kickoff": "13:00",
+   "game": "NO at ATL",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2027-01-03",
+   "kickoff": "13:00",
+   "game": "NYG at DAL",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2027-01-03",
+   "kickoff": "13:00",
+   "game": "PIT at TEN",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2027-01-03",
+   "kickoff": "13:00",
+   "game": "SEA at CAR",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2027-01-03",
+   "kickoff": "13:00",
+   "game": "WAS at JAX",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2027-01-03",
+   "kickoff": "16:05",
+   "game": "LV at ARI",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2027-01-03",
+   "kickoff": "16:25",
+   "game": "DET at CHI",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2027-01-03",
+   "kickoff": "20:20",
+   "game": "PHI at SF",
+   "played": false
+  },
+  {
+   "week": 17,
+   "gameday": "2027-01-04",
+   "kickoff": "20:15",
+   "game": "HOU at GB",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "ATL at CAR",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "CHI at MIN",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "CLE at CIN",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "DAL at WAS",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "DET at GB",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "JAX at IND",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "LAC at DEN",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "LV at KC",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "MIA at NE",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "NYJ at BUF",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "PHI at NYG",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "PIT at BAL",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "SEA at LA",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "SF at ARI",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "TB at NO",
+   "played": false
+  },
+  {
+   "week": 18,
+   "gameday": "2027-01-10",
+   "kickoff": "13:00",
+   "game": "TEN at HOU",
+   "played": false
+  }
+ ],
+ "generated_at": "2026-10-20 17:02 UTC",
  "as_of": "2026-10-20 16:40",
  "selections": [
   {

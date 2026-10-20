@@ -274,3 +274,22 @@ tr.outcome-void td { color: var(--dim); }
   h1 { font-size: 1.5rem; }
   .tile .value { font-size: 1.3rem; }
 }
+
+/* ----------------------------------------------------- unpriced game --- */
+/* A fixture with no card typed in yet. Dimmed rather than hidden: the
+   question "what is on this week" deserves an answer either way. */
+.filters.games .chip.unpriced { color: var(--dim); border-style: dashed; }
+.filters.games .chip.unpriced.on {
+  color: var(--muted); border-style: solid; border-color: var(--line);
+  background: var(--panel-2);
+}
+.fixture.unavailable .head { background: var(--panel); }
+.unavailable-body { padding: 1.6rem .9rem 1.8rem; text-align: center; }
+.unavailable-title {
+  font-size: 1rem; font-weight: 600; color: var(--muted);
+  letter-spacing: -0.01em;
+}
+.unavailable-why {
+  font-size: .8rem; color: var(--dim); margin-top: .35rem;
+  max-width: 24rem; margin-left: auto; margin-right: auto;
+}

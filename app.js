@@ -75,7 +75,9 @@ function buildBoard() {
   /* Week first, then a game inside it. The board reaches back over played
      weeks now, so without the second row a finished week would be one long
      list of every game at once. */
-  const weeks = [...new Set(legs.map((l) => l.week))]
+  const sched = DATA.selections.schedule || [];
+  const weeks = [...new Set(
+    (sched.length ? sched : legs).map((l) => l.week))]
     .filter((w) => w != null && w !== "")
     .sort((a, b) => Number(a) - Number(b));
 
@@ -83,8 +85,9 @@ function buildBoard() {
      has not kicked off, and the last week otherwise, so a board left
      sitting does not open on a slate that is already over. */
   const today = new Date().toISOString().slice(0, 10);
+  const source = sched.length ? sched : legs;
   const upcoming = weeks.find((w) =>
-    legs.some((l) => String(l.week) === String(w) && l.gameday >= today));
+    source.some((g) => String(g.week) === String(w) && g.gameday >= today));
   filter.week = String(upcoming != null ? upcoming : weeks[weeks.length - 1]);
 
   const chips = $("board-filters");
@@ -112,20 +115,36 @@ function buildGameChips() {
 
   const inWeek = (DATA.selections.selections || [])
     .filter((l) => String(l.week) === String(filter.week));
-  const games = [...new Map(inWeek.map((l) => [l.game, l.gameday])).entries()]
-    .sort((a, b) => (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0));
 
+  /* Every fixture in the week, from the schedule, not only the ones with
+     picks against them. A game nobody has priced is still a game, and a
+     board that hides it cannot answer "what is on this week". */
+  const sched = (DATA.selections.schedule || [])
+    .filter((g) => String(g.week) === String(filter.week));
+  const games = sched.length
+    ? sched.map((g) => [g.game, g.gameday])
+    : [...new Map(inWeek.map((l) => [l.game, l.gameday])).entries()]
+        .sort((a, b) => (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0));
+
+  /* Open on a game that actually has picks, rather than on whichever
+     fixture happens to kick off first. */
   if (!games.some((g) => g[0] === filter.game)) {
-    filter.game = games.length ? games[0][0] : null;
+    const priced = games.find((g) => inWeek.some((l) => l.game === g[0]));
+    filter.game = priced ? priced[0] : (games.length ? games[0][0] : null);
   }
   games.forEach((pair) => {
-    const settled = inWeek.filter((l) => l.game === pair[0]
-      && l.status && l.status !== "open");
+    const mine = inWeek.filter((l) => l.game === pair[0]);
+    const settled = mine.filter((l) => l.status && l.status !== "open");
     const right = settled.filter((l) => l.status === "right").length;
-    const label = settled.length
-      ? pair[0] + "  " + right + "/" + settled.filter((l) => l.status !== "void").length
-      : pair[0];
-    chipFor(host, "game", pair[0], label);
+    let label = pair[0];
+    if (settled.length) {
+      label += "  " + right + "/"
+        + settled.filter((l) => l.status !== "void").length;
+    } else if (mine.length) {
+      label += "  " + mine.length;
+    }
+    const chip = chipFor(host, "game", pair[0], label);
+    if (!mine.length) chip.classList.add("unpriced");
   });
   drawBoard();
 }
@@ -133,6 +152,12 @@ function buildGameChips() {
 function drawTiles(legs) {
   const tiles = $("board-tiles");
   tiles.textContent = "";
+  /* Nothing priced: the tiles would otherwise read "Legs 0" beside an
+     entry bar for an entry that cannot be built. */
+  if (!legs.length) {
+    $("board-warning").hidden = true;
+    return;
+  }
   const sides = new Set(legs.map((l) => l.our_side));
   const priced = legs.filter((l) => num(l.our_probability) != null);
   const clearing = priced.filter((l) => legBar && num(l.our_probability) >= legBar);
@@ -193,6 +218,7 @@ function chipFor(into, kind, value, label) {
   b.dataset.kind = kind;
   b.dataset.value = value;
   into.appendChild(b);
+  return b;
 }
 
 function refreshChips() {
@@ -215,7 +241,7 @@ function drawBoard() {
 
   drawTiles(legs);
   if (!legs.length) {
-    root.innerHTML = '<p class="empty">No priced legs in that game.</p>';
+    drawUnavailable(root);
     return;
   }
 
@@ -262,6 +288,43 @@ function drawBoard() {
     root.appendChild(scroller);
     drawWeek(scroller, games);
   });
+}
+
+/* A fixture nobody has typed a card for. Said plainly, because the honest
+   answer to "what does the model like here" is that nothing has been
+   priced yet -- not that there is nothing worth backing. */
+function drawUnavailable(root) {
+  const box = document.createElement("div");
+  box.className = "fixture unavailable";
+  const head = document.createElement("div");
+  head.className = "head";
+  const teams = document.createElement("span");
+  teams.className = "teams";
+  teams.textContent = filter.game || "This game";
+  const when = document.createElement("span");
+  when.className = "when";
+  const game = (DATA.selections.schedule || [])
+    .find((g) => g.game === filter.game
+      && String(g.week) === String(filter.week));
+  when.textContent = game ? niceDate(game.gameday) : "";
+  head.appendChild(teams);
+  head.appendChild(when);
+  box.appendChild(head);
+
+  const body = document.createElement("div");
+  body.className = "unavailable-body";
+  const title = document.createElement("div");
+  title.className = "unavailable-title";
+  title.textContent = "Picks Unavailable";
+  const why = document.createElement("div");
+  why.className = "unavailable-why";
+  why.textContent = game && game.played
+    ? "No card was typed in for this game while it was still ahead."
+    : "No sportsbook card has been entered for this game yet.";
+  body.appendChild(title);
+  body.appendChild(why);
+  box.appendChild(body);
+  root.appendChild(box);
 }
 
 function drawWeek(root, games) {
