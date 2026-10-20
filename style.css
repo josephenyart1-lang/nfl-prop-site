@@ -135,6 +135,14 @@ h2 { font-size: 1.02rem; margin: 2rem 0 .7rem; font-weight: 600; letter-spacing:
 .leg .model { font-size: .73rem; color: var(--dim); font-variant-numeric: tabular-nums; }
 .up { color: var(--accent); }
 .down { color: var(--bad); }
+/* A side the model gives less than an even chance is not a call, so it is
+   not coloured like one. */
+.side.noview { color: var(--dim); font-style: italic; }
+.pct { font-variant-numeric: tabular-nums; }
+.leg .pct { cursor: help; }
+/* Clears the bar one leg of a 2-pick entry has to clear. Also used inline
+   in the prose above the board to show the reader what green means. */
+.pct.clears { color: var(--accent); font-weight: 600; }
 
 /* ------------------------------------------------------------ tables --- */
 .scroll { overflow-x: auto; }

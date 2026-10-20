@@ -5,6 +5,10 @@ const PRETTY = {
 };
 let DATA = null;
 let filter = { market: "all", day: "all" };
+/* What a single leg of a 2-pick entry has to clear to be worth including.
+   Read from the entry bar rather than hardcoded, so it follows Underdog's
+   payouts if they change. */
+let legBar = null;
 
 const $ = (id) => document.getElementById(id);
 const num = (x) => (x === "" || x == null ? null : Number(x));
@@ -68,11 +72,19 @@ function buildBoard() {
   const games = new Set(legs.map((l) => l.game)).size;
   const sides = new Set(legs.map((l) => l.our_side));
   const two = bar.find((b) => num(b.legs) === 2);
+  legBar = two ? num(two.unrelated) : null;
+  const priced = legs.filter((l) => num(l.our_probability) != null);
+  const clearing = priced.filter((l) => legBar && num(l.our_probability) >= legBar);
+  const noView = priced.filter((l) => num(l.our_probability) < 0.5);
+
   tile(tiles, "Legs priced", legs.length, games + " games");
-  tile(tiles, "Markets", new Set(legs.map((l) => l.market)).size, "of four modelled");
   if (two) {
     tile(tiles, "A 2-pick leg needs", (num(two.unrelated) * 100).toFixed(1) + "%",
       "stacked " + (num(two.stacked) * 100).toFixed(1) + "%");
+  }
+  if (priced.length) {
+    tile(tiles, "Clear that bar", clearing.length + " of " + priced.length,
+      noView.length ? noView.length + " are not calls at all" : "the rest fall short");
   }
   tile(tiles, "Sides", sides.size === 1 ? [...sides][0] + " only" : [...sides].join(" / "),
     sides.size === 1 ? "one-sided, see below" : "both directions");
@@ -192,12 +204,37 @@ function drawBoard() {
 
         const nums = document.createElement("div");
         nums.className = "nums";
+        const chance = num(l.our_probability);
+        /* The side is picked by disagreeing with Underdog, not by which
+           outcome is likelier, so the model can land on a side it expects
+           to lose. Printing "Lower 3.5" for a 44% call reads as a
+           recommendation it is not, so no side is shown at all. */
+        const noView = chance != null && chance < 0.5;
+
         const side = document.createElement("div");
-        side.className = "side " + (l.our_side === "Higher" ? "up" : "down");
-        side.textContent = l.our_side + " " + l.underdog_line;
+        side.className = "side " + (noView ? "noview"
+          : (l.our_side === "Higher" ? "up" : "down"));
+        side.textContent = noView ? "no view at " + l.underdog_line
+          : l.our_side + " " + l.underdog_line;
+
         const model = document.createElement("div");
         model.className = "model";
-        model.textContent = "model " + l.model;
+        if (chance != null) {
+          const pct = document.createElement("span");
+          pct.className = "pct" + (!noView && legBar && chance >= legBar ? " clears" : "");
+          /* One decimal, to match the bar it is being compared against. A
+             leg at 57.70% rounded to "58%" sitting unmarked beside a bar of
+             "57.7%" looks like a mistake rather than a near miss. */
+          pct.textContent = (chance * 100).toFixed(1) + "%";
+          pct.title = noView
+            ? "The model gives this side less than an even chance."
+            : (legBar && chance >= legBar
+              ? "Clears the bar a 2-pick entry needs."
+              : "Below the bar a 2-pick entry needs.");
+          model.appendChild(pct);
+          model.appendChild(document.createTextNode(" · "));
+        }
+        model.appendChild(document.createTextNode("model " + l.model));
         nums.appendChild(side);
         nums.appendChild(model);
 

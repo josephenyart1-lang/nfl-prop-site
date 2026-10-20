@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-19 22:39 UTC",
- "as_of": "2026-10-19 22:25",
+ "generated_at": "2026-10-20 02:56 UTC",
+ "as_of": "2026-10-20 02:54",
  "selections": [
   {
    "week": 6,
@@ -12,6 +12,7 @@
    "model": 8.4,
    "underdog_line": 5.5,
    "our_side": "Higher",
+   "our_probability": 0.676,
    "last_played": "2026-10-11"
   },
   {
@@ -24,6 +25,7 @@
    "model": 7.3,
    "underdog_line": 6.5,
    "our_side": "Higher",
+   "our_probability": 0.577,
    "last_played": "2026-10-11"
   },
   {
@@ -36,6 +38,7 @@
    "model": 32.6,
    "underdog_line": 30.5,
    "our_side": "Higher",
+   "our_probability": 0.577,
    "last_played": "2026 wk5"
   },
   {
@@ -48,6 +51,7 @@
    "model": 32.1,
    "underdog_line": 30.5,
    "our_side": "Higher",
+   "our_probability": 0.547,
    "last_played": "2026 wk5"
   },
   {
@@ -60,6 +64,7 @@
    "model": 7.6,
    "underdog_line": 7.5,
    "our_side": "Higher",
+   "our_probability": 0.449,
    "last_played": "2026-10-11"
   },
   {
@@ -72,6 +77,7 @@
    "model": 6.4,
    "underdog_line": 6.5,
    "our_side": "Lower",
+   "our_probability": 0.586,
    "last_played": "2026-10-11"
   },
   {
@@ -84,6 +90,7 @@
    "model": 3.2,
    "underdog_line": 3.5,
    "our_side": "Lower",
+   "our_probability": 0.615,
    "last_played": "2026-10-11"
   },
   {
@@ -96,6 +103,7 @@
    "model": 14.3,
    "underdog_line": 14.5,
    "our_side": "Lower",
+   "our_probability": 0.581,
    "last_played": "2026-10-11"
   },
   {
@@ -108,6 +116,7 @@
    "model": 7.6,
    "underdog_line": 8.5,
    "our_side": "Lower",
+   "our_probability": 0.698,
    "last_played": "2026-10-11"
   },
   {
@@ -120,6 +129,7 @@
    "model": 6.3,
    "underdog_line": 13.5,
    "our_side": "Lower",
+   "our_probability": 0.913,
    "last_played": "2026-10-11"
   },
   {
@@ -132,6 +142,7 @@
    "model": 2.7,
    "underdog_line": 1.5,
    "our_side": "Higher",
+   "our_probability": 0.718,
    "last_played": "2026-10-18"
   },
   {
@@ -144,6 +155,7 @@
    "model": 11.4,
    "underdog_line": 7.5,
    "our_side": "Higher",
+   "our_probability": 0.76,
    "last_played": "2026-10-18"
   },
   {
@@ -156,6 +168,7 @@
    "model": 2.2,
    "underdog_line": 1.5,
    "our_side": "Higher",
+   "our_probability": 0.608,
    "last_played": "2026-10-18"
   },
   {
@@ -168,6 +181,7 @@
    "model": 3.7,
    "underdog_line": 2.5,
    "our_side": "Higher",
+   "our_probability": 0.718,
    "last_played": "2026-10-18"
   },
   {
@@ -180,6 +194,7 @@
    "model": 3.5,
    "underdog_line": 2.5,
    "our_side": "Higher",
+   "our_probability": 0.677,
    "last_played": "2026-10-11"
   },
   {
@@ -192,6 +207,7 @@
    "model": 2.6,
    "underdog_line": 1.5,
    "our_side": "Higher",
+   "our_probability": 0.698,
    "last_played": "2026-10-18"
   },
   {
@@ -204,6 +220,7 @@
    "model": 5.2,
    "underdog_line": 4.5,
    "our_side": "Higher",
+   "our_probability": 0.608,
    "last_played": "2026-10-18"
   },
   {
@@ -216,6 +233,7 @@
    "model": 34.8,
    "underdog_line": 33.5,
    "our_side": "Higher",
+   "our_probability": 0.531,
    "last_played": "2026 wk6"
   },
   {
@@ -228,6 +246,7 @@
    "model": 3.5,
    "underdog_line": 3.5,
    "our_side": "Higher",
+   "our_probability": 0.437,
    "last_played": "2026-10-18"
   },
   {
@@ -240,6 +259,7 @@
    "model": 32.0,
    "underdog_line": 31.5,
    "our_side": "Lower",
+   "our_probability": 0.512,
    "last_played": "2026 wk6"
   },
   {
@@ -252,6 +272,7 @@
    "model": 4.4,
    "underdog_line": 4.5,
    "our_side": "Lower",
+   "our_probability": 0.584,
    "last_played": "2026-10-18"
   },
   {
@@ -264,6 +285,7 @@
    "model": 2.8,
    "underdog_line": 2.5,
    "our_side": "Lower",
+   "our_probability": 0.491,
    "last_played": "2026-10-18"
   },
   {
@@ -276,6 +298,7 @@
    "model": 3.3,
    "underdog_line": 3.5,
    "our_side": "Lower",
+   "our_probability": 0.604,
    "last_played": "2026-10-18"
   },
   {
@@ -288,6 +311,7 @@
    "model": 10.9,
    "underdog_line": 11.5,
    "our_side": "Lower",
+   "our_probability": 0.616,
    "last_played": "2026-10-18"
   },
   {
@@ -300,6 +324,7 @@
    "model": 2.9,
    "underdog_line": 3.5,
    "our_side": "Lower",
+   "our_probability": 0.675,
    "last_played": "2026-10-18"
   },
   {
@@ -312,6 +337,7 @@
    "model": 4.5,
    "underdog_line": 4.5,
    "our_side": "Lower",
+   "our_probability": 0.563,
    "last_played": "2026-10-18"
   },
   {
@@ -324,6 +350,7 @@
    "model": 14.0,
    "underdog_line": 14.5,
    "our_side": "Lower",
+   "our_probability": 0.608,
    "last_played": "2026-10-18"
   }
  ],
