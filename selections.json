@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-20 03:24 UTC",
- "as_of": "2026-10-20 02:54",
+ "generated_at": "2026-10-20 03:43 UTC",
+ "as_of": "2026-10-20 03:42",
  "selections": [
   {
    "week": 6,
@@ -35,10 +35,10 @@
    "player": "Jayden Daniels",
    "position": "QB",
    "market": "pass_attempts",
-   "model": 32.6,
+   "model": 32.4,
    "underdog_line": 30.5,
    "our_side": "Higher",
-   "our_probability": 0.577,
+   "our_probability": 0.562,
    "last_played": "2026 wk5"
   },
   {
@@ -48,10 +48,10 @@
    "player": "Brock Purdy",
    "position": "QB",
    "market": "pass_attempts",
-   "model": 32.1,
+   "model": 31.9,
    "underdog_line": 30.5,
    "our_side": "Higher",
-   "our_probability": 0.547,
+   "our_probability": 0.537,
    "last_played": "2026 wk5"
   },
   {
@@ -61,10 +61,10 @@
    "player": "George Kittle",
    "position": "TE",
    "market": "targets",
-   "model": 7.6,
+   "model": 7.5,
    "underdog_line": 7.5,
-   "our_side": "Higher",
-   "our_probability": 0.449,
+   "our_side": "Lower",
+   "our_probability": 0.569,
    "last_played": "2026-10-11"
   },
   {
@@ -74,10 +74,10 @@
    "player": "Christian McCaffrey",
    "position": "RB",
    "market": "targets",
-   "model": 6.4,
+   "model": 6.3,
    "underdog_line": 6.5,
    "our_side": "Lower",
-   "our_probability": 0.586,
+   "our_probability": 0.6,
    "last_played": "2026-10-11"
   },
   {
@@ -87,10 +87,10 @@
    "player": "Rachaad White",
    "position": "RB",
    "market": "targets",
-   "model": 3.2,
+   "model": 3.1,
    "underdog_line": 3.5,
    "our_side": "Lower",
-   "our_probability": 0.615,
+   "our_probability": 0.629,
    "last_played": "2026-10-11"
   },
   {
@@ -100,10 +100,10 @@
    "player": "Christian McCaffrey",
    "position": "RB",
    "market": "carries",
-   "model": 14.3,
+   "model": 14.4,
    "underdog_line": 14.5,
    "our_side": "Lower",
-   "our_probability": 0.581,
+   "our_probability": 0.577,
    "last_played": "2026-10-11"
   },
   {
@@ -113,10 +113,10 @@
    "player": "Mike Evans",
    "position": "WR",
    "market": "targets",
-   "model": 7.6,
+   "model": 7.5,
    "underdog_line": 8.5,
    "our_side": "Lower",
-   "our_probability": 0.698,
+   "our_probability": 0.711,
    "last_played": "2026-10-11"
   },
   {
@@ -126,10 +126,10 @@
    "player": "Rachaad White",
    "position": "RB",
    "market": "carries",
-   "model": 6.3,
+   "model": 6.4,
    "underdog_line": 13.5,
    "our_side": "Lower",
-   "our_probability": 0.913,
+   "our_probability": 0.911,
    "last_played": "2026-10-11"
   },
   {
@@ -152,10 +152,10 @@
    "player": "TreVeyon Henderson",
    "position": "RB",
    "market": "carries",
-   "model": 11.4,
+   "model": 11.3,
    "underdog_line": 7.5,
    "our_side": "Higher",
-   "our_probability": 0.76,
+   "our_probability": 0.747,
    "last_played": "2026-10-18"
   },
   {
@@ -165,10 +165,10 @@
    "player": "Cole Kmet",
    "position": "TE",
    "market": "receptions",
-   "model": 2.2,
+   "model": 2.3,
    "underdog_line": 1.5,
    "our_side": "Higher",
-   "our_probability": 0.608,
+   "our_probability": 0.631,
    "last_played": "2026-10-18"
   },
   {
@@ -178,10 +178,10 @@
    "player": "Kalif Raymond",
    "position": "WR",
    "market": "receptions",
-   "model": 3.7,
+   "model": 3.8,
    "underdog_line": 2.5,
    "our_side": "Higher",
-   "our_probability": 0.718,
+   "our_probability": 0.739,
    "last_played": "2026-10-18"
   },
   {
@@ -191,10 +191,10 @@
    "player": "Rhamondre Stevenson",
    "position": "RB",
    "market": "receptions",
-   "model": 3.5,
+   "model": 3.6,
    "underdog_line": 2.5,
    "our_side": "Higher",
-   "our_probability": 0.677,
+   "our_probability": 0.698,
    "last_played": "2026-10-11"
   },
   {
@@ -217,10 +217,10 @@
    "player": "A.J. Brown",
    "position": "WR",
    "market": "receptions",
-   "model": 5.2,
+   "model": 5.3,
    "underdog_line": 4.5,
    "our_side": "Higher",
-   "our_probability": 0.608,
+   "our_probability": 0.631,
    "last_played": "2026-10-18"
   },
   {
@@ -230,10 +230,10 @@
    "player": "Caleb Williams",
    "position": "QB",
    "market": "pass_attempts",
-   "model": 34.8,
+   "model": 35.0,
    "underdog_line": 33.5,
    "our_side": "Higher",
-   "our_probability": 0.531,
+   "our_probability": 0.542,
    "last_played": "2026 wk6"
   },
   {
@@ -245,8 +245,8 @@
    "market": "receptions",
    "model": 3.5,
    "underdog_line": 3.5,
-   "our_side": "Higher",
-   "our_probability": 0.437,
+   "our_side": "Lower",
+   "our_probability": 0.563,
    "last_played": "2026-10-18"
   },
   {
@@ -256,10 +256,10 @@
    "player": "Drake Maye",
    "position": "QB",
    "market": "pass_attempts",
-   "model": 32.0,
+   "model": 32.2,
    "underdog_line": 31.5,
    "our_side": "Lower",
-   "our_probability": 0.512,
+   "our_probability": 0.501,
    "last_played": "2026 wk6"
   },
   {
@@ -284,8 +284,8 @@
    "market": "receptions",
    "model": 2.8,
    "underdog_line": 2.5,
-   "our_side": "Lower",
-   "our_probability": 0.491,
+   "our_side": "Higher",
+   "our_probability": 0.509,
    "last_played": "2026-10-18"
   },
   {
