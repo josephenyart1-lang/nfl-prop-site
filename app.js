@@ -244,6 +244,16 @@ function drawWeek(root, games) {
         mkt.textContent = PRETTY[l.market] || l.market;
         who.appendChild(name);
         who.appendChild(mkt);
+        /* The model only uses a binary "on the report or not", and only
+           for targets. The words are here because a reader deciding on a
+           prop wants more than a flag, and because the back model does not
+           use this at all -- the warning has to come from somewhere. */
+        if (l.injury) {
+          const flag = document.createElement("div");
+          flag.className = "injury";
+          flag.textContent = l.injury;
+          who.appendChild(flag);
+        }
 
         const nums = document.createElement("div");
         nums.className = "nums";

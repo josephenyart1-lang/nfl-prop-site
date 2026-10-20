@@ -158,6 +158,16 @@ h2 { font-size: 1.02rem; margin: 2rem 0 .7rem; font-weight: 600; letter-spacing:
 .leg .who { min-width: 0; }
 .leg .name { font-size: .9rem; }
 .leg .mkt { font-size: .73rem; color: var(--dim); }
+/* On the week's injury report. Amber rather than red: most players listed
+   here do play, which is exactly why they are worth flagging. */
+.leg .injury {
+  font-size: .72rem; color: var(--warn); margin-top: .15rem;
+  display: flex; align-items: center; gap: .3rem;
+}
+.leg .injury::before {
+  content: ""; width: .35rem; height: .35rem; border-radius: 50%;
+  background: var(--warn); flex: none;
+}
 .leg .nums { text-align: right; white-space: nowrap; }
 .leg .side { font-size: .95rem; font-variant-numeric: tabular-nums; }
 .leg .model { font-size: .73rem; color: var(--dim); font-variant-numeric: tabular-nums; }

@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-20 16:34 UTC",
- "as_of": "2026-10-20 16:32",
+ "generated_at": "2026-10-20 16:41 UTC",
+ "as_of": "2026-10-20 16:40",
  "selections": [
   {
    "week": 7,
@@ -13,7 +13,8 @@
    "underdog_line": 1.5,
    "our_side": "Higher",
    "our_probability": 0.718,
-   "last_played": "2026-10-18"
+   "last_played": "2026-10-18",
+   "injury": null
   },
   {
    "week": 7,
@@ -26,7 +27,8 @@
    "underdog_line": 7.5,
    "our_side": "Higher",
    "our_probability": 0.747,
-   "last_played": "2026-10-18"
+   "last_played": "2026-10-18",
+   "injury": null
   },
   {
    "week": 7,
@@ -39,7 +41,8 @@
    "underdog_line": 1.5,
    "our_side": "Higher",
    "our_probability": 0.631,
-   "last_played": "2026-10-18"
+   "last_played": "2026-10-18",
+   "injury": null
   },
   {
    "week": 7,
@@ -52,7 +55,8 @@
    "underdog_line": 2.5,
    "our_side": "Higher",
    "our_probability": 0.739,
-   "last_played": "2026-10-18"
+   "last_played": "2026-10-18",
+   "injury": null
   },
   {
    "week": 7,
@@ -65,7 +69,8 @@
    "underdog_line": 2.5,
    "our_side": "Higher",
    "our_probability": 0.698,
-   "last_played": "2026-10-11"
+   "last_played": "2026-10-11",
+   "injury": null
   },
   {
    "week": 7,
@@ -78,7 +83,8 @@
    "underdog_line": 1.5,
    "our_side": "Higher",
    "our_probability": 0.698,
-   "last_played": "2026-10-18"
+   "last_played": "2026-10-18",
+   "injury": null
   },
   {
    "week": 7,
@@ -91,7 +97,8 @@
    "underdog_line": 4.5,
    "our_side": "Higher",
    "our_probability": 0.631,
-   "last_played": "2026-10-18"
+   "last_played": "2026-10-18",
+   "injury": null
   },
   {
    "week": 7,
@@ -104,7 +111,8 @@
    "underdog_line": 33.5,
    "our_side": "Higher",
    "our_probability": 0.542,
-   "last_played": "2026 wk6"
+   "last_played": "2026 wk6",
+   "injury": null
   },
   {
    "week": 7,
@@ -117,7 +125,8 @@
    "underdog_line": 3.5,
    "our_side": "Lower",
    "our_probability": 0.563,
-   "last_played": "2026-10-18"
+   "last_played": "2026-10-18",
+   "injury": null
   },
   {
    "week": 7,
@@ -130,7 +139,8 @@
    "underdog_line": 31.5,
    "our_side": "Lower",
    "our_probability": 0.501,
-   "last_played": "2026 wk6"
+   "last_played": "2026 wk6",
+   "injury": null
   },
   {
    "week": 7,
@@ -143,7 +153,8 @@
    "underdog_line": 4.5,
    "our_side": "Lower",
    "our_probability": 0.584,
-   "last_played": "2026-10-18"
+   "last_played": "2026-10-18",
+   "injury": null
   },
   {
    "week": 7,
@@ -156,7 +167,8 @@
    "underdog_line": 2.5,
    "our_side": "Higher",
    "our_probability": 0.509,
-   "last_played": "2026-10-18"
+   "last_played": "2026-10-18",
+   "injury": null
   },
   {
    "week": 7,
@@ -169,7 +181,8 @@
    "underdog_line": 3.5,
    "our_side": "Lower",
    "our_probability": 0.604,
-   "last_played": "2026-10-18"
+   "last_played": "2026-10-18",
+   "injury": null
   },
   {
    "week": 7,
@@ -182,7 +195,8 @@
    "underdog_line": 11.5,
    "our_side": "Lower",
    "our_probability": 0.616,
-   "last_played": "2026-10-18"
+   "last_played": "2026-10-18",
+   "injury": null
   },
   {
    "week": 7,
@@ -195,7 +209,8 @@
    "underdog_line": 3.5,
    "our_side": "Lower",
    "our_probability": 0.675,
-   "last_played": "2026-10-18"
+   "last_played": "2026-10-18",
+   "injury": null
   },
   {
    "week": 7,
@@ -208,7 +223,8 @@
    "underdog_line": 4.5,
    "our_side": "Lower",
    "our_probability": 0.563,
-   "last_played": "2026-10-18"
+   "last_played": "2026-10-18",
+   "injury": null
   },
   {
    "week": 7,
@@ -221,7 +237,8 @@
    "underdog_line": 14.5,
    "our_side": "Lower",
    "our_probability": 0.608,
-   "last_played": "2026-10-18"
+   "last_played": "2026-10-18",
+   "injury": null
   }
  ],
  "entry_bar": [
