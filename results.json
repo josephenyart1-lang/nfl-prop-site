@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20 12:31 UTC",
+ "generated_at": "2026-10-20 16:33 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -159,68 +159,68 @@
    "naive_error": 1.89,
    "flat_error": 2.4,
    "ratio": 0.766,
-   "beats_naive_by": 0.048,
+   "beats_naive_by": 0.049,
    "typical_miss": 2.45,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 7171,
-     "said": 0.0664,
-     "happened": 0.0595
+     "cases": 7026,
+     "said": 0.0656,
+     "happened": 0.0569
     },
     {
      "band": "10%-20%",
-     "cases": 5728,
-     "said": 0.1441,
-     "happened": 0.1318
+     "cases": 5907,
+     "said": 0.1434,
+     "happened": 0.1331
     },
     {
      "band": "20%-30%",
-     "cases": 3578,
-     "said": 0.247,
-     "happened": 0.2387
+     "cases": 3575,
+     "said": 0.2477,
+     "happened": 0.2394
     },
     {
      "band": "30%-40%",
-     "cases": 2712,
-     "said": 0.3468,
-     "happened": 0.3256
+     "cases": 2677,
+     "said": 0.3466,
+     "happened": 0.3235
     },
     {
      "band": "40%-50%",
-     "cases": 2357,
-     "said": 0.4478,
-     "happened": 0.4188
+     "cases": 2283,
+     "said": 0.4464,
+     "happened": 0.4218
     },
     {
      "band": "50%-60%",
-     "cases": 2155,
-     "said": 0.5478,
-     "happened": 0.536
+     "cases": 2222,
+     "said": 0.5468,
+     "happened": 0.5315
     },
     {
      "band": "60%-70%",
-     "cases": 2056,
-     "said": 0.6522,
-     "happened": 0.6722
+     "cases": 2033,
+     "said": 0.6509,
+     "happened": 0.664
     },
     {
      "band": "70%-80%",
-     "cases": 2058,
-     "said": 0.7504,
-     "happened": 0.7638
+     "cases": 2101,
+     "said": 0.7506,
+     "happened": 0.7634
     },
     {
      "band": "80%-90%",
-     "cases": 3323,
-     "said": 0.8558,
-     "happened": 0.8595
+     "cases": 3266,
+     "said": 0.8547,
+     "happened": 0.8604
     },
     {
      "band": "90%-100%",
-     "cases": 4851,
-     "said": 0.9455,
-     "happened": 0.9485
+     "cases": 4907,
+     "said": 0.9456,
+     "happened": 0.9476
     }
    ]
   },
