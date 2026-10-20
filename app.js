@@ -4,7 +4,8 @@ const PRETTY = {
   targets: "targets", receptions: "receptions",
 };
 let DATA = null;
-let filter = { week: null };   /* set to a real week once the data loads */
+let filter = { week: null, game: null };  /* set once the data loads */
+let entryBar = null;          /* the 2-pick row of the entry bar */
 /* What a single leg of a 2-pick entry has to clear to be worth including.
    Read from the entry bar rather than hardcoded, so it follows Underdog's
    payouts if they change. */
@@ -67,48 +68,20 @@ function show(name) {
 function buildBoard() {
   const legs = DATA.selections.selections || [];
   const bar = DATA.selections.entry_bar || [];
-
-  const tiles = $("board-tiles");
-  const games = new Set(legs.map((l) => l.game)).size;
-  const sides = new Set(legs.map((l) => l.our_side));
   const two = bar.find((b) => num(b.legs) === 2);
   legBar = two ? num(two.unrelated) : null;
-  const priced = legs.filter((l) => num(l.our_probability) != null);
-  const clearing = priced.filter((l) => legBar && num(l.our_probability) >= legBar);
-  const noView = priced.filter((l) => num(l.our_probability) < 0.5);
+  entryBar = two;
 
-  tile(tiles, "Legs priced", legs.length, games + " games");
-  if (two) {
-    tile(tiles, "A 2-pick leg needs", (num(two.unrelated) * 100).toFixed(1) + "%",
-      "stacked " + (num(two.stacked) * 100).toFixed(1) + "%");
-  }
-  if (priced.length) {
-    tile(tiles, "Clear that bar", clearing.length + " of " + priced.length,
-      noView.length ? noView.length + " are not calls at all" : "the rest fall short");
-  }
-  tile(tiles, "Sides", sides.size === 1 ? [...sides][0] + " only" : [...sides].join(" / "),
-    sides.size === 1 ? "one-sided, see below" : "both directions");
-
-  if (legs.length > 1 && sides.size === 1) {
-    $("board-warning").hidden = false;
-    $("board-warning").innerHTML =
-      "<strong>Every leg is on the " + [...sides][0].toLowerCase() + ".</strong> " +
-      "That is the signature of a model with a lean, not a slate of findings. " +
-      "A market is not wrong in one direction on every player at once.";
-  }
-
-  /* Week is the only filter. Slicing by market cut a game into four lists
-     and hid the thing worth seeing, which is everything one game offers in
-     one place -- a quarterback beside his own receivers is the one pairing
-     that helps a multi-pick entry, and a market filter breaks that up. */
+  /* Week first, then a game inside it. The board reaches back over played
+     weeks now, so without the second row a finished week would be one long
+     list of every game at once. */
   const weeks = [...new Set(legs.map((l) => l.week))]
     .filter((w) => w != null && w !== "")
     .sort((a, b) => Number(a) - Number(b));
 
-  /* One week at a time, so there is no "all" to fall back to. The week
-     that opens is the one still to be played: the earliest holding a game
-     that has not kicked off yet, and the last week otherwise, so an old
-     board does not open on a stale slate. */
+  /* Opens on the week still to be played: the earliest holding a game that
+     has not kicked off, and the last week otherwise, so a board left
+     sitting does not open on a slate that is already over. */
   const today = new Date().toISOString().slice(0, 10);
   const upcoming = weeks.find((w) =>
     legs.some((l) => String(l.week) === String(w) && l.gameday >= today));
@@ -116,7 +89,7 @@ function buildBoard() {
 
   const chips = $("board-filters");
   weeks.forEach((w) => chipFor(chips, "week", String(w), "Week " + w));
-  drawBoard();
+  buildGameChips();
 
   const barWrap = $("entry-bar");
   bar.forEach((r) => {
@@ -130,15 +103,92 @@ function buildBoard() {
   });
 }
 
+/* The games inside whichever week is selected. Rebuilt whenever the week
+   changes, because last week's fixtures are not this week's. */
+function buildGameChips() {
+  const host = $("board-games");
+  if (!host) return;
+  host.textContent = "";
+
+  const inWeek = (DATA.selections.selections || [])
+    .filter((l) => String(l.week) === String(filter.week));
+  const games = [...new Map(inWeek.map((l) => [l.game, l.gameday])).entries()]
+    .sort((a, b) => (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0));
+
+  if (!games.some((g) => g[0] === filter.game)) {
+    filter.game = games.length ? games[0][0] : null;
+  }
+  games.forEach((pair) => {
+    const settled = inWeek.filter((l) => l.game === pair[0]
+      && l.status && l.status !== "open");
+    const right = settled.filter((l) => l.status === "right").length;
+    const label = settled.length
+      ? pair[0] + "  " + right + "/" + settled.filter((l) => l.status !== "void").length
+      : pair[0];
+    chipFor(host, "game", pair[0], label);
+  });
+  drawBoard();
+}
+
+function drawTiles(legs) {
+  const tiles = $("board-tiles");
+  tiles.textContent = "";
+  const sides = new Set(legs.map((l) => l.our_side));
+  const priced = legs.filter((l) => num(l.our_probability) != null);
+  const clearing = priced.filter((l) => legBar && num(l.our_probability) >= legBar);
+  const noView = priced.filter((l) => num(l.our_probability) < 0.5);
+  const settled = legs.filter((l) => l.status === "right" || l.status === "wrong");
+  const right = settled.filter((l) => l.status === "right").length;
+  const voided = legs.filter((l) => l.status === "void").length;
+
+  tile(tiles, "Legs", legs.length,
+    filter.game ? filter.game : "this week");
+
+  /* A played game is judged on what happened; one still ahead is judged on
+     what has to be cleared. Showing the entry bar beside a finished game
+     would be inviting a bet that can no longer be made. */
+  if (settled.length) {
+    tile(tiles, "Landed", right + " of " + settled.length,
+      voided ? voided + (voided === 1 ? " void" : " voided") : "graded");
+    const claimed = settled.reduce((t, l) => t + num(l.our_probability), 0);
+    tile(tiles, "Claimed vs actual", right + " vs " + claimed.toFixed(1),
+      "the number that matters");
+  } else if (entryBar) {
+    tile(tiles, "A 2-pick leg needs", (num(entryBar.unrelated) * 100).toFixed(1) + "%",
+      "stacked " + (num(entryBar.stacked) * 100).toFixed(1) + "%");
+    if (priced.length) {
+      tile(tiles, "Clear that bar", clearing.length + " of " + priced.length,
+        noView.length ? noView.length + " are not calls at all" : "the rest fall short");
+    }
+  }
+  tile(tiles, "Sides", sides.size === 1 ? [...sides][0] + " only" : [...sides].join(" / "),
+    sides.size === 1 ? "one-sided, see below" : "both directions");
+
+  const warning = $("board-warning");
+  if (legs.length > 1 && sides.size === 1 && !settled.length) {
+    warning.hidden = false;
+    warning.innerHTML =
+      "<strong>Every leg is on the " + [...sides][0].toLowerCase() + ".</strong> " +
+      "That is the signature of a model with a lean, not a slate of findings. " +
+      "A market is not wrong in one direction on every player at once.";
+  } else {
+    warning.hidden = true;
+  }
+}
+
 function chipFor(into, kind, value, label) {
   const b = document.createElement("button");
   b.className = "chip" + (filter[kind] === value ? " on" : "");
   b.type = "button";
   b.textContent = label;
   b.addEventListener("click", () => {
+    if (filter[kind] === value) return;
     filter[kind] = value;
     refreshChips();
-    drawBoard();
+    /* Last week's fixtures are not this week's, so changing the week
+       rebuilds the row of games under it rather than leaving a stale one. */
+    if (kind === "week") buildGameChips();
+    else drawBoard();
   });
   b.dataset.kind = kind;
   b.dataset.value = value;
@@ -146,9 +196,10 @@ function chipFor(into, kind, value, label) {
 }
 
 function refreshChips() {
-  document.querySelectorAll("#board-filters .chip").forEach((c) => {
-    c.classList.toggle("on", filter[c.dataset.kind] === c.dataset.value);
-  });
+  document.querySelectorAll("#board-filters .chip, #board-games .chip")
+    .forEach((c) => {
+      c.classList.toggle("on", filter[c.dataset.kind] === c.dataset.value);
+    });
 }
 
 function drawBoard() {
@@ -158,9 +209,13 @@ function drawBoard() {
   if (filter.week != null) {
     legs = legs.filter((l) => String(l.week) === String(filter.week));
   }
+  if (filter.game != null) {
+    legs = legs.filter((l) => l.game === filter.game);
+  }
 
+  drawTiles(legs);
   if (!legs.length) {
-    root.innerHTML = '<p class="empty">No priced legs in that week.</p>';
+    root.innerHTML = '<p class="empty">No priced legs in that game.</p>';
     return;
   }
 
@@ -255,6 +310,25 @@ function drawWeek(root, games) {
           who.appendChild(flag);
         }
 
+        /* How it turned out, immediately left of the side it was taken
+           on, so the eye reads "this call, this result" in one movement.
+           A void gets a dash rather than a tick or a cross: it was neither,
+           and a mark either way would be a small lie. */
+        let mark = null;
+        if (l.status && l.status !== "open") {
+          const verdict = document.createElement("div");
+          verdict.className = "verdict-mark " + l.status;
+          verdict.textContent = l.status === "right" ? "✓"
+            : l.status === "wrong" ? "✗" : "–";
+          verdict.title = l.status === "right" ? "Landed"
+            : l.status === "wrong" ? "Missed"
+            : (l.note ? "Void: " + l.note : "Void");
+          if (l.actual != null) {
+            verdict.title += " — actual " + l.actual;
+          }
+          mark = verdict;
+        }
+
         const nums = document.createElement("div");
         nums.className = "nums";
         const chance = num(l.our_probability);
@@ -262,7 +336,11 @@ function drawWeek(root, games) {
            outcome is likelier, so the model can land on a side it expects
            to lose. Printing "Lower 3.5" for a 44% call reads as a
            recommendation it is not, so no side is shown at all. */
-        const noView = chance != null && chance < 0.5;
+        /* Only for a leg still to be played. "No view" exists so a weak
+           call is not dressed as a recommendation; once a game is over the
+           leg is history, and history should say what was actually graded. */
+        const settledLeg = l.status && l.status !== "open";
+        const noView = !settledLeg && chance != null && chance < 0.5;
 
         const side = document.createElement("div");
         side.className = "side " + (noView ? "noview"
@@ -288,10 +366,17 @@ function drawWeek(root, games) {
           model.appendChild(document.createTextNode(" · "));
         }
         model.appendChild(document.createTextNode("model " + l.model));
+        if (l.actual != null) {
+          const got = document.createElement("span");
+          got.className = "actual";
+          got.textContent = " · actual " + l.actual;
+          model.appendChild(got);
+        }
         nums.appendChild(side);
         nums.appendChild(model);
 
         row.appendChild(who);
+        if (mark) row.appendChild(mark);
         row.appendChild(nums);
         box.appendChild(row);
       });
