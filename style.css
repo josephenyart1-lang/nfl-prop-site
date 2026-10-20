@@ -184,6 +184,11 @@ h2 { font-size: 1.02rem; margin: 2rem 0 .7rem; font-weight: 600; letter-spacing:
 .leg .who { min-width: 0; flex: 1; }
 .leg .name { font-size: .9rem; }
 .leg .mkt { font-size: .73rem; color: var(--dim); }
+/* Depth-chart slot. Quiet: it is context for the number beside it, not a
+   verdict of its own. */
+.leg .slot {
+  color: var(--muted); font-variant-numeric: tabular-nums; cursor: help;
+}
 /* On the week's injury report. Amber rather than red: most players listed
    here do play, which is exactly why they are worth flagging. */
 .leg .injury {

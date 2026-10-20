@@ -360,6 +360,17 @@ function drawWeek(root, games) {
         const mkt = document.createElement("div");
         mkt.className = "mkt";
         mkt.textContent = PRETTY[l.market] || l.market;
+        /* Where the coaching staff lists him. The carries model uses this;
+           the targets model was tested on it and did not improve, so for a
+           receiver it is here to be read rather than to be relied on. */
+        if (l.depth) {
+          const slot = document.createElement("span");
+          slot.className = "slot";
+          slot.textContent = l.depth;
+          slot.title = "Listed " + l.depth + " on the depth chart";
+          mkt.appendChild(document.createTextNode(" · "));
+          mkt.appendChild(slot);
+        }
         who.appendChild(name);
         who.appendChild(mkt);
         /* The model only uses a binary "on the report or not", and only
