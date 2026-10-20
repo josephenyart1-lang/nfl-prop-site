@@ -122,6 +122,23 @@ h2 { font-size: 1.02rem; margin: 2rem 0 .7rem; font-weight: 600; letter-spacing:
 .week:first-child { margin-top: .2rem; }
 .week-meta { font-size: .74rem; color: var(--dim); font-weight: 400; }
 
+/* A full slate is sixteen games, so the week's fixtures scroll in their own
+   box and the week buttons stay reachable. overscroll-behavior stops the
+   page itself moving when this box reaches its end. */
+.week-games {
+  max-height: 68vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-right: .3rem;
+}
+.week-games::-webkit-scrollbar { width: .5rem; }
+.week-games::-webkit-scrollbar-track { background: transparent; }
+.week-games::-webkit-scrollbar-thumb {
+  background: var(--line); border-radius: 2rem;
+}
+.week-games::-webkit-scrollbar-thumb:hover { background: #2b3d4f; }
+.week-games { scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+
 /* ---------------------------------------------------------- fixtures --- */
 .fixture {
   background: var(--panel); border: 1px solid var(--line);

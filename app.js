@@ -4,7 +4,7 @@ const PRETTY = {
   targets: "targets", receptions: "receptions",
 };
 let DATA = null;
-let filter = { week: "all" };
+let filter = { week: null };   /* set to a real week once the data loads */
 /* What a single leg of a 2-pick entry has to clear to be worth including.
    Read from the entry bar rather than hardcoded, so it follows Underdog's
    payouts if they change. */
@@ -104,11 +104,18 @@ function buildBoard() {
   const weeks = [...new Set(legs.map((l) => l.week))]
     .filter((w) => w != null && w !== "")
     .sort((a, b) => Number(a) - Number(b));
+
+  /* One week at a time, so there is no "all" to fall back to. The week
+     that opens is the one still to be played: the earliest holding a game
+     that has not kicked off yet, and the last week otherwise, so an old
+     board does not open on a stale slate. */
+  const today = new Date().toISOString().slice(0, 10);
+  const upcoming = weeks.find((w) =>
+    legs.some((l) => String(l.week) === String(w) && l.gameday >= today));
+  filter.week = String(upcoming != null ? upcoming : weeks[weeks.length - 1]);
+
   const chips = $("board-filters");
-  if (weeks.length > 1) {
-    chipFor(chips, "week", "all", "All weeks");
-    weeks.forEach((w) => chipFor(chips, "week", String(w), "Week " + w));
-  }
+  weeks.forEach((w) => chipFor(chips, "week", String(w), "Week " + w));
   drawBoard();
 
   const barWrap = $("entry-bar");
@@ -148,12 +155,12 @@ function drawBoard() {
   const root = $("board");
   root.textContent = "";
   let legs = DATA.selections.selections || [];
-  if (filter.week !== "all") {
+  if (filter.week != null) {
     legs = legs.filter((l) => String(l.week) === String(filter.week));
   }
 
   if (!legs.length) {
-    root.innerHTML = '<p class="empty">Nothing in that week.</p>';
+    root.innerHTML = '<p class="empty">No priced legs in that week.</p>';
     return;
   }
 
@@ -192,7 +199,13 @@ function drawBoard() {
     heading.appendChild(title);
     heading.appendChild(meta);
     root.appendChild(heading);
-    drawWeek(root, games);
+
+    /* The week's games scroll inside their own box, so the week buttons
+       and the heading stay put while a full slate is read through. */
+    const scroller = document.createElement("div");
+    scroller.className = "week-games";
+    root.appendChild(scroller);
+    drawWeek(scroller, games);
   });
 }
 
