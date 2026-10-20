@@ -190,6 +190,15 @@ td.text { white-space: normal; font-variant-numeric: normal; }
    that has a result. */
 tr.pending td { color: var(--dim); }
 tr.pending td.text { color: var(--muted); }
+
+/* How a resolved prop came out. Colour carries the verdict, but the word
+   is there too, so it does not depend on telling green from red. */
+td.verdict { font-weight: 600; }
+td.verdict.right { color: var(--accent); }
+td.verdict.wrong { color: var(--bad); }
+td.verdict.void { color: var(--dim); font-weight: 400; font-style: italic; cursor: help; }
+td.verdict.push { color: var(--warn); }
+tr.outcome-void td { color: var(--dim); }
 .bar-cell { min-width: 7rem; }
 .bar-track { background: var(--panel-2); border-radius: 2rem; height: .4rem; overflow: hidden; }
 .bar-fill { background: var(--accent); height: 100%; border-radius: 2rem; }

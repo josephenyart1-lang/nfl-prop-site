@@ -313,6 +313,7 @@ function buildResults() {
     "the number that matters");
 
   drawByGame(rec.games || []);
+  drawSettled(rec.settled_props || []);
 
   const table = $("accuracy");
   const best = Math.max(...r.markets.map((m) => 1 - m.ratio));
@@ -391,6 +392,88 @@ function tile(into, label, value, foot) {
   el.querySelector(".value").textContent = value;
   el.querySelector(".foot").textContent = foot || "";
   into.appendChild(el);
+}
+
+const OUTCOME = { right: "landed", wrong: "missed", push: "push", void: "void" };
+
+function drawSettled(rows) {
+  const host = $("settled-props");
+  if (!host) return;
+  host.textContent = "";
+  if (!rows.length) {
+    host.innerHTML = '<p class="empty">Nothing has resolved yet.</p>';
+    return;
+  }
+
+  /* Grouped by game, the same way the board groups them, so a week with
+     several games does not become one long undifferentiated list. */
+  const games = new Map();
+  rows.forEach((r) => {
+    const key = (r.week || "?") + "|" + r.game;
+    if (!games.has(key)) games.set(key, []);
+    games.get(key).push(r);
+  });
+
+  games.forEach((props, key) => {
+    const parts = key.split("|");
+    const right = props.filter((p) => p.status === "right").length;
+    const wrong = props.filter((p) => p.status === "wrong").length;
+    const voided = props.filter((p) => p.status === "void").length;
+
+    const heading = document.createElement("h3");
+    heading.className = "week";
+    const title = document.createElement("span");
+    title.textContent = "Week " + parts[0] + " · " + parts[1];
+    const meta = document.createElement("span");
+    meta.className = "week-meta";
+    meta.textContent = right + " landed, " + wrong + " missed"
+      + (voided ? ", " + voided + " void" : "");
+    heading.appendChild(title);
+    heading.appendChild(meta);
+    host.appendChild(heading);
+
+    const scroll = document.createElement("div");
+    scroll.className = "scroll";
+    const table = document.createElement("table");
+    table.innerHTML = "<thead><tr><th>Player</th><th>Market</th>"
+      + "<th>Our call</th><th>We said</th><th>Model</th><th>Actual</th>"
+      + "<th>Result</th></tr></thead><tbody></tbody>";
+    const body = table.querySelector("tbody");
+
+    props.forEach((p) => {
+      const row = body.insertRow();
+      row.className = "outcome-" + p.status;
+      const cells = [];
+      for (let i = 0; i < 7; i++) cells.push(row.insertCell());
+      cells[0].textContent = p.player;
+      cells[0].className = "text";
+      cells[1].textContent = PRETTY[p.market] || p.market;
+      cells[1].className = "text";
+      cells[2].textContent = p.our_side + " " + p.underdog_line;
+      cells[3].textContent = p.our_probability != null
+        ? (num(p.our_probability) * 100).toFixed(1) + "%" : "—";
+      cells[4].textContent = p.model;
+      cells[5].textContent = p.actual === "" || p.actual == null
+        ? "—" : p.actual;
+      cells[6].textContent = OUTCOME[p.status] || p.status;
+      cells[6].className = "verdict " + p.status;
+      /* A void is explained on the row rather than in a footnote, because
+         an unexplained void is the kind of thing a reader should distrust. */
+      if (p.note) cells[6].title = p.note;
+    });
+    scroll.appendChild(table);
+    host.appendChild(scroll);
+
+    if (voided) {
+      const why = props.find((p) => p.status === "void" && p.note);
+      if (why) {
+        const note = document.createElement("p");
+        note.className = "empty";
+        note.textContent = "Void: " + why.player + " — " + why.note;
+        host.appendChild(note);
+      }
+    }
+  });
 }
 
 /* ------------------------------------------------------- calibration --- */

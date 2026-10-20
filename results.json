@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20 12:23 UTC",
+ "generated_at": "2026-10-20 12:31 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -338,6 +338,148 @@
     "wrong": 0,
     "pushed": 0,
     "expected_right": null
+   }
+  ],
+  "settled_props": [
+   {
+    "week": "6",
+    "gameday": "2026-10-19",
+    "game": "WAS at SF",
+    "player": "Austin Ekeler",
+    "market": "carries",
+    "underdog_line": 5.5,
+    "our_side": "Higher",
+    "our_probability": 0.676,
+    "model": 8.4,
+    "status": "wrong",
+    "actual": 1,
+    "note": ""
+   },
+   {
+    "week": "6",
+    "gameday": "2026-10-19",
+    "game": "WAS at SF",
+    "player": "Brock Purdy",
+    "market": "pass_attempts",
+    "underdog_line": 30.5,
+    "our_side": "Higher",
+    "our_probability": 0.547,
+    "model": 32.1,
+    "status": "wrong",
+    "actual": 29,
+    "note": ""
+   },
+   {
+    "week": "6",
+    "gameday": "2026-10-19",
+    "game": "WAS at SF",
+    "player": "Christian McCaffrey",
+    "market": "targets",
+    "underdog_line": 6.5,
+    "our_side": "Lower",
+    "our_probability": 0.586,
+    "model": 6.4,
+    "status": "wrong",
+    "actual": 10,
+    "note": ""
+   },
+   {
+    "week": "6",
+    "gameday": "2026-10-19",
+    "game": "WAS at SF",
+    "player": "Christian McCaffrey",
+    "market": "carries",
+    "underdog_line": 14.5,
+    "our_side": "Lower",
+    "our_probability": 0.581,
+    "model": 14.3,
+    "status": "wrong",
+    "actual": 16,
+    "note": ""
+   },
+   {
+    "week": "6",
+    "gameday": "2026-10-19",
+    "game": "WAS at SF",
+    "player": "George Kittle",
+    "market": "targets",
+    "underdog_line": 7.5,
+    "our_side": "Higher",
+    "our_probability": 0.449,
+    "model": 7.6,
+    "status": "right",
+    "actual": 8,
+    "note": ""
+   },
+   {
+    "week": "6",
+    "gameday": "2026-10-19",
+    "game": "WAS at SF",
+    "player": "Jayden Daniels",
+    "market": "pass_attempts",
+    "underdog_line": 30.5,
+    "our_side": "Higher",
+    "our_probability": 0.577,
+    "model": 32.6,
+    "status": "right",
+    "actual": 40,
+    "note": ""
+   },
+   {
+    "week": "6",
+    "gameday": "2026-10-19",
+    "game": "WAS at SF",
+    "player": "Mike Evans",
+    "market": "targets",
+    "underdog_line": 8.5,
+    "our_side": "Lower",
+    "our_probability": 0.698,
+    "model": 7.6,
+    "status": "right",
+    "actual": 5,
+    "note": ""
+   },
+   {
+    "week": "6",
+    "gameday": "2026-10-19",
+    "game": "WAS at SF",
+    "player": "Rachaad White",
+    "market": "targets",
+    "underdog_line": 3.5,
+    "our_side": "Lower",
+    "our_probability": 0.615,
+    "model": 3.2,
+    "status": "wrong",
+    "actual": 5,
+    "note": ""
+   },
+   {
+    "week": "6",
+    "gameday": "2026-10-19",
+    "game": "WAS at SF",
+    "player": "Rachaad White",
+    "market": "carries",
+    "underdog_line": 13.5,
+    "our_side": "Lower",
+    "our_probability": 0.913,
+    "model": 6.3,
+    "status": "right",
+    "actual": 7,
+    "note": ""
+   },
+   {
+    "week": "6",
+    "gameday": "2026-10-19",
+    "game": "WAS at SF",
+    "player": "Terry McLaurin",
+    "market": "targets",
+    "underdog_line": 6.5,
+    "our_side": "Higher",
+    "our_probability": 0.577,
+    "model": 7.3,
+    "status": "void",
+    "actual": 1,
+    "note": "injured during the game; Underdog voided the pick"
    }
   ]
  }
