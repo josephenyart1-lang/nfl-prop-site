@@ -160,13 +160,46 @@ function drawBoard() {
     return;
   }
 
-  const games = new Map();
+  /* Week first, then the games inside it. A board that runs past a
+     Thursday holds two weeks at once -- a Monday night game closing one
+     and a Thursday opening the next -- and a flat list of fixtures gives
+     no sign of where one ends and the other begins. */
+  const byWeek = new Map();
   legs.forEach((l) => {
+    const week = l.week == null || l.week === "" ? "" : String(l.week);
+    if (!byWeek.has(week)) byWeek.set(week, new Map());
+    const games = byWeek.get(week);
     const key = l.gameday + "|" + l.game;
     if (!games.has(key)) games.set(key, []);
     games.get(key).push(l);
   });
 
+  /* Blank weeks last; everything else in order. */
+  const weeks = [...byWeek.keys()].sort((a, b) => {
+    if (a === "") return 1;
+    if (b === "") return -1;
+    return Number(a) - Number(b);
+  });
+
+  weeks.forEach((week) => {
+    const games = byWeek.get(week);
+    const count = [...games.values()].reduce((n, rows) => n + rows.length, 0);
+    const heading = document.createElement("h3");
+    heading.className = "week";
+    const title = document.createElement("span");
+    title.textContent = week ? "Week " + week : "Week not known";
+    const meta = document.createElement("span");
+    meta.className = "week-meta";
+    meta.textContent = count + (count === 1 ? " leg" : " legs") + " · "
+      + games.size + (games.size === 1 ? " game" : " games");
+    heading.appendChild(title);
+    heading.appendChild(meta);
+    root.appendChild(heading);
+    drawWeek(root, games);
+  });
+}
+
+function drawWeek(root, games) {
   [...games.keys()].sort().forEach((key) => {
     const parts = key.split("|");
     const box = document.createElement("div");
