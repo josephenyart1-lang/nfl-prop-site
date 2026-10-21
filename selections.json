@@ -1352,8 +1352,8 @@
    "played": false
   }
  ],
- "generated_at": "2026-10-20 17:42 UTC",
- "as_of": "2026-10-20 17:39",
+ "generated_at": "2026-10-21 19:22 UTC",
+ "as_of": "2026-10-21 19:22",
  "selections": [
   {
    "week": "6",
@@ -1547,7 +1547,7 @@
    "our_side": "Higher",
    "our_probability": 0.608,
    "last_played": null,
-   "injury": null,
+   "injury": "Limited Practice",
    "depth": "WR1",
    "status": "open",
    "actual": null,
@@ -1817,7 +1817,7 @@
    "our_side": "Higher",
    "our_probability": 0.718,
    "last_played": null,
-   "injury": null,
+   "injury": "Full Practice",
    "depth": "RB2",
    "status": "open",
    "actual": null,
@@ -1835,7 +1835,7 @@
    "our_side": "Higher",
    "our_probability": 0.76,
    "last_played": null,
-   "injury": null,
+   "injury": "Full Practice",
    "depth": "RB2",
    "status": "open",
    "actual": null,
