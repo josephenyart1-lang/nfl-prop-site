@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22 23:16 UTC",
+ "generated_at": "2026-10-22 23:25 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -300,7 +300,7 @@
   }
  ],
  "prop_record": {
-  "recorded": 27,
+  "recorded": 31,
   "voided": 1,
   "settled": 9,
   "right": 4,
@@ -331,7 +331,7 @@
     "week": "7",
     "gameday": "2026-10-22",
     "game": "NE at CHI",
-    "recorded": 17,
+    "recorded": 21,
     "voided": 0,
     "settled": 0,
     "right": 0,
