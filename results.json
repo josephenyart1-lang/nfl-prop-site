@@ -1,159 +1,159 @@
 {
- "generated_at": "2026-10-23 04:07 UTC",
+ "generated_at": "2026-10-23 11:36 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
    "market": "Pass attempts",
    "who": "quarterbacks",
-   "games_tested": 1052,
+   "games_tested": 1054,
    "typical_value": 32.7,
-   "model_error": 6.07,
+   "model_error": 6.06,
    "naive_error": 6.28,
-   "flat_error": 6.59,
+   "flat_error": 6.58,
    "ratio": 0.921,
-   "beats_naive_by": 0.216,
+   "beats_naive_by": 0.217,
    "typical_miss": 7.7,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 3648,
+     "cases": 3655,
      "said": 0.072,
-     "happened": 0.0776
+     "happened": 0.0774
     },
     {
      "band": "10%-20%",
-     "cases": 3809,
+     "cases": 3816,
      "said": 0.1462,
-     "happened": 0.1465
+     "happened": 0.1462
     },
     {
      "band": "20%-30%",
-     "cases": 2413,
+     "cases": 2418,
      "said": 0.2509,
-     "happened": 0.2317
+     "happened": 0.2312
     },
     {
      "band": "30%-40%",
-     "cases": 2302,
+     "cases": 2307,
      "said": 0.347,
-     "happened": 0.3341
+     "happened": 0.3333
     },
     {
      "band": "40%-50%",
-     "cases": 2172,
+     "cases": 2176,
      "said": 0.4489,
-     "happened": 0.4337
+     "happened": 0.4329
     },
     {
      "band": "50%-60%",
-     "cases": 1852,
-     "said": 0.5479,
-     "happened": 0.5275
+     "cases": 1855,
+     "said": 0.548,
+     "happened": 0.5278
     },
     {
      "band": "60%-70%",
-     "cases": 2194,
+     "cases": 2198,
      "said": 0.6518,
-     "happened": 0.6436
+     "happened": 0.6442
     },
     {
      "band": "70%-80%",
-     "cases": 2342,
+     "cases": 2347,
      "said": 0.7504,
-     "happened": 0.7532
+     "happened": 0.7537
     },
     {
      "band": "80%-90%",
-     "cases": 3312,
+     "cases": 3318,
      "said": 0.8514,
-     "happened": 0.8602
+     "happened": 0.8605
     },
     {
      "band": "90%-100%",
-     "cases": 2256,
+     "cases": 2260,
      "said": 0.926,
-     "happened": 0.9317
+     "happened": 0.9319
     }
    ]
   },
   {
    "market": "Carries",
    "who": "running backs",
-   "games_tested": 2193,
+   "games_tested": 2198,
    "typical_value": 11.4,
-   "model_error": 3.86,
+   "model_error": 3.87,
    "naive_error": 3.94,
-   "flat_error": 5.32,
+   "flat_error": 5.33,
    "ratio": 0.725,
    "beats_naive_by": 0.073,
    "typical_miss": 5.18,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 4836,
+     "cases": 4849,
      "said": 0.0766,
      "happened": 0.0728
     },
     {
      "band": "10%-20%",
-     "cases": 6450,
+     "cases": 6465,
      "said": 0.1449,
-     "happened": 0.1431
+     "happened": 0.1432
     },
     {
      "band": "20%-30%",
-     "cases": 3955,
+     "cases": 3961,
      "said": 0.2488,
-     "happened": 0.2501
+     "happened": 0.2499
     },
     {
      "band": "30%-40%",
-     "cases": 3344,
+     "cases": 3353,
      "said": 0.348,
-     "happened": 0.3484
+     "happened": 0.348
     },
     {
      "band": "40%-50%",
-     "cases": 2837,
+     "cases": 2842,
      "said": 0.4494,
-     "happened": 0.4561
+     "happened": 0.4557
     },
     {
      "band": "50%-60%",
-     "cases": 2364,
+     "cases": 2369,
      "said": 0.5511,
-     "happened": 0.5668
+     "happened": 0.5661
     },
     {
      "band": "60%-70%",
-     "cases": 2515,
-     "said": 0.6497,
-     "happened": 0.6668
+     "cases": 2522,
+     "said": 0.6496,
+     "happened": 0.6657
     },
     {
      "band": "70%-80%",
-     "cases": 2853,
+     "cases": 2861,
      "said": 0.7476,
-     "happened": 0.7746
+     "happened": 0.7742
     },
     {
      "band": "80%-90%",
-     "cases": 4029,
+     "cases": 4038,
      "said": 0.8535,
-     "happened": 0.8814
+     "happened": 0.8809
     },
     {
      "band": "90%-100%",
-     "cases": 4098,
+     "cases": 4106,
      "said": 0.9347,
-     "happened": 0.9461
+     "happened": 0.9459
     }
    ]
   },
   {
    "market": "Targets",
    "who": "receivers and backs",
-   "games_tested": 6728,
+   "games_tested": 6739,
    "typical_value": 5.1,
    "model_error": 1.84,
    "naive_error": 1.89,
@@ -164,70 +164,70 @@
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 7026,
-     "said": 0.0656,
-     "happened": 0.0569
+     "cases": 6903,
+     "said": 0.0646,
+     "happened": 0.0635
     },
     {
      "band": "10%-20%",
-     "cases": 5907,
-     "said": 0.1434,
-     "happened": 0.1331
+     "cases": 5833,
+     "said": 0.1437,
+     "happened": 0.1387
     },
     {
      "band": "20%-30%",
      "cases": 3575,
-     "said": 0.2477,
-     "happened": 0.2394
+     "said": 0.2492,
+     "happened": 0.2302
     },
     {
      "band": "30%-40%",
-     "cases": 2677,
-     "said": 0.3466,
-     "happened": 0.3235
+     "cases": 2804,
+     "said": 0.3485,
+     "happened": 0.327
     },
     {
      "band": "40%-50%",
-     "cases": 2283,
-     "said": 0.4464,
-     "happened": 0.4218
+     "cases": 2367,
+     "said": 0.4476,
+     "happened": 0.4275
     },
     {
      "band": "50%-60%",
-     "cases": 2222,
-     "said": 0.5468,
-     "happened": 0.5315
+     "cases": 2057,
+     "said": 0.5467,
+     "happened": 0.5289
     },
     {
      "band": "60%-70%",
-     "cases": 2033,
-     "said": 0.6509,
-     "happened": 0.664
+     "cases": 2115,
+     "said": 0.6524,
+     "happened": 0.6638
     },
     {
      "band": "70%-80%",
-     "cases": 2101,
-     "said": 0.7506,
-     "happened": 0.7634
+     "cases": 2181,
+     "said": 0.7522,
+     "happened": 0.7584
     },
     {
      "band": "80%-90%",
-     "cases": 3266,
-     "said": 0.8547,
-     "happened": 0.8604
+     "cases": 3173,
+     "said": 0.8544,
+     "happened": 0.8657
     },
     {
      "band": "90%-100%",
-     "cases": 4907,
-     "said": 0.9456,
-     "happened": 0.9476
+     "cases": 4987,
+     "said": 0.946,
+     "happened": 0.9471
     }
    ]
   },
   {
    "market": "Receptions",
    "who": "receivers and backs",
-   "games_tested": 6728,
+   "games_tested": 6739,
    "typical_value": 3.5,
    "model_error": 1.48,
    "naive_error": 1.52,
@@ -238,63 +238,63 @@
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 5598,
-     "said": 0.0662,
-     "happened": 0.0607
+     "cases": 5524,
+     "said": 0.0642,
+     "happened": 0.061
     },
     {
      "band": "10%-20%",
-     "cases": 4371,
-     "said": 0.1435,
-     "happened": 0.1359
+     "cases": 4353,
+     "said": 0.1441,
+     "happened": 0.1326
     },
     {
      "band": "20%-30%",
-     "cases": 2840,
-     "said": 0.2472,
-     "happened": 0.2331
+     "cases": 2957,
+     "said": 0.2463,
+     "happened": 0.2313
     },
     {
      "band": "30%-40%",
-     "cases": 2267,
-     "said": 0.3486,
-     "happened": 0.3313
+     "cases": 2446,
+     "said": 0.348,
+     "happened": 0.3332
     },
     {
      "band": "40%-50%",
-     "cases": 1897,
-     "said": 0.4446,
-     "happened": 0.4338
+     "cases": 1659,
+     "said": 0.4468,
+     "happened": 0.4328
     },
     {
      "band": "50%-60%",
-     "cases": 1704,
-     "said": 0.5505,
-     "happened": 0.5364
+     "cases": 1724,
+     "said": 0.5514,
+     "happened": 0.5447
     },
     {
      "band": "60%-70%",
-     "cases": 1834,
-     "said": 0.6512,
-     "happened": 0.6658
+     "cases": 1783,
+     "said": 0.652,
+     "happened": 0.6663
     },
     {
      "band": "70%-80%",
-     "cases": 1801,
-     "said": 0.7499,
-     "happened": 0.7629
+     "cases": 2001,
+     "said": 0.7502,
+     "happened": 0.7641
     },
     {
      "band": "80%-90%",
-     "cases": 2579,
-     "said": 0.8514,
-     "happened": 0.8794
+     "cases": 2516,
+     "said": 0.8518,
+     "happened": 0.8744
     },
     {
      "band": "90%-100%",
-     "cases": 3107,
-     "said": 0.9338,
-     "happened": 0.9456
+     "cases": 3034,
+     "said": 0.9348,
+     "happened": 0.9469
     }
    ]
   }
@@ -302,11 +302,11 @@
  "prop_record": {
   "recorded": 339,
   "voided": 1,
-  "settled": 9,
-  "right": 4,
-  "wrong": 5,
+  "settled": 30,
+  "right": 14,
+  "wrong": 16,
   "pushed": 0,
-  "expected_right": 5.6,
+  "expected_right": 18.9,
   "markets": [
    "carries",
    "pass_attempts",
@@ -333,11 +333,11 @@
     "game": "NE at CHI",
     "recorded": 21,
     "voided": 0,
-    "settled": 0,
-    "right": 0,
-    "wrong": 0,
+    "settled": 21,
+    "right": 10,
+    "wrong": 11,
     "pushed": 0,
-    "expected_right": null
+    "expected_right": 13.3
    },
    {
     "week": "7",
@@ -636,6 +636,300 @@
     "status": "void",
     "actual": 1,
     "note": "injured during the game; Underdog voided the pick"
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "A.J. Brown",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Higher",
+    "our_probability": 0.608,
+    "model": 5.2,
+    "status": "wrong",
+    "actual": 3,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "Caleb Williams",
+    "market": "pass_attempts",
+    "underdog_line": 33.5,
+    "our_side": "Higher",
+    "our_probability": 0.531,
+    "model": 34.8,
+    "status": "wrong",
+    "actual": 33,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "Cole Kmet",
+    "market": "receptions",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.608,
+    "model": 2.2,
+    "status": "right",
+    "actual": 3,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "Colston Loveland",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Lower",
+    "our_probability": 0.584,
+    "model": 4.4,
+    "status": "wrong",
+    "actual": 7,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "Corey Kiner",
+    "market": "carries",
+    "underdog_line": 3.5,
+    "our_side": "Higher",
+    "our_probability": 0.605,
+    "model": 5.4,
+    "status": "right",
+    "actual": 4,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "D'Andre Swift",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.56,
+    "model": 2.8,
+    "status": "right",
+    "actual": 4,
+    "note": "side corrected; recorded under the old rule at this same line"
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "D'Andre Swift",
+    "market": "carries",
+    "underdog_line": 14.5,
+    "our_side": "Lower",
+    "our_probability": 0.608,
+    "model": 14.0,
+    "status": "wrong",
+    "actual": 22,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "DeMario Douglas",
+    "market": "receptions",
+    "underdog_line": 3.5,
+    "our_side": "Lower",
+    "our_probability": 0.675,
+    "model": 2.9,
+    "status": "right",
+    "actual": 3,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "Drake Maye",
+    "market": "pass_attempts",
+    "underdog_line": 31.5,
+    "our_side": "Lower",
+    "our_probability": 0.512,
+    "model": 32.0,
+    "status": "right",
+    "actual": 31,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "Efton Chism III",
+    "market": "receptions",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.698,
+    "model": 2.6,
+    "status": "wrong",
+    "actual": 1,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "Hunter Henry",
+    "market": "receptions",
+    "underdog_line": 3.5,
+    "our_side": "Lower",
+    "our_probability": 0.604,
+    "model": 3.3,
+    "status": "wrong",
+    "actual": 7,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "Kalif Raymond",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.718,
+    "model": 3.7,
+    "status": "wrong",
+    "actual": 0,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "Kyle Williams",
+    "market": "receptions",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.585,
+    "model": 2.1,
+    "status": "wrong",
+    "actual": 0,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "Luther Burden III",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Lower",
+    "our_probability": 0.563,
+    "model": 4.5,
+    "status": "right",
+    "actual": 4,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "Rhamondre Stevenson",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.677,
+    "model": 3.5,
+    "status": "right",
+    "actual": 5,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "Rhamondre Stevenson",
+    "market": "carries",
+    "underdog_line": 11.5,
+    "our_side": "Lower",
+    "our_probability": 0.616,
+    "model": 10.9,
+    "status": "right",
+    "actual": 6,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "Rome Odunze",
+    "market": "receptions",
+    "underdog_line": 3.5,
+    "our_side": "Lower",
+    "our_probability": 0.604,
+    "model": 3.5,
+    "status": "wrong",
+    "actual": 4,
+    "note": "side corrected; recorded under the old rule at this same line"
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "Roschon Johnson",
+    "market": "receptions",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.756,
+    "model": 2.9,
+    "status": "wrong",
+    "actual": 0,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "Roschon Johnson",
+    "market": "carries",
+    "underdog_line": 7.5,
+    "our_side": "Lower",
+    "our_probability": 0.713,
+    "model": 5.2,
+    "status": "right",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "TreVeyon Henderson",
+    "market": "receptions",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.718,
+    "model": 2.7,
+    "status": "right",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-22",
+    "game": "NE at CHI",
+    "player": "TreVeyon Henderson",
+    "market": "carries",
+    "underdog_line": 7.5,
+    "our_side": "Higher",
+    "our_probability": 0.76,
+    "model": 11.4,
+    "status": "wrong",
+    "actual": 3,
+    "note": ""
    }
   ]
  }
