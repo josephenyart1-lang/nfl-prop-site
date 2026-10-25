@@ -348,6 +348,12 @@ function drawWeek(root, games) {
     head.appendChild(when);
     box.appendChild(head);
 
+    /* Weeks played before the badge existed have no team on any leg, and
+       an empty column down the side of one of those reads as a mistake
+       rather than as alignment. The column is only drawn where at least
+       one leg in the game can fill it. */
+    const anyTeam = inGame.some((l) => l.team);
+
     inGame.sort((a, b) => MARKETS.indexOf(a.market) - MARKETS.indexOf(b.market))
       .forEach((l) => {
         const row = document.createElement("div");
@@ -360,18 +366,6 @@ function drawWeek(root, games) {
         const mkt = document.createElement("div");
         mkt.className = "mkt";
         mkt.textContent = PRETTY[l.market] || l.market;
-        /* Who he plays for, in his team's colour. The colours arrive
-           already lifted to stay readable on this background, so a navy
-           like Chicago's is published as a blue you can actually see. */
-        if (l.team) {
-          const team = document.createElement("span");
-          team.className = "team";
-          team.textContent = l.team;
-          const colour = (DATA.selections.team_colours || {})[l.team];
-          if (colour) team.style.color = colour;
-          mkt.appendChild(document.createTextNode(" · "));
-          mkt.appendChild(team);
-        }
         /* Where the coaching staff lists him. The carries model uses this;
            the targets model was tested on it and did not improve, so for a
            receiver it is here to be read rather than to be relied on. */
@@ -383,8 +377,14 @@ function drawWeek(root, games) {
           mkt.appendChild(document.createTextNode(" · "));
           mkt.appendChild(slot);
         }
-        who.appendChild(name);
-        who.appendChild(mkt);
+        /* The team sits in its own fixed-width column down the left of the
+           board, so every player name starts at the same place however
+           long the abbreviation is. The name, the market and any injury
+           note stack beside it. */
+        const lines = document.createElement("div");
+        lines.className = "lines";
+        lines.appendChild(name);
+        lines.appendChild(mkt);
         /* The model only uses a binary "on the report or not", and only
            for targets. The words are here because a reader deciding on a
            prop wants more than a flag, and because the back model does not
@@ -393,8 +393,24 @@ function drawWeek(root, games) {
           const flag = document.createElement("div");
           flag.className = "injury";
           flag.textContent = l.injury;
-          who.appendChild(flag);
+          lines.appendChild(flag);
         }
+        /* Who he plays for, in his team's colour. The colours arrive
+           already lifted to stay readable on this background, so a navy
+           like Chicago's is published as a blue you can actually see.
+           A leg with no team still gets the column, so the names stay in
+           line rather than one of them jumping left. */
+        if (anyTeam) {
+          const team = document.createElement("span");
+          team.className = "team";
+          if (l.team) {
+            team.textContent = l.team;
+            const colour = (DATA.selections.team_colours || {})[l.team];
+            if (colour) team.style.color = colour;
+          }
+          who.appendChild(team);
+        }
+        who.appendChild(lines);
 
         /* How it turned out, immediately left of the side it was taken
            on, so the eye reads "this call, this result" in one movement.

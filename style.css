@@ -181,7 +181,14 @@ h2 { font-size: 1.02rem; margin: 2rem 0 .7rem; font-weight: 600; letter-spacing:
   padding: .55rem .9rem; border-bottom: 1px solid var(--line);
 }
 .leg:last-child { border-bottom: 0; }
-.leg .who { min-width: 0; flex: 1; }
+/* The team badge is a fixed column down the left, with the name, market
+   and injury note stacked beside it. Baseline alignment puts the badge on
+   the name's line rather than floating in the middle of the stack. */
+.leg .who {
+  min-width: 0; flex: 1;
+  display: flex; align-items: baseline; gap: .55rem;
+}
+.leg .lines { min-width: 0; flex: 1; }
 .leg .name { font-size: .9rem; }
 .leg .mkt { font-size: .73rem; color: var(--dim); }
 /* Depth-chart slot. Quiet: it is context for the number beside it, not a
@@ -193,9 +200,16 @@ h2 { font-size: 1.02rem; margin: 2rem 0 .7rem; font-weight: 600; letter-spacing:
    lifted to at least 4.5:1 against the panel, so the inline colour is
    safe to trust; the weight is what makes three small capitals read as a
    badge rather than as more grey text. A fallback is set in case a team
-   arrives with no colour of its own. */
+   arrives with no colour of its own.
+
+   The width is fixed so the names line up in a column: four characters
+   is enough for every abbreviation nflverse uses, and a leg with no team
+   keeps the empty column rather than shuffling left. */
 .leg .team {
-  color: var(--muted); font-weight: 650; letter-spacing: .02em;
+  flex: none; width: 2.6rem;
+  color: var(--muted); font-weight: 650; letter-spacing: .03em;
+  font-size: .76rem; text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
 }
 /* On the week's injury report. Amber rather than red: most players listed
    here do play, which is exactly why they are worth flagging. */
