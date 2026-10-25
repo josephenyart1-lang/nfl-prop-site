@@ -360,6 +360,18 @@ function drawWeek(root, games) {
         const mkt = document.createElement("div");
         mkt.className = "mkt";
         mkt.textContent = PRETTY[l.market] || l.market;
+        /* Who he plays for, in his team's colour. The colours arrive
+           already lifted to stay readable on this background, so a navy
+           like Chicago's is published as a blue you can actually see. */
+        if (l.team) {
+          const team = document.createElement("span");
+          team.className = "team";
+          team.textContent = l.team;
+          const colour = (DATA.selections.team_colours || {})[l.team];
+          if (colour) team.style.color = colour;
+          mkt.appendChild(document.createTextNode(" · "));
+          mkt.appendChild(team);
+        }
         /* Where the coaching staff lists him. The carries model uses this;
            the targets model was tested on it and did not improve, so for a
            receiver it is here to be read rather than to be relied on. */

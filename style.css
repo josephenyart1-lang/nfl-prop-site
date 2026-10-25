@@ -189,6 +189,14 @@ h2 { font-size: 1.02rem; margin: 2rem 0 .7rem; font-weight: 600; letter-spacing:
 .leg .slot {
   color: var(--muted); font-variant-numeric: tabular-nums; cursor: help;
 }
+/* The team, in the team's colour. Every colour published here has been
+   lifted to at least 4.5:1 against the panel, so the inline colour is
+   safe to trust; the weight is what makes three small capitals read as a
+   badge rather than as more grey text. A fallback is set in case a team
+   arrives with no colour of its own. */
+.leg .team {
+  color: var(--muted); font-weight: 650; letter-spacing: .02em;
+}
 /* On the week's injury report. Amber rather than red: most players listed
    here do play, which is exactly why they are worth flagging. */
 .leg .injury {
