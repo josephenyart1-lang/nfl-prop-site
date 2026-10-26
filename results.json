@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26 01:56 UTC",
+ "generated_at": "2026-10-26 03:23 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -155,72 +155,72 @@
    "who": "receivers and backs",
    "games_tested": 6859,
    "typical_value": 5.1,
-   "model_error": 1.84,
+   "model_error": 1.81,
    "naive_error": 1.89,
    "flat_error": 2.4,
-   "ratio": 0.765,
-   "beats_naive_by": 0.049,
-   "typical_miss": 2.45,
+   "ratio": 0.755,
+   "beats_naive_by": 0.072,
+   "typical_miss": 2.46,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 6889,
-     "said": 0.0671,
-     "happened": 0.0582
+     "cases": 5632,
+     "said": 0.071,
+     "happened": 0.0621
     },
     {
      "band": "10%-20%",
-     "cases": 5528,
-     "said": 0.1432,
-     "happened": 0.1283
+     "cases": 5629,
+     "said": 0.1435,
+     "happened": 0.1254
     },
     {
      "band": "20%-30%",
-     "cases": 3734,
-     "said": 0.2475,
-     "happened": 0.2212
+     "cases": 3351,
+     "said": 0.2488,
+     "happened": 0.2253
     },
     {
      "band": "30%-40%",
-     "cases": 2773,
-     "said": 0.3493,
-     "happened": 0.3188
+     "cases": 2888,
+     "said": 0.3479,
+     "happened": 0.3172
     },
     {
      "band": "40%-50%",
-     "cases": 2498,
-     "said": 0.4483,
-     "happened": 0.4171
+     "cases": 2338,
+     "said": 0.4496,
+     "happened": 0.4234
     },
     {
      "band": "50%-60%",
-     "cases": 2155,
-     "said": 0.5466,
-     "happened": 0.5271
+     "cases": 1952,
+     "said": 0.5471,
+     "happened": 0.5302
     },
     {
      "band": "60%-70%",
-     "cases": 2059,
-     "said": 0.6526,
-     "happened": 0.6537
+     "cases": 2240,
+     "said": 0.6491,
+     "happened": 0.6513
     },
     {
      "band": "70%-80%",
-     "cases": 2271,
-     "said": 0.7508,
-     "happened": 0.7613
+     "cases": 2615,
+     "said": 0.7526,
+     "happened": 0.7518
     },
     {
      "band": "80%-90%",
-     "cases": 3191,
-     "said": 0.8538,
-     "happened": 0.8668
+     "cases": 3383,
+     "said": 0.8515,
+     "happened": 0.8611
     },
     {
      "band": "90%-100%",
-     "cases": 4902,
-     "said": 0.9458,
-     "happened": 0.9472
+     "cases": 5970,
+     "said": 0.9476,
+     "happened": 0.9484
     }
    ]
   },
@@ -301,7 +301,7 @@
  ],
  "prop_record": {
   "recorded": 339,
-  "voided": 1,
+  "voided": 12,
   "settled": 285,
   "right": 164,
   "wrong": 121,
@@ -356,7 +356,7 @@
     "gameday": "2026-10-25",
     "game": "CLE at TEN",
     "recorded": 29,
-    "voided": 0,
+    "voided": 5,
     "settled": 24,
     "right": 12,
     "wrong": 12,
@@ -380,7 +380,7 @@
     "gameday": "2026-10-25",
     "game": "GB at DET",
     "recorded": 25,
-    "voided": 0,
+    "voided": 1,
     "settled": 24,
     "right": 12,
     "wrong": 12,
@@ -392,7 +392,7 @@
     "gameday": "2026-10-25",
     "game": "IND at MIN",
     "recorded": 22,
-    "voided": 0,
+    "voided": 2,
     "settled": 20,
     "right": 13,
     "wrong": 7,
@@ -416,7 +416,7 @@
     "gameday": "2026-10-25",
     "game": "LA at LV",
     "recorded": 28,
-    "voided": 0,
+    "voided": 1,
     "settled": 27,
     "right": 15,
     "wrong": 12,
@@ -440,7 +440,7 @@
     "gameday": "2026-10-25",
     "game": "NYG at HOU",
     "recorded": 31,
-    "voided": 0,
+    "voided": 1,
     "settled": 30,
     "right": 21,
     "wrong": 9,
@@ -464,7 +464,7 @@
     "gameday": "2026-10-25",
     "game": "SF at ATL",
     "recorded": 21,
-    "voided": 0,
+    "voided": 1,
     "settled": 20,
     "right": 11,
     "wrong": 9,
@@ -1201,6 +1201,34 @@
     "week": "7",
     "gameday": "2026-10-25",
     "game": "CLE at TEN",
+    "player": "Calvin Ridley",
+    "market": "targets",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.874,
+    "model": 5.0,
+    "status": "void",
+    "actual": null,
+    "note": "did not play; Underdog voided the pick"
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "CLE at TEN",
+    "player": "Calvin Ridley",
+    "market": "receptions",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.718,
+    "model": 2.7,
+    "status": "void",
+    "actual": null,
+    "note": "did not play; Underdog voided the pick"
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "CLE at TEN",
     "player": "Cam Ward",
     "market": "pass_attempts",
     "underdog_line": 31.5,
@@ -1504,6 +1532,48 @@
     "status": "wrong",
     "actual": 25,
     "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "CLE at TEN",
+    "player": "Tyjae Spears",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.653,
+    "model": 3.4,
+    "status": "void",
+    "actual": null,
+    "note": "did not play; Underdog voided the pick"
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "CLE at TEN",
+    "player": "Tyjae Spears",
+    "market": "targets",
+    "underdog_line": 3.5,
+    "our_side": "Higher",
+    "our_probability": 0.537,
+    "model": 4.1,
+    "status": "void",
+    "actual": null,
+    "note": "did not play; Underdog voided the pick"
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "CLE at TEN",
+    "player": "Tyjae Spears",
+    "market": "carries",
+    "underdog_line": 3.5,
+    "our_side": "Higher",
+    "our_probability": 0.63,
+    "model": 5.7,
+    "status": "void",
+    "actual": null,
+    "note": "did not play; Underdog voided the pick"
    },
    {
     "week": "7",
@@ -1980,6 +2050,20 @@
     "status": "wrong",
     "actual": 9,
     "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "GB at DET",
+    "player": "Brock Wright",
+    "market": "receptions",
+    "underdog_line": 0.5,
+    "our_side": "Higher",
+    "our_probability": 0.878,
+    "model": 2.6,
+    "status": "void",
+    "actual": null,
+    "note": "did not play; Underdog voided the pick"
    },
    {
     "week": "7",
@@ -2572,6 +2656,34 @@
    {
     "week": "7",
     "gameday": "2026-10-25",
+    "game": "IND at MIN",
+    "player": "Tyler Warren",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Lower",
+    "our_probability": 0.584,
+    "model": 4.4,
+    "status": "void",
+    "actual": null,
+    "note": "did not play; Underdog voided the pick"
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "IND at MIN",
+    "player": "Tyler Warren",
+    "market": "targets",
+    "underdog_line": 6.5,
+    "our_side": "Lower",
+    "our_probability": 0.601,
+    "model": 6.3,
+    "status": "void",
+    "actual": null,
+    "note": "did not play; Underdog voided the pick"
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
     "game": "LA at LV",
     "player": "Ashton Jeanty",
     "market": "carries",
@@ -2736,6 +2848,20 @@
     "status": "right",
     "actual": 2,
     "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "LA at LV",
+    "player": "Jordan Whittington",
+    "market": "receptions",
+    "underdog_line": 0.5,
+    "our_side": "Higher",
+    "our_probability": 0.831,
+    "model": 2.3,
+    "status": "void",
+    "actual": null,
+    "note": "did not play; Underdog voided the pick"
    },
    {
     "week": "7",
@@ -3254,6 +3380,20 @@
     "status": "right",
     "actual": 5,
     "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "NYG at HOU",
+    "player": "Foster Moreau",
+    "market": "receptions",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.677,
+    "model": 2.5,
+    "status": "void",
+    "actual": null,
+    "note": "did not play; Underdog voided the pick"
    },
    {
     "week": "7",
@@ -4220,6 +4360,20 @@
     "status": "right",
     "actual": 34,
     "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "SF at ATL",
+    "player": "Olamide Zaccheaus",
+    "market": "receptions",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.739,
+    "model": 2.8,
+    "status": "void",
+    "actual": null,
+    "note": "did not play; Underdog voided the pick"
    },
    {
     "week": "7",
