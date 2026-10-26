@@ -1390,7 +1390,7 @@
   "TEN": "#4495D2",
   "WAS": "#da5656"
  },
- "generated_at": "2026-10-26 03:23 UTC",
+ "generated_at": "2026-10-26 03:30 UTC",
  "as_of": "2026-10-26 02:40",
  "selections": [
   {
@@ -3905,6 +3905,25 @@
    "week": "7",
    "gameday": "2026-10-25",
    "game": "GB at DET",
+   "player": "Sione Vaki",
+   "position": "RB",
+   "market": "carries",
+   "model": 6.9,
+   "underdog_line": 3.5,
+   "our_side": "Higher",
+   "our_probability": 0.545,
+   "last_played": null,
+   "injury": null,
+   "depth": null,
+   "team": null,
+   "status": "wrong",
+   "actual": 1,
+   "note": "recorded late from the published pre-game snapshot nfl-prop-site d0b6790, as_of 2026-10-25 12:57 UTC; the board showed it, record() never did"
+  },
+  {
+   "week": "7",
+   "gameday": "2026-10-25",
+   "game": "GB at DET",
    "player": "Tucker Kraft",
    "position": "TE",
    "market": "receptions",
@@ -6237,6 +6256,25 @@
    "status": "right",
    "actual": 2,
    "note": null
+  },
+  {
+   "week": "7",
+   "gameday": "2026-10-25",
+   "game": "PIT at NO",
+   "player": "CJ Donaldson",
+   "position": "RB",
+   "market": "carries",
+   "model": 5.1,
+   "underdog_line": 3.5,
+   "our_side": "Lower",
+   "our_probability": 0.605,
+   "last_played": null,
+   "injury": null,
+   "depth": null,
+   "team": null,
+   "status": "void",
+   "actual": null,
+   "note": "did not play; Underdog voided the pick -- New Orleans used only Kendre Miller and Alvin Kamara, and he has no row for the game; recorded late from the published pre-game snapshot nfl-prop-site d0b6790"
   },
   {
    "week": "7",

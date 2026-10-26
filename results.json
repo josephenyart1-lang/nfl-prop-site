@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26 03:23 UTC",
+ "generated_at": "2026-10-26 03:30 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -300,13 +300,13 @@
   }
  ],
  "prop_record": {
-  "recorded": 339,
-  "voided": 12,
-  "settled": 285,
+  "recorded": 341,
+  "voided": 13,
+  "settled": 286,
   "right": 164,
-  "wrong": 121,
+  "wrong": 122,
   "pushed": 0,
-  "expected_right": 184.6,
+  "expected_right": 185.2,
   "markets": [
    "carries",
    "pass_attempts",
@@ -379,13 +379,13 @@
     "week": "7",
     "gameday": "2026-10-25",
     "game": "GB at DET",
-    "recorded": 25,
+    "recorded": 26,
     "voided": 1,
-    "settled": 24,
+    "settled": 25,
     "right": 12,
-    "wrong": 12,
+    "wrong": 13,
     "pushed": 0,
-    "expected_right": 15.9
+    "expected_right": 16.4
    },
    {
     "week": "7",
@@ -451,8 +451,8 @@
     "week": "7",
     "gameday": "2026-10-25",
     "game": "PIT at NO",
-    "recorded": 28,
-    "voided": 0,
+    "recorded": 29,
+    "voided": 1,
     "settled": 28,
     "right": 17,
     "wrong": 11,
@@ -2349,6 +2349,20 @@
     "week": "7",
     "gameday": "2026-10-25",
     "game": "GB at DET",
+    "player": "Sione Vaki",
+    "market": "carries",
+    "underdog_line": 3.5,
+    "our_side": "Higher",
+    "our_probability": 0.545,
+    "model": 6.9,
+    "status": "wrong",
+    "actual": 1,
+    "note": "recorded late from the published pre-game snapshot nfl-prop-site d0b6790, as_of 2026-10-25 12:57 UTC; the board showed it, record() never did"
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "GB at DET",
     "player": "Tucker Kraft",
     "market": "receptions",
     "underdog_line": 4.5,
@@ -3772,6 +3786,20 @@
     "status": "right",
     "actual": 2,
     "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "PIT at NO",
+    "player": "CJ Donaldson",
+    "market": "carries",
+    "underdog_line": 3.5,
+    "our_side": "Lower",
+    "our_probability": 0.605,
+    "model": 5.1,
+    "status": "void",
+    "actual": null,
+    "note": "did not play; Underdog voided the pick -- New Orleans used only Kendre Miller and Alvin Kamara, and he has no row for the game; recorded late from the published pre-game snapshot nfl-prop-site d0b6790"
    },
    {
     "week": "7",
