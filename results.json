@@ -1,162 +1,162 @@
 {
- "generated_at": "2026-10-26 03:30 UTC",
+ "generated_at": "2026-10-27 12:31 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
    "market": "Pass attempts",
    "who": "quarterbacks",
-   "games_tested": 1074,
+   "games_tested": 1077,
    "typical_value": 32.7,
    "model_error": 6.07,
    "naive_error": 6.3,
-   "flat_error": 6.59,
+   "flat_error": 6.58,
    "ratio": 0.921,
-   "beats_naive_by": 0.232,
+   "beats_naive_by": 0.236,
    "typical_miss": 7.7,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 3726,
+     "cases": 3737,
      "said": 0.072,
-     "happened": 0.0768
+     "happened": 0.0765
     },
     {
      "band": "10%-20%",
-     "cases": 3887,
+     "cases": 3897,
      "said": 0.1462,
-     "happened": 0.1469
+     "happened": 0.1465
     },
     {
      "band": "20%-30%",
-     "cases": 2467,
+     "cases": 2475,
      "said": 0.2509,
-     "happened": 0.231
+     "happened": 0.2303
     },
     {
      "band": "30%-40%",
-     "cases": 2353,
+     "cases": 2360,
      "said": 0.3471,
-     "happened": 0.334
+     "happened": 0.3331
     },
     {
      "band": "40%-50%",
-     "cases": 2216,
-     "said": 0.449,
-     "happened": 0.4332
+     "cases": 2222,
+     "said": 0.4491,
+     "happened": 0.432
     },
     {
      "band": "50%-60%",
-     "cases": 1889,
-     "said": 0.548,
-     "happened": 0.5273
+     "cases": 1894,
+     "said": 0.5481,
+     "happened": 0.5264
     },
     {
      "band": "60%-70%",
-     "cases": 2238,
+     "cases": 2244,
      "said": 0.6518,
-     "happened": 0.643
+     "happened": 0.6426
     },
     {
      "band": "70%-80%",
-     "cases": 2392,
+     "cases": 2399,
      "said": 0.7504,
-     "happened": 0.7529
+     "happened": 0.7524
     },
     {
      "band": "80%-90%",
-     "cases": 3380,
-     "said": 0.8514,
-     "happened": 0.8604
+     "cases": 3389,
+     "said": 0.8515,
+     "happened": 0.8601
     },
     {
      "band": "90%-100%",
-     "cases": 2302,
+     "cases": 2308,
      "said": 0.926,
-     "happened": 0.9322
+     "happened": 0.9324
     }
    ]
   },
   {
    "market": "Carries",
    "who": "running backs",
-   "games_tested": 2242,
+   "games_tested": 2250,
    "typical_value": 11.4,
    "model_error": 3.88,
-   "naive_error": 3.95,
+   "naive_error": 3.96,
    "flat_error": 5.35,
-   "ratio": 0.725,
-   "beats_naive_by": 0.077,
+   "ratio": 0.726,
+   "beats_naive_by": 0.082,
    "typical_miss": 5.18,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 4945,
+     "cases": 4963,
      "said": 0.0766,
-     "happened": 0.0732
+     "happened": 0.0737
     },
     {
      "band": "10%-20%",
-     "cases": 6595,
+     "cases": 6618,
      "said": 0.1449,
-     "happened": 0.144
+     "happened": 0.1445
     },
     {
      "band": "20%-30%",
-     "cases": 4042,
+     "cases": 4057,
      "said": 0.2488,
      "happened": 0.2499
     },
     {
      "band": "30%-40%",
-     "cases": 3420,
+     "cases": 3430,
      "said": 0.348,
-     "happened": 0.3482
+     "happened": 0.349
     },
     {
      "band": "40%-50%",
-     "cases": 2902,
-     "said": 0.4495,
+     "cases": 2913,
+     "said": 0.4494,
      "happened": 0.4552
     },
     {
      "band": "50%-60%",
-     "cases": 2414,
+     "cases": 2423,
      "said": 0.5511,
      "happened": 0.5671
     },
     {
      "band": "60%-70%",
-     "cases": 2570,
+     "cases": 2580,
      "said": 0.6496,
-     "happened": 0.6654
+     "happened": 0.6655
     },
     {
      "band": "70%-80%",
-     "cases": 2920,
+     "cases": 2930,
      "said": 0.7476,
-     "happened": 0.7736
+     "happened": 0.7737
     },
     {
      "band": "80%-90%",
-     "cases": 4118,
+     "cases": 4133,
      "said": 0.8535,
-     "happened": 0.8796
+     "happened": 0.879
     },
     {
      "band": "90%-100%",
-     "cases": 4188,
+     "cases": 4203,
      "said": 0.9347,
-     "happened": 0.9451
+     "happened": 0.9443
     }
    ]
   },
   {
    "market": "Targets",
    "who": "receivers and backs",
-   "games_tested": 6859,
+   "games_tested": 6879,
    "typical_value": 5.1,
    "model_error": 1.81,
-   "naive_error": 1.89,
+   "naive_error": 1.88,
    "flat_error": 2.4,
    "ratio": 0.755,
    "beats_naive_by": 0.072,
@@ -164,72 +164,72 @@
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 5632,
-     "said": 0.071,
-     "happened": 0.0621
+     "cases": 5610,
+     "said": 0.0688,
+     "happened": 0.0636
     },
     {
      "band": "10%-20%",
-     "cases": 5629,
-     "said": 0.1435,
-     "happened": 0.1254
+     "cases": 5428,
+     "said": 0.1448,
+     "happened": 0.124
     },
     {
      "band": "20%-30%",
-     "cases": 3351,
-     "said": 0.2488,
-     "happened": 0.2253
+     "cases": 3657,
+     "said": 0.25,
+     "happened": 0.2248
     },
     {
      "band": "30%-40%",
-     "cases": 2888,
-     "said": 0.3479,
-     "happened": 0.3172
+     "cases": 2835,
+     "said": 0.3462,
+     "happened": 0.3132
     },
     {
      "band": "40%-50%",
-     "cases": 2338,
-     "said": 0.4496,
-     "happened": 0.4234
+     "cases": 2334,
+     "said": 0.4506,
+     "happened": 0.4297
     },
     {
      "band": "50%-60%",
-     "cases": 1952,
-     "said": 0.5471,
-     "happened": 0.5302
+     "cases": 2168,
+     "said": 0.5516,
+     "happened": 0.5424
     },
     {
      "band": "60%-70%",
-     "cases": 2240,
-     "said": 0.6491,
-     "happened": 0.6513
+     "cases": 2115,
+     "said": 0.6512,
+     "happened": 0.6643
     },
     {
      "band": "70%-80%",
-     "cases": 2615,
-     "said": 0.7526,
-     "happened": 0.7518
+     "cases": 2595,
+     "said": 0.7547,
+     "happened": 0.7626
     },
     {
      "band": "80%-90%",
-     "cases": 3383,
-     "said": 0.8515,
-     "happened": 0.8611
+     "cases": 3568,
+     "said": 0.8531,
+     "happened": 0.8652
     },
     {
      "band": "90%-100%",
-     "cases": 5970,
-     "said": 0.9476,
-     "happened": 0.9484
+     "cases": 5678,
+     "said": 0.9466,
+     "happened": 0.9507
     }
    ]
   },
   {
    "market": "Receptions",
    "who": "receivers and backs",
-   "games_tested": 6859,
+   "games_tested": 6879,
    "typical_value": 3.5,
-   "model_error": 1.48,
+   "model_error": 1.47,
    "naive_error": 1.52,
    "flat_error": 1.77,
    "ratio": 0.832,
@@ -238,63 +238,63 @@
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 5501,
-     "said": 0.0653,
-     "happened": 0.0591
+     "cases": 5360,
+     "said": 0.0642,
+     "happened": 0.0599
     },
     {
      "band": "10%-20%",
-     "cases": 4290,
-     "said": 0.1431,
-     "happened": 0.1368
+     "cases": 4435,
+     "said": 0.1445,
+     "happened": 0.1285
     },
     {
      "band": "20%-30%",
-     "cases": 2870,
-     "said": 0.2475,
-     "happened": 0.2272
+     "cases": 3027,
+     "said": 0.2465,
+     "happened": 0.2243
     },
     {
      "band": "30%-40%",
-     "cases": 2328,
-     "said": 0.3489,
-     "happened": 0.3286
+     "cases": 2313,
+     "said": 0.3491,
+     "happened": 0.3329
     },
     {
      "band": "40%-50%",
-     "cases": 1822,
-     "said": 0.4451,
-     "happened": 0.4221
+     "cases": 1773,
+     "said": 0.4457,
+     "happened": 0.4179
     },
     {
      "band": "50%-60%",
-     "cases": 1758,
-     "said": 0.5514,
-     "happened": 0.5324
+     "cases": 1709,
+     "said": 0.5511,
+     "happened": 0.5471
     },
     {
      "band": "60%-70%",
-     "cases": 1763,
-     "said": 0.6509,
-     "happened": 0.6665
+     "cases": 1852,
+     "said": 0.65,
+     "happened": 0.6631
     },
     {
      "band": "70%-80%",
-     "cases": 1999,
-     "said": 0.7502,
-     "happened": 0.7554
+     "cases": 1967,
+     "said": 0.7508,
+     "happened": 0.7494
     },
     {
      "band": "80%-90%",
-     "cases": 2751,
-     "said": 0.8509,
-     "happened": 0.8819
+     "cases": 2560,
+     "said": 0.8491,
+     "happened": 0.8793
     },
     {
      "band": "90%-100%",
-     "cases": 2915,
-     "said": 0.9327,
-     "happened": 0.9455
+     "cases": 3001,
+     "said": 0.9293,
+     "happened": 0.9427
     }
    ]
   }
@@ -302,11 +302,11 @@
  "prop_record": {
   "recorded": 341,
   "voided": 13,
-  "settled": 286,
-  "right": 164,
-  "wrong": 122,
+  "settled": 325,
+  "right": 183,
+  "wrong": 142,
   "pushed": 0,
-  "expected_right": 185.2,
+  "expected_right": 209.9,
   "markets": [
    "carries",
    "pass_attempts",
@@ -405,11 +405,11 @@
     "game": "KC at SEA",
     "recorded": 21,
     "voided": 0,
-    "settled": 0,
-    "right": 0,
-    "wrong": 0,
+    "settled": 21,
+    "right": 9,
+    "wrong": 12,
     "pushed": 0,
-    "expected_right": null
+    "expected_right": 13.8
    },
    {
     "week": "7",
@@ -489,11 +489,11 @@
     "game": "DAL at PHI",
     "recorded": 21,
     "voided": 0,
-    "settled": 0,
-    "right": 0,
-    "wrong": 0,
+    "settled": 18,
+    "right": 10,
+    "wrong": 8,
     "pushed": 0,
-    "expected_right": null
+    "expected_right": 10.9
    }
   ],
   "settled_props": [
@@ -2698,6 +2698,300 @@
    {
     "week": "7",
     "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "AJ Barner",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.56,
+    "model": 3.0,
+    "status": "right",
+    "actual": 4,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "AJ Barner",
+    "market": "targets",
+    "underdog_line": 4.5,
+    "our_side": "Lower",
+    "our_probability": 0.601,
+    "model": 4.3,
+    "status": "wrong",
+    "actual": 5,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Cooper Kupp",
+    "market": "targets",
+    "underdog_line": 4.5,
+    "our_side": "Higher",
+    "our_probability": 0.659,
+    "model": 5.7,
+    "status": "wrong",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Cooper Kupp",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.653,
+    "model": 3.4,
+    "status": "wrong",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Jaxon Smith-Njigba",
+    "market": "receptions",
+    "underdog_line": 6.5,
+    "our_side": "Lower",
+    "our_probability": 0.604,
+    "model": 6.3,
+    "status": "wrong",
+    "actual": 9,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Jaxon Smith-Njigba",
+    "market": "targets",
+    "underdog_line": 10.5,
+    "our_side": "Lower",
+    "our_probability": 0.699,
+    "model": 9.6,
+    "status": "wrong",
+    "actual": 12,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Kenneth Walker III",
+    "market": "targets",
+    "underdog_line": 4.5,
+    "our_side": "Lower",
+    "our_probability": 0.601,
+    "model": 4.3,
+    "status": "wrong",
+    "actual": 5,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Kenneth Walker III",
+    "market": "receptions",
+    "underdog_line": 3.5,
+    "our_side": "Lower",
+    "our_probability": 0.622,
+    "model": 3.2,
+    "status": "wrong",
+    "actual": 4,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Kenneth Walker III",
+    "market": "carries",
+    "underdog_line": 18.5,
+    "our_side": "Lower",
+    "our_probability": 0.703,
+    "model": 16.4,
+    "status": "right",
+    "actual": 14,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Noah Gray",
+    "market": "receptions",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.631,
+    "model": 2.3,
+    "status": "right",
+    "actual": 3,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Noah Gray",
+    "market": "targets",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.557,
+    "model": 3.2,
+    "status": "right",
+    "actual": 3,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Patrick Mahomes",
+    "market": "pass_attempts",
+    "underdog_line": 31.5,
+    "our_side": "Higher",
+    "our_probability": 0.627,
+    "model": 34.5,
+    "status": "right",
+    "actual": 33,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Rashid Shaheed",
+    "market": "targets",
+    "underdog_line": 3.5,
+    "our_side": "Higher",
+    "our_probability": 0.599,
+    "model": 4.4,
+    "status": "wrong",
+    "actual": 3,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Rashid Shaheed",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Lower",
+    "our_probability": 0.584,
+    "model": 2.4,
+    "status": "right",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Sam Darnold",
+    "market": "pass_attempts",
+    "underdog_line": 30.5,
+    "our_side": "Higher",
+    "our_probability": 0.537,
+    "model": 31.9,
+    "status": "wrong",
+    "actual": 28,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Tory Horton",
+    "market": "targets",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.912,
+    "model": 4.4,
+    "status": "wrong",
+    "actual": 1,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Tory Horton",
+    "market": "receptions",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.653,
+    "model": 2.4,
+    "status": "wrong",
+    "actual": 0,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Travis Kelce",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Lower",
+    "our_probability": 0.693,
+    "model": 3.8,
+    "status": "right",
+    "actual": 4,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Travis Kelce",
+    "market": "targets",
+    "underdog_line": 6.5,
+    "our_side": "Lower",
+    "our_probability": 0.685,
+    "model": 5.7,
+    "status": "wrong",
+    "actual": 8,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Xavier Worthy",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Lower",
+    "our_probability": 0.752,
+    "model": 3.4,
+    "status": "right",
+    "actual": 3,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
+    "game": "KC at SEA",
+    "player": "Xavier Worthy",
+    "market": "targets",
+    "underdog_line": 7.5,
+    "our_side": "Lower",
+    "our_probability": 0.841,
+    "model": 5.2,
+    "status": "right",
+    "actual": 6,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-25",
     "game": "LA at LV",
     "player": "Ashton Jeanty",
     "market": "carries",
@@ -4681,6 +4975,258 @@
     "model": 4.1,
     "status": "wrong",
     "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "CeeDee Lamb",
+    "market": "receptions",
+    "underdog_line": 7.5,
+    "our_side": "Lower",
+    "our_probability": 0.779,
+    "model": 6.2,
+    "status": "right",
+    "actual": 5,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "CeeDee Lamb",
+    "market": "targets",
+    "underdog_line": 11.5,
+    "our_side": "Lower",
+    "our_probability": 0.869,
+    "model": 8.8,
+    "status": "wrong",
+    "actual": 12,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "Dak Prescott",
+    "market": "pass_attempts",
+    "underdog_line": 37.5,
+    "our_side": "Lower",
+    "our_probability": 0.591,
+    "model": 36.4,
+    "status": "right",
+    "actual": 27,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "Dallas Goedert",
+    "market": "targets",
+    "underdog_line": 7.5,
+    "our_side": "Lower",
+    "our_probability": 0.711,
+    "model": 6.5,
+    "status": "right",
+    "actual": 7,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "Dallas Goedert",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Lower",
+    "our_probability": 0.622,
+    "model": 4.2,
+    "status": "wrong",
+    "actual": 5,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "George Pickens",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Higher",
+    "our_probability": 0.509,
+    "model": 4.8,
+    "status": "wrong",
+    "actual": 4,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "George Pickens",
+    "market": "targets",
+    "underdog_line": 7.5,
+    "our_side": "Lower",
+    "our_probability": 0.615,
+    "model": 7.2,
+    "status": "right",
+    "actual": 6,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "Jake Ferguson",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.585,
+    "model": 3.1,
+    "status": "wrong",
+    "actual": 0,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "Jake Ferguson",
+    "market": "targets",
+    "underdog_line": 4.5,
+    "our_side": "Lower",
+    "our_probability": 0.569,
+    "model": 4.5,
+    "status": "right",
+    "actual": 1,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "Javonte Williams",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.585,
+    "model": 3.1,
+    "status": "wrong",
+    "actual": 0,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "Javonte Williams",
+    "market": "targets",
+    "underdog_line": 3.5,
+    "our_side": "Higher",
+    "our_probability": 0.537,
+    "model": 4.1,
+    "status": "wrong",
+    "actual": 0,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "Javonte Williams",
+    "market": "carries",
+    "underdog_line": 16.5,
+    "our_side": "Higher",
+    "our_probability": 0.503,
+    "model": 17.3,
+    "status": "right",
+    "actual": 25,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "Makai Lemon",
+    "market": "targets",
+    "underdog_line": 4.5,
+    "our_side": "Higher",
+    "our_probability": 0.557,
+    "model": 5.2,
+    "status": "right",
+    "actual": 8,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "Ryan Flournoy",
+    "market": "receptions",
+    "underdog_line": 3.5,
+    "our_side": "Higher",
+    "our_probability": 0.608,
+    "model": 4.2,
+    "status": "right",
+    "actual": 4,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "Ryan Flournoy",
+    "market": "targets",
+    "underdog_line": 5.5,
+    "our_side": "Higher",
+    "our_probability": 0.537,
+    "model": 6.1,
+    "status": "wrong",
+    "actual": 4,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "Saquon Barkley",
+    "market": "targets",
+    "underdog_line": 3.5,
+    "our_side": "Higher",
+    "our_probability": 0.557,
+    "model": 4.2,
+    "status": "wrong",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "Saquon Barkley",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Lower",
+    "our_probability": 0.584,
+    "model": 2.4,
+    "status": "right",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "Saquon Barkley",
+    "market": "carries",
+    "underdog_line": 16.5,
+    "our_side": "Lower",
+    "our_probability": 0.582,
+    "model": 16.2,
+    "status": "right",
+    "actual": 7,
     "note": ""
    }
   ]

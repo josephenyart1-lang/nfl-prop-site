@@ -187,14 +187,14 @@
    "gameday": "2026-10-25",
    "kickoff": "20:20",
    "game": "KC at SEA",
-   "played": false
+   "played": true
   },
   {
    "week": 7,
    "gameday": "2026-10-26",
    "kickoff": "20:15",
    "game": "DAL at PHI",
-   "played": false
+   "played": true
   },
   {
    "week": 8,
@@ -1390,7 +1390,7 @@
   "TEN": "#4495D2",
   "WAS": "#da5656"
  },
- "generated_at": "2026-10-26 03:30 UTC",
+ "generated_at": "2026-10-27 12:32 UTC",
  "as_of": "2026-10-26 02:40",
  "selections": [
   {
@@ -4391,8 +4391,8 @@
    "injury": null,
    "depth": "TE1",
    "team": "SEA",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -4410,8 +4410,8 @@
    "injury": null,
    "depth": "TE1",
    "team": "SEA",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 5,
    "note": null
   },
   {
@@ -4429,8 +4429,8 @@
    "injury": null,
    "depth": "WR3",
    "team": "SEA",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -4448,8 +4448,8 @@
    "injury": null,
    "depth": "WR3",
    "team": "SEA",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -4467,8 +4467,8 @@
    "injury": null,
    "depth": "WR1",
    "team": "SEA",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 9,
    "note": null
   },
   {
@@ -4486,8 +4486,8 @@
    "injury": null,
    "depth": "WR1",
    "team": "SEA",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 12,
    "note": null
   },
   {
@@ -4505,8 +4505,8 @@
    "injury": null,
    "depth": "RB1",
    "team": "KC",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 5,
    "note": null
   },
   {
@@ -4524,8 +4524,8 @@
    "injury": null,
    "depth": "RB1",
    "team": "KC",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -4543,8 +4543,8 @@
    "injury": null,
    "depth": "RB1",
    "team": "KC",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 14,
    "note": null
   },
   {
@@ -4562,8 +4562,8 @@
    "injury": null,
    "depth": "TE2",
    "team": "KC",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -4581,8 +4581,8 @@
    "injury": null,
    "depth": "TE2",
    "team": "KC",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -4600,8 +4600,8 @@
    "injury": null,
    "depth": null,
    "team": "KC",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 33,
    "note": null
   },
   {
@@ -4619,8 +4619,8 @@
    "injury": "Full Practice",
    "depth": "WR2",
    "team": "SEA",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 3,
    "note": null
   },
   {
@@ -4638,8 +4638,8 @@
    "injury": "Full Practice",
    "depth": "WR2",
    "team": "SEA",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -4657,8 +4657,8 @@
    "injury": null,
    "depth": null,
    "team": "SEA",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 28,
    "note": null
   },
   {
@@ -4676,8 +4676,8 @@
    "injury": null,
    "depth": "WR4",
    "team": "SEA",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 1,
    "note": null
   },
   {
@@ -4695,8 +4695,8 @@
    "injury": null,
    "depth": "WR4",
    "team": "SEA",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 0,
    "note": null
   },
   {
@@ -4714,8 +4714,8 @@
    "injury": "Limited Practice",
    "depth": "TE1",
    "team": "KC",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -4733,8 +4733,8 @@
    "injury": "Limited Practice",
    "depth": "TE1",
    "team": "KC",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 8,
    "note": null
   },
   {
@@ -4752,8 +4752,8 @@
    "injury": null,
    "depth": "WR2",
    "team": "KC",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -4771,8 +4771,8 @@
    "injury": null,
    "depth": "WR2",
    "team": "KC",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -7488,8 +7488,8 @@
    "injury": null,
    "depth": "WR1",
    "team": "DAL",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -7507,8 +7507,8 @@
    "injury": null,
    "depth": "WR1",
    "team": "DAL",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 12,
    "note": null
   },
   {
@@ -7526,8 +7526,8 @@
    "injury": null,
    "depth": null,
    "team": "DAL",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 27,
    "note": null
   },
   {
@@ -7545,8 +7545,8 @@
    "injury": "Full Practice",
    "depth": "TE1",
    "team": "PHI",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -7564,8 +7564,8 @@
    "injury": "Full Practice",
    "depth": "TE1",
    "team": "PHI",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 5,
    "note": null
   },
   {
@@ -7640,8 +7640,8 @@
    "injury": "Full Practice",
    "depth": "WR2",
    "team": "DAL",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -7659,8 +7659,8 @@
    "injury": "Full Practice",
    "depth": "WR2",
    "team": "DAL",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -7678,8 +7678,8 @@
    "injury": null,
    "depth": "TE1",
    "team": "DAL",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 0,
    "note": null
   },
   {
@@ -7697,8 +7697,8 @@
    "injury": null,
    "depth": "TE1",
    "team": "DAL",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 1,
    "note": null
   },
   {
@@ -7716,8 +7716,8 @@
    "injury": null,
    "depth": "RB1",
    "team": "DAL",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 0,
    "note": null
   },
   {
@@ -7735,8 +7735,8 @@
    "injury": null,
    "depth": "RB1",
    "team": "DAL",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 0,
    "note": null
   },
   {
@@ -7754,8 +7754,8 @@
    "injury": null,
    "depth": "RB1",
    "team": "DAL",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 25,
    "note": null
   },
   {
@@ -7773,8 +7773,8 @@
    "injury": null,
    "depth": "WR3",
    "team": "PHI",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 8,
    "note": null
   },
   {
@@ -7792,8 +7792,8 @@
    "injury": null,
    "depth": "WR3",
    "team": "DAL",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -7811,8 +7811,8 @@
    "injury": null,
    "depth": "WR3",
    "team": "DAL",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -7830,8 +7830,8 @@
    "injury": "Questionable, full practice",
    "depth": "RB1",
    "team": "PHI",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -7849,8 +7849,8 @@
    "injury": "Questionable, full practice",
    "depth": "RB1",
    "team": "PHI",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -7868,8 +7868,8 @@
    "injury": "Questionable, full practice",
    "depth": "RB1",
    "team": "PHI",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   }
  ],
