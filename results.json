@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27 15:10 UTC",
+ "generated_at": "2026-10-29 14:40 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -79,229 +79,229 @@
   {
    "market": "Carries",
    "who": "running backs",
-   "games_tested": 2250,
-   "typical_value": 11.4,
-   "model_error": 3.88,
-   "naive_error": 3.96,
-   "flat_error": 5.35,
-   "ratio": 0.726,
-   "beats_naive_by": 0.082,
-   "typical_miss": 5.18,
+   "games_tested": 2290,
+   "typical_value": 11.3,
+   "model_error": 3.84,
+   "naive_error": 3.95,
+   "flat_error": 5.37,
+   "ratio": 0.716,
+   "beats_naive_by": 0.111,
+   "typical_miss": 5.14,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 4963,
-     "said": 0.0766,
-     "happened": 0.0737
+     "cases": 5237,
+     "said": 0.0756,
+     "happened": 0.0768
     },
     {
      "band": "10%-20%",
-     "cases": 6618,
-     "said": 0.1449,
-     "happened": 0.1445
+     "cases": 6853,
+     "said": 0.1459,
+     "happened": 0.1484
     },
     {
      "band": "20%-30%",
-     "cases": 4057,
-     "said": 0.2488,
-     "happened": 0.2499
+     "cases": 4048,
+     "said": 0.2493,
+     "happened": 0.254
     },
     {
      "band": "30%-40%",
-     "cases": 3430,
-     "said": 0.348,
-     "happened": 0.349
+     "cases": 3415,
+     "said": 0.3474,
+     "happened": 0.3549
     },
     {
      "band": "40%-50%",
-     "cases": 2913,
-     "said": 0.4494,
-     "happened": 0.4552
+     "cases": 2829,
+     "said": 0.4467,
+     "happened": 0.456
     },
     {
      "band": "50%-60%",
-     "cases": 2423,
-     "said": 0.5511,
-     "happened": 0.5671
+     "cases": 2420,
+     "said": 0.5498,
+     "happened": 0.5723
     },
     {
      "band": "60%-70%",
-     "cases": 2580,
-     "said": 0.6496,
-     "happened": 0.6655
+     "cases": 2674,
+     "said": 0.65,
+     "happened": 0.6773
     },
     {
      "band": "70%-80%",
-     "cases": 2930,
-     "said": 0.7476,
-     "happened": 0.7737
+     "cases": 3041,
+     "said": 0.7488,
+     "happened": 0.7813
     },
     {
      "band": "80%-90%",
-     "cases": 4133,
-     "said": 0.8535,
-     "happened": 0.879
+     "cases": 4145,
+     "said": 0.8543,
+     "happened": 0.8825
     },
     {
      "band": "90%-100%",
-     "cases": 4203,
-     "said": 0.9347,
-     "happened": 0.9443
+     "cases": 4268,
+     "said": 0.935,
+     "happened": 0.9466
     }
    ]
   },
   {
    "market": "Targets",
    "who": "receivers and backs",
-   "games_tested": 7115,
+   "games_tested": 7105,
    "typical_value": 5.1,
    "model_error": 1.87,
    "naive_error": 1.97,
    "flat_error": 2.37,
-   "ratio": 0.788,
+   "ratio": 0.789,
    "beats_naive_by": 0.097,
    "typical_miss": 2.46,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 4342,
-     "said": 0.0738,
-     "happened": 0.0583
+     "cases": 5124,
+     "said": 0.0751,
+     "happened": 0.0664
     },
     {
      "band": "10%-20%",
-     "cases": 5803,
-     "said": 0.1434,
-     "happened": 0.1249
+     "cases": 5395,
+     "said": 0.1461,
+     "happened": 0.134
     },
     {
      "band": "20%-30%",
-     "cases": 3323,
-     "said": 0.2466,
-     "happened": 0.2245
+     "cases": 3434,
+     "said": 0.2471,
+     "happened": 0.249
     },
     {
      "band": "30%-40%",
-     "cases": 2647,
-     "said": 0.3481,
-     "happened": 0.3136
+     "cases": 2370,
+     "said": 0.3449,
+     "happened": 0.3405
     },
     {
      "band": "40%-50%",
-     "cases": 2140,
-     "said": 0.4497,
-     "happened": 0.435
+     "cases": 2091,
+     "said": 0.4464,
+     "happened": 0.4443
     },
     {
      "band": "50%-60%",
-     "cases": 2250,
-     "said": 0.55,
-     "happened": 0.5413
+     "cases": 2217,
+     "said": 0.5489,
+     "happened": 0.5683
     },
     {
      "band": "60%-70%",
-     "cases": 2188,
-     "said": 0.6522,
-     "happened": 0.6431
+     "cases": 2214,
+     "said": 0.6527,
+     "happened": 0.664
     },
     {
      "band": "70%-80%",
-     "cases": 2809,
-     "said": 0.7503,
-     "happened": 0.7426
+     "cases": 2563,
+     "said": 0.7534,
+     "happened": 0.7569
     },
     {
      "band": "80%-90%",
-     "cases": 3932,
-     "said": 0.8538,
-     "happened": 0.851
+     "cases": 4049,
+     "said": 0.8537,
+     "happened": 0.8572
     },
     {
      "band": "90%-100%",
-     "cases": 6538,
-     "said": 0.9472,
-     "happened": 0.9511
+     "cases": 6539,
+     "said": 0.9455,
+     "happened": 0.9495
     }
    ]
   },
   {
    "market": "Receptions",
    "who": "receivers and backs",
-   "games_tested": 7115,
+   "games_tested": 7105,
    "typical_value": 3.4,
-   "model_error": 1.49,
+   "model_error": 1.5,
    "naive_error": 1.55,
    "flat_error": 1.76,
-   "ratio": 0.85,
+   "ratio": 0.851,
    "beats_naive_by": 0.054,
    "typical_miss": 1.99,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 3910,
-     "said": 0.0699,
-     "happened": 0.067
+     "cases": 4293,
+     "said": 0.0724,
+     "happened": 0.0643
     },
     {
      "band": "10%-20%",
-     "cases": 4104,
-     "said": 0.1438,
-     "happened": 0.1296
+     "cases": 4204,
+     "said": 0.144,
+     "happened": 0.1425
     },
     {
      "band": "20%-30%",
-     "cases": 2658,
-     "said": 0.2468,
-     "happened": 0.2148
+     "cases": 2543,
+     "said": 0.247,
+     "happened": 0.2414
     },
     {
      "band": "30%-40%",
-     "cases": 2030,
-     "said": 0.3476,
-     "happened": 0.3315
+     "cases": 2116,
+     "said": 0.3505,
+     "happened": 0.3455
     },
     {
      "band": "40%-50%",
-     "cases": 2093,
-     "said": 0.4484,
-     "happened": 0.4348
+     "cases": 1825,
+     "said": 0.4493,
+     "happened": 0.4652
     },
     {
      "band": "50%-60%",
-     "cases": 1764,
-     "said": 0.5517,
-     "happened": 0.5448
+     "cases": 1662,
+     "said": 0.5493,
+     "happened": 0.5548
     },
     {
      "band": "60%-70%",
-     "cases": 1926,
-     "said": 0.649,
-     "happened": 0.6516
+     "cases": 1893,
+     "said": 0.6492,
+     "happened": 0.6878
     },
     {
      "band": "70%-80%",
-     "cases": 2414,
-     "said": 0.7511,
-     "happened": 0.7647
+     "cases": 2293,
+     "said": 0.754,
+     "happened": 0.7776
     },
     {
      "band": "80%-90%",
-     "cases": 2696,
-     "said": 0.8553,
-     "happened": 0.8687
+     "cases": 2663,
+     "said": 0.8539,
+     "happened": 0.8701
     },
     {
      "band": "90%-100%",
-     "cases": 4404,
-     "said": 0.9404,
-     "happened": 0.9498
+     "cases": 4505,
+     "said": 0.9413,
+     "happened": 0.9509
     }
    ]
   }
  ],
  "prop_record": {
-  "recorded": 341,
-  "voided": 13,
+  "recorded": 366,
+  "voided": 16,
   "settled": 325,
   "right": 183,
   "wrong": 142,
@@ -313,7 +313,7 @@
    "receptions",
    "targets"
   ],
-  "weeks": 2,
+  "weeks": 3,
   "games": [
    {
     "week": "6",
@@ -488,12 +488,24 @@
     "gameday": "2026-10-26",
     "game": "DAL at PHI",
     "recorded": 21,
-    "voided": 0,
+    "voided": 3,
     "settled": 18,
     "right": 10,
     "wrong": 8,
     "pushed": 0,
     "expected_right": 10.9
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "recorded": 25,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
    }
   ],
   "settled_props": [
@@ -5046,6 +5058,48 @@
     "status": "wrong",
     "actual": 5,
     "note": ""
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "DeVonta Smith",
+    "market": "receptions",
+    "underdog_line": 6.5,
+    "our_side": "Lower",
+    "our_probability": 0.779,
+    "model": 5.2,
+    "status": "void",
+    "actual": null,
+    "note": "ruled out on Saturday with a hamstring, did not play; no row in a complete PHI box score"
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "DeVonta Smith",
+    "market": "targets",
+    "underdog_line": 10.5,
+    "our_side": "Lower",
+    "our_probability": 0.816,
+    "model": 8.5,
+    "status": "void",
+    "actual": null,
+    "note": "ruled out on Saturday with a hamstring, did not play; no row in a complete PHI box score"
+   },
+   {
+    "week": "7",
+    "gameday": "2026-10-26",
+    "game": "DAL at PHI",
+    "player": "Dontayvion Wicks",
+    "market": "targets",
+    "underdog_line": 4.5,
+    "our_side": "Higher",
+    "our_probability": 0.599,
+    "model": 5.4,
+    "status": "void",
+    "actual": null,
+    "note": "ruled out on Saturday with an ankle, did not play; no row in a complete PHI box score"
    },
    {
     "week": "7",
