@@ -331,3 +331,9 @@ tr.outcome-void td { color: var(--dim); }
   font-size: .8rem; color: var(--dim); margin-top: .35rem;
   max-width: 24rem; margin-left: auto; margin-right: auto;
 }
+
+/* The entry-bar lookup. One row is not arithmetic: it is a payout somebody
+   actually saw on an entry screen, and it is marked so the reader can tell
+   the difference between a measurement and a column of sums. */
+table.bar td.seen { color: var(--accent); font-weight: 600; cursor: help; }
+table.bar tr.seen td:first-child { color: var(--accent); font-weight: 600; }

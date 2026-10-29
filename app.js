@@ -5,7 +5,7 @@ const PRETTY = {
 };
 let DATA = null;
 let filter = { week: null, game: null };  /* set once the data loads */
-let entryBar = null;          /* the 2-pick row of the entry bar */
+let entryBar = null;          /* a payout actually seen on an entry screen */
 /* What a single leg of a 2-pick entry has to clear to be worth including.
    Read from the entry bar rather than hardcoded, so it follows Underdog's
    payouts if they change. */
@@ -67,10 +67,20 @@ function show(name) {
 /* ------------------------------------------------------------- board --- */
 function buildBoard() {
   const legs = DATA.selections.selections || [];
+  /* Underdog's multiplier is NOT fixed by entry size. It varies with the
+     picks' own odds, so there is no such thing as "the" bar for a 5-pick,
+     and this page used to publish one anyway: 20x for five picks, where a
+     real five-pick on 2026-10-29 paid 8.25x. That is a per-leg bar of
+     65.6% published as 54.9%.
+
+     So the bar now comes only from a payout somebody actually saw on an
+     entry screen, which is what seen_on marks. No sighting, no bar, and
+     nothing is marked as clearing one. */
   const bar = DATA.selections.entry_bar || [];
-  const two = bar.find((b) => num(b.legs) === 2);
-  legBar = two ? num(two.unrelated) : null;
-  entryBar = two;
+  const entryBar_ = bar.filter((b) => b.seen_on).sort((a, b) =>
+    String(b.seen_on).localeCompare(String(a.seen_on)))[0] || null;
+  legBar = entryBar_ ? num(entryBar_.unrelated) : null;
+  entryBar = entryBar_;
 
   /* Week first, then a game inside it. The board reaches back over played
      weeks now, so without the second row a finished week would be one long
@@ -94,16 +104,50 @@ function buildBoard() {
   weeks.forEach((w) => chipFor(chips, "week", String(w), "Week " + w));
   buildGameChips();
 
+  /* A lookup, not a claim. The multiplier belongs to the entry screen and
+     varies with the picks, so the honest thing this page can publish is
+     the arithmetic for whatever payout the reader is shown -- with the one
+     payout somebody actually saw marked, because a real number is worth
+     more than a plausible one. Tiles were the wrong shape for this: four
+     of them read as four facts, and these are a table to look yourself up
+     in. */
   const barWrap = $("entry-bar");
-  bar.forEach((r) => {
-    const cell = document.createElement("div");
-    cell.className = "tile";
-    cell.innerHTML = '<div class="label"></div><div class="value"></div><div class="foot"></div>';
-    cell.querySelector(".label").textContent = r.legs + " picks at " + num(r.multiplier) + "x";
-    cell.querySelector(".value").textContent = (num(r.unrelated) * 100).toFixed(1) + "%";
-    cell.querySelector(".foot").textContent = "stacked " + (num(r.stacked) * 100).toFixed(1) + "%";
-    barWrap.appendChild(cell);
+  barWrap.textContent = "";
+  const sizes = [...new Set(bar.map((r) => num(r.legs)))].sort((a, b) => a - b);
+  const mults = [...new Set(bar.map((r) => num(r.multiplier)))]
+    .sort((a, b) => a - b);
+  const at = new Map(bar.map((r) => [num(r.legs) + "@" + num(r.multiplier), r]));
+
+  const table = document.createElement("table");
+  table.className = "bar";
+  const head = document.createElement("thead");
+  head.innerHTML = "<tr><th>payout</th>"
+    + sizes.map((s) => "<th>" + s + " picks</th>").join("") + "</tr>";
+  table.appendChild(head);
+
+  const body = document.createElement("tbody");
+  mults.forEach((m) => {
+    const tr = document.createElement("tr");
+    const label = document.createElement("td");
+    label.textContent = (Math.round(m * 100) / 100) + "x";
+    tr.appendChild(label);
+    sizes.forEach((s) => {
+      const r = at.get(s + "@" + m);
+      const td = document.createElement("td");
+      td.textContent = r ? (num(r.unrelated) * 100).toFixed(1) + "%" : "–";
+      if (r && r.seen_on) {
+        td.className = "seen";
+        td.title = "Seen on an entry screen on " + r.seen_on
+          + ". Stacked, that bar is "
+          + (num(r.stacked) * 100).toFixed(1) + "%.";
+        tr.classList.add("seen");
+      }
+      tr.appendChild(td);
+    });
+    body.appendChild(tr);
   });
+  table.appendChild(body);
+  barWrap.appendChild(table);
 }
 
 /* The games inside whichever week is selected. Rebuilt whenever the week
@@ -179,8 +223,12 @@ function drawTiles(legs) {
     tile(tiles, "Claimed vs actual", right + " vs " + claimed.toFixed(1),
       "the number that matters");
   } else if (entryBar) {
-    tile(tiles, "A 2-pick leg needs", (num(entryBar.unrelated) * 100).toFixed(1) + "%",
-      "stacked " + (num(entryBar.stacked) * 100).toFixed(1) + "%");
+    tile(tiles,
+      "A " + entryBar.legs + "-pick at " + num(entryBar.multiplier).toFixed(2)
+        + "x needs",
+      (num(entryBar.unrelated) * 100).toFixed(1) + "%",
+      "stacked " + (num(entryBar.stacked) * 100).toFixed(1) + "%"
+        + " · seen " + entryBar.seen_on + ", yours will differ");
     if (priced.length) {
       tile(tiles, "Clear that bar", clearing.length + " of " + priced.length,
         noView.length ? noView.length + " are not calls at all" : "the rest fall short");
@@ -459,11 +507,15 @@ function drawWeek(root, games) {
              leg at 57.70% rounded to "58%" sitting unmarked beside a bar of
              "57.7%" looks like a mistake rather than a near miss. */
           pct.textContent = (chance * 100).toFixed(1) + "%";
+          const barName = entryBar
+            ? "a " + entryBar.legs + "-pick at "
+              + num(entryBar.multiplier).toFixed(2) + "x"
+            : "an entry";
           pct.title = noView
             ? "The model gives this side less than an even chance."
             : (legBar && chance >= legBar
-              ? "Clears the bar a 2-pick entry needs."
-              : "Below the bar a 2-pick entry needs.");
+              ? "Clears the bar " + barName + " needs."
+              : "Below the bar " + barName + " needs.");
           model.appendChild(pct);
           model.appendChild(document.createTextNode(" · "));
         }
