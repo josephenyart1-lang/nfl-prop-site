@@ -568,6 +568,8 @@ function buildResults() {
     rec.expected_right != null ? rec.right + " vs " + rec.expected_right : "—",
     "the number that matters");
 
+  sideSplit(r.sides);
+
   drawByGame(rec.games || []);
   drawSettled(rec.settled_props || []);
 
@@ -742,6 +744,26 @@ function loudSentence(loud) {
     ? "And a loud disagreement has turned out to be the model's better side "
       + "rather than its worse: " + seen + "."
     : "And a loud disagreement really is a warning: " + seen + ".";
+}
+
+/* The sharpest thing the record says, and the one a single tally hides.
+   Over the first 350 settled props the Higher legs claimed 65% and landed
+   51% while the Lower legs were near enough honest, and that split held in
+   every market separately. Written from the data so it keeps tracking. */
+function sideSplit(sides) {
+  const host = $("side-split");
+  if (!host || !sides || !sides.higher || !sides.lower) return;
+  const pct = (x) => (x * 100).toFixed(1) + "%";
+  const say = (name, s) => name + " legs claimed " + pct(s.claimed)
+    + " and landed " + pct(s.landed) + " over " + s.settled + " legs";
+  const worse = sides.higher.sd <= sides.lower.sd ? sides.higher : sides.lower;
+  const tail = Math.abs(worse.sd) >= 2
+    ? " That gap is " + Math.abs(worse.sd).toFixed(1)
+      + " standard deviations, so it is not a run of luck."
+    : " Neither gap is big enough yet to be worth more than watching.";
+  host.textContent = "The claim has not held up the same way on both sides "
+    + "of the line: " + say("Higher", sides.higher) + ", while "
+    + say("Lower", sides.lower).replace(/^Lower/, "Lower") + "." + tail;
 }
 
 function tile(into, label, value, foot) {

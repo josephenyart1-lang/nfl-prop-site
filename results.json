@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30 21:35 UTC",
+ "generated_at": "2026-10-30 23:34 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -5685,5 +5685,29 @@
   },
   "games_on_report": 1453,
   "games_off_report": 5647
+ },
+ "sides": {
+  "higher": {
+   "settled": 186,
+   "claimed": 0.65,
+   "landed": 0.511,
+   "sd": -4.1
+  },
+  "lower": {
+   "settled": 164,
+   "claimed": 0.632,
+   "landed": 0.604,
+   "sd": -0.8
+  }
+ },
+ "line_weight": {
+  "settled": 350,
+  "shipped": 0.7,
+  "fitted": 0.428,
+  "low": 0.139,
+  "high": 0.723,
+  "fold_low": 0.283,
+  "fold_high": 0.527,
+  "shipped_inside": true
  }
 }
