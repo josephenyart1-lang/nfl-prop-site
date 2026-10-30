@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30 21:19 UTC",
+ "generated_at": "2026-10-30 21:35 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -5646,5 +5646,44 @@
  "counts": {
   "quiet_receiver_games": 12453,
   "quiet_back_games": 1949
+ },
+ "steadiness": {
+  "receiver_share": {
+   "correlation": 0.721,
+   "games": 12922
+  },
+  "back_share": {
+   "correlation": 0.758,
+   "games": 3307
+  },
+  "qb_attempts": {
+   "correlation": 0.245,
+   "games": 1079
+  }
+ },
+ "run_tendency": {
+  "team_games": 4638,
+  "correlation": 0.287,
+  "typical_miss": 0.082
+ },
+ "book": {
+  "wagers": 2,
+  "days": 2,
+  "settled": 0,
+  "points_above_book": 7.2
+ },
+ "injury": {
+  "told": {
+   "off_report": -0.59,
+   "on_report": -0.33,
+   "gap": 0.26
+  },
+  "untold": {
+   "off_report": -0.62,
+   "on_report": -0.23,
+   "gap": 0.39
+  },
+  "games_on_report": 1453,
+  "games_off_report": 5647
  }
 }

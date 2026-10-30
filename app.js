@@ -641,6 +641,64 @@ function buildMethod() {
   const loud = $("method-loud");
   if (loud && r.loud) loud.textContent = loudSentence(r.loud);
   methodCounts(r);
+  methodMeasurements(r);
+}
+
+/* Four claims that were on the page with no measurement behind them: the
+   three steadiness correlations, the run-tendency result, the sportsbook
+   comparison and the injury lean. Each was re-derived and each is written
+   from results.json now, for the same reason as the counts above -- the
+   receiver one had been quoting 0.55 since the table was a third smaller. */
+function methodMeasurements(r) {
+  const one = (id, make) => {
+    const el = $(id);
+    if (!el) return;
+    const text = make();
+    if (text) el.textContent = text;
+  };
+
+  one("m-steady", () => {
+    const s = r.steadiness;
+    if (!s || !s.receiver_share || !s.qb_attempts || !s.back_share) return null;
+    const two = (c) => c.correlation.toFixed(2);
+    return "Share correlates " + two(s.receiver_share)
+      + " with his next game, against " + two(s.qb_attempts)
+      + " for a quarterback's attempts and " + two(s.back_share)
+      + " for a back's share of carries.";
+  });
+
+  one("m-tendency", () => {
+    const t = r.run_tendency;
+    if (!t) return null;
+    return "Not a coach's intentions: a team's own run-pass mix over its "
+      + "last eight games barely predicts its next, correlating "
+      + t.correlation + " across " + t.team_games.toLocaleString()
+      + " team-games and missing the real rate by "
+      + Math.round(t.typical_miss * 100) + " points of it.";
+  });
+
+  one("m-book", () => {
+    const b = r.book;
+    if (!b || !b.wagers) return null;
+    const WORDS = ["no", "one", "two", "three", "four", "five", "six",
+                   "seven", "eight", "nine", "ten"];
+    const count = WORDS[b.wagers] || b.wagers.toLocaleString();
+    const n = count + (b.wagers === 1 ? " pass-attempt wager" : " pass-attempt wagers");
+    const graded = b.settled === 0
+      ? "and neither has been graded. That is a disagreement about price, not a result."
+      : "of which " + b.settled + " have been graded, which is far too few to tell.";
+    return "Against a bookmaker's own implied probabilities it has priced "
+      + n + ", about " + Math.round(b.points_above_book)
+      + " points above the book, " + graded;
+  });
+
+  one("m-injury", () => {
+    const i = r.injury;
+    if (!i || !i.told) return null;
+    return "the model asks for about " + i.told.gap.toFixed(2)
+      + " of a target more for a player carrying something than for one who "
+      + "is not, even after being told he is on the report";
+  });
 }
 
 /* Row counts the Method prose quotes. Each of these was typed in when it was

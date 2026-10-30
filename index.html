@@ -69,9 +69,10 @@
         with the picks themselves, so read it off your own entry screen.</p>
       <p class="lede">An amber note under a player means he is on this
         week's injury report. Most players listed there do play, which is
-        why it is worth seeing rather than hiding: the model runs about 0.2
-        targets high on anyone carrying something, and for running backs it
-        does not account for this at all. The report is filed a few days
+        why it is worth seeing rather than hiding: <span id="m-injury">the model asks for
+        about 0.26 of a target more for a player carrying something
+        than for one who is not, even after being told he is on the
+        report</span>, and for running backs it is not told at all. The report is filed a few days
         before kickoff, so early in the week it will be empty.</p>
 
       <div class="tiles" id="board-tiles"></div>
@@ -193,8 +194,9 @@
 
         <p><strong>Volume splits into role and pace.</strong> A receiver's
           share of his team's targets is stable; his team's passing volume is
-          not. Share correlates 0.55 with his next game, against 0.25 for a
-          quarterback's attempts and 0.72 for a back's share of carries. So
+          not. <span id="m-steady">Share correlates 0.72 with his next game,
+          against 0.24 for a quarterback's attempts and 0.76 for a back's
+          share of carries.</span> So
           share and volume are predicted apart and multiplied.</p>
 
         <p><strong>Probabilities come from real misses, not a bell curve.</strong>
@@ -229,9 +231,10 @@
           near-certain starter and a rotational back are no longer told
           apart by almost nothing.</p>
 
-        <p><strong>What it cannot see.</strong> Not a coach's intentions: a
-          stated plan to run the ball more was measured against 4,508
-          team-games and predicts nothing at all. And the board is priced
+        <p><strong>What it cannot see.</strong> <span id="m-tendency">Not a coach's
+          intentions: a team's own run-pass mix over its last eight games
+          barely predicts its next, correlating 0.29 across 4,638 team-games
+          and missing the real rate by eight points of it.</span> And the board is priced
           days before kickoff and not looked at again, so a Saturday ruling
           can land after a Thursday price. It does read the weekly injury
           report, the depth chart and snap counts, and a player his team has
@@ -263,9 +266,10 @@
           something no one knows before a season starts.</p>
 
         <p><strong>What it has not shown.</strong> That it beats a
-          sportsbook. Against a bookmaker's own implied probabilities it
-          still sits several points high on pass attempts, on two cards,
-          which is far too few to separate the lean above from noise. On the
+          sportsbook. <span id="m-book">Against a bookmaker's own implied
+          probabilities it has priced two pass-attempt wagers, about seven
+          points above the book on both, and neither has been graded. That
+          is a disagreement about price, not a result.</span> On the
           other markets there are only a handful of priced cards so far
           either. Nothing here is a recommendation to bet. If you do, risk
           only what you can lose.</p>
