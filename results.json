@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30 15:45 UTC",
+ "generated_at": "2026-10-30 16:20 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -79,81 +79,81 @@
   {
    "market": "Carries",
    "who": "running backs",
-   "games_tested": 2292,
-   "typical_value": 11.3,
+   "games_tested": 2275,
+   "typical_value": 11.4,
    "model_error": 3.85,
    "naive_error": 3.96,
-   "flat_error": 5.37,
-   "ratio": 0.716,
+   "flat_error": 5.36,
+   "ratio": 0.717,
    "beats_naive_by": 0.11,
    "typical_miss": 5.14,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 5241,
-     "said": 0.0756,
-     "happened": 0.0771
+     "cases": 5302,
+     "said": 0.0759,
+     "happened": 0.076
     },
     {
      "band": "10%-20%",
-     "cases": 6859,
-     "said": 0.1459,
-     "happened": 0.149
+     "cases": 6682,
+     "said": 0.1462,
+     "happened": 0.1501
     },
     {
      "band": "20%-30%",
-     "cases": 4052,
+     "cases": 4015,
      "said": 0.2493,
-     "happened": 0.2547
+     "happened": 0.2543
     },
     {
      "band": "30%-40%",
-     "cases": 3419,
-     "said": 0.3474,
-     "happened": 0.3557
+     "cases": 3398,
+     "said": 0.348,
+     "happened": 0.3552
     },
     {
      "band": "40%-50%",
-     "cases": 2831,
-     "said": 0.4467,
-     "happened": 0.4564
+     "cases": 2843,
+     "said": 0.447,
+     "happened": 0.4541
     },
     {
      "band": "50%-60%",
-     "cases": 2422,
-     "said": 0.5498,
-     "happened": 0.5727
+     "cases": 2372,
+     "said": 0.5501,
+     "happened": 0.5687
     },
     {
      "band": "60%-70%",
-     "cases": 2676,
-     "said": 0.65,
-     "happened": 0.6775
+     "cases": 2677,
+     "said": 0.6499,
+     "happened": 0.6769
     },
     {
      "band": "70%-80%",
-     "cases": 3043,
-     "said": 0.7488,
-     "happened": 0.7815
+     "cases": 3000,
+     "said": 0.749,
+     "happened": 0.782
     },
     {
      "band": "80%-90%",
-     "cases": 4149,
-     "said": 0.8543,
-     "happened": 0.8826
+     "cases": 4126,
+     "said": 0.855,
+     "happened": 0.882
     },
     {
      "band": "90%-100%",
-     "cases": 4272,
-     "said": 0.935,
-     "happened": 0.9466
+     "cases": 4260,
+     "said": 0.9352,
+     "happened": 0.9477
     }
    ]
   },
   {
    "market": "Targets",
    "who": "receivers and backs",
-   "games_tested": 7117,
+   "games_tested": 7100,
    "typical_value": 5.1,
    "model_error": 1.87,
    "naive_error": 1.97,
@@ -164,137 +164,137 @@
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 4793,
-     "said": 0.0728,
-     "happened": 0.0649
+     "cases": 5136,
+     "said": 0.0711,
+     "happened": 0.0646
     },
     {
      "band": "10%-20%",
-     "cases": 5757,
-     "said": 0.1453,
-     "happened": 0.1291
+     "cases": 5100,
+     "said": 0.1442,
+     "happened": 0.1282
     },
     {
      "band": "20%-30%",
-     "cases": 3325,
-     "said": 0.2478,
-     "happened": 0.2442
+     "cases": 3493,
+     "said": 0.2474,
+     "happened": 0.235
     },
     {
      "band": "30%-40%",
-     "cases": 2440,
-     "said": 0.346,
-     "happened": 0.3328
+     "cases": 2561,
+     "said": 0.3476,
+     "happened": 0.3296
     },
     {
      "band": "40%-50%",
-     "cases": 2120,
-     "said": 0.4472,
-     "happened": 0.4401
+     "cases": 2158,
+     "said": 0.4489,
+     "happened": 0.4411
     },
     {
      "band": "50%-60%",
-     "cases": 2054,
-     "said": 0.549,
-     "happened": 0.5526
+     "cases": 2113,
+     "said": 0.5506,
+     "happened": 0.5551
     },
     {
      "band": "60%-70%",
-     "cases": 2373,
-     "said": 0.6524,
-     "happened": 0.6393
+     "cases": 2310,
+     "said": 0.6538,
+     "happened": 0.6506
     },
     {
      "band": "70%-80%",
-     "cases": 2599,
-     "said": 0.7519,
-     "happened": 0.7561
+     "cases": 2658,
+     "said": 0.7533,
+     "happened": 0.76
     },
     {
      "band": "80%-90%",
-     "cases": 3998,
-     "said": 0.8537,
-     "happened": 0.8552
+     "cases": 3906,
+     "said": 0.8532,
+     "happened": 0.86
     },
     {
      "band": "90%-100%",
-     "cases": 6540,
-     "said": 0.9456,
-     "happened": 0.9514
+     "cases": 6546,
+     "said": 0.9472,
+     "happened": 0.9526
     }
    ]
   },
   {
    "market": "Receptions",
    "who": "receivers and backs",
-   "games_tested": 7117,
+   "games_tested": 7100,
    "typical_value": 3.4,
    "model_error": 1.5,
    "naive_error": 1.55,
    "flat_error": 1.76,
    "ratio": 0.851,
-   "beats_naive_by": 0.054,
+   "beats_naive_by": 0.055,
    "typical_miss": 1.99,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 4423,
-     "said": 0.0685,
-     "happened": 0.0658
+     "cases": 4335,
+     "said": 0.0689,
+     "happened": 0.0648
     },
     {
      "band": "10%-20%",
-     "cases": 4040,
-     "said": 0.1443,
-     "happened": 0.1406
+     "cases": 3974,
+     "said": 0.1425,
+     "happened": 0.1376
     },
     {
      "band": "20%-30%",
-     "cases": 2572,
-     "said": 0.2482,
-     "happened": 0.2391
+     "cases": 2679,
+     "said": 0.2452,
+     "happened": 0.2333
     },
     {
      "band": "30%-40%",
-     "cases": 2069,
-     "said": 0.348,
-     "happened": 0.3446
+     "cases": 2208,
+     "said": 0.3491,
+     "happened": 0.3428
     },
     {
      "band": "40%-50%",
-     "cases": 1827,
-     "said": 0.4485,
-     "happened": 0.4505
+     "cases": 1798,
+     "said": 0.4493,
+     "happened": 0.4583
     },
     {
      "band": "50%-60%",
-     "cases": 1602,
-     "said": 0.5501,
-     "happened": 0.5456
+     "cases": 1646,
+     "said": 0.5507,
+     "happened": 0.548
     },
     {
      "band": "60%-70%",
-     "cases": 1785,
-     "said": 0.6494,
-     "happened": 0.6773
+     "cases": 1711,
+     "said": 0.6519,
+     "happened": 0.6645
     },
     {
      "band": "70%-80%",
-     "cases": 2263,
-     "said": 0.7519,
-     "happened": 0.7477
+     "cases": 2362,
+     "said": 0.7517,
+     "happened": 0.7561
     },
     {
      "band": "80%-90%",
-     "cases": 3037,
-     "said": 0.8509,
-     "happened": 0.8775
+     "cases": 3017,
+     "said": 0.8532,
+     "happened": 0.878
     },
     {
      "band": "90%-100%",
-     "cases": 4376,
-     "said": 0.9401,
-     "happened": 0.9534
+     "cases": 4257,
+     "said": 0.9422,
+     "happened": 0.9486
     }
    ]
   }
