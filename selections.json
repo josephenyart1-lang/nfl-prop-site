@@ -201,7 +201,7 @@
    "gameday": "2026-10-29",
    "kickoff": "20:15",
    "game": "CAR at GB",
-   "played": false
+   "played": true
   },
   {
    "week": 8,
@@ -1390,7 +1390,7 @@
   "TEN": "#4495D2",
   "WAS": "#da5656"
  },
- "generated_at": "2026-10-30 15:33 UTC",
+ "generated_at": "2026-10-30 15:45 UTC",
  "as_of": "2026-10-30 04:37",
  "selections": [
   {
@@ -7887,8 +7887,8 @@
    "injury": null,
    "depth": null,
    "team": "CAR",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 41,
    "note": null
   },
   {
@@ -7906,8 +7906,8 @@
    "injury": null,
    "depth": "WR1",
    "team": "GB",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 10,
    "note": null
   },
   {
@@ -7925,8 +7925,8 @@
    "injury": null,
    "depth": "WR1",
    "team": "GB",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 8,
    "note": null
   },
   {
@@ -7944,8 +7944,8 @@
    "injury": null,
    "depth": "RB1",
    "team": "CAR",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -7963,8 +7963,8 @@
    "injury": null,
    "depth": "RB1",
    "team": "CAR",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 8,
    "note": null
   },
   {
@@ -7982,8 +7982,8 @@
    "injury": null,
    "depth": "RB1",
    "team": "CAR",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 22,
    "note": null
   },
   {
@@ -8001,8 +8001,8 @@
    "injury": null,
    "depth": "TE2",
    "team": "CAR",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -8020,8 +8020,8 @@
    "injury": null,
    "depth": "TE2",
    "team": "CAR",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 1,
    "note": null
   },
   {
@@ -8039,8 +8039,8 @@
    "injury": "Full Practice",
    "depth": "WR2",
    "team": "CAR",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -8058,8 +8058,8 @@
    "injury": "Full Practice",
    "depth": "WR2",
    "team": "CAR",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -8077,8 +8077,8 @@
    "injury": null,
    "depth": "WR4",
    "team": "CAR",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -8096,8 +8096,8 @@
    "injury": null,
    "depth": "WR4",
    "team": "CAR",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -8115,8 +8115,8 @@
    "injury": null,
    "depth": null,
    "team": "GB",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 41,
    "note": null
   },
   {
@@ -8134,8 +8134,8 @@
    "injury": null,
    "depth": "RB1",
    "team": "GB",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -8153,8 +8153,8 @@
    "injury": null,
    "depth": "RB1",
    "team": "GB",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -8172,8 +8172,8 @@
    "injury": null,
    "depth": "RB1",
    "team": "GB",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 21,
    "note": null
   },
   {
@@ -8191,8 +8191,8 @@
    "injury": null,
    "depth": "RB2",
    "team": "GB",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -8210,8 +8210,8 @@
    "injury": "Questionable, limited practice",
    "depth": "WR2",
    "team": "GB",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 13,
    "note": null
   },
   {
@@ -8229,8 +8229,8 @@
    "injury": "Questionable, limited practice",
    "depth": "WR2",
    "team": "GB",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 7,
    "note": null
   },
   {
@@ -8248,8 +8248,8 @@
    "injury": null,
    "depth": "RB3",
    "team": "GB",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 1,
    "note": null
   },
   {
@@ -8267,8 +8267,8 @@
    "injury": null,
    "depth": "WR1",
    "team": "CAR",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -8286,8 +8286,8 @@
    "injury": null,
    "depth": "WR1",
    "team": "CAR",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 11,
    "note": null
   },
   {
@@ -8305,8 +8305,8 @@
    "injury": null,
    "depth": "TE1",
    "team": "CAR",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 1,
    "note": null
   },
   {
@@ -8324,8 +8324,8 @@
    "injury": null,
    "depth": "TE1",
    "team": "GB",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -8343,8 +8343,8 @@
    "injury": null,
    "depth": "TE1",
    "team": "GB",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {

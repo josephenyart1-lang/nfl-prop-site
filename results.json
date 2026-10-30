@@ -1,150 +1,150 @@
 {
- "generated_at": "2026-10-30 04:41 UTC",
+ "generated_at": "2026-10-30 15:45 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
    "market": "Pass attempts",
    "who": "quarterbacks",
-   "games_tested": 1077,
+   "games_tested": 1079,
    "typical_value": 32.7,
    "model_error": 6.07,
    "naive_error": 6.3,
    "flat_error": 6.58,
-   "ratio": 0.921,
-   "beats_naive_by": 0.236,
+   "ratio": 0.922,
+   "beats_naive_by": 0.23,
    "typical_miss": 7.7,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 3737,
+     "cases": 3745,
      "said": 0.072,
-     "happened": 0.0765
+     "happened": 0.0764
     },
     {
      "band": "10%-20%",
-     "cases": 3897,
+     "cases": 3904,
      "said": 0.1462,
-     "happened": 0.1465
+     "happened": 0.1468
     },
     {
      "band": "20%-30%",
-     "cases": 2475,
+     "cases": 2480,
      "said": 0.2509,
-     "happened": 0.2303
+     "happened": 0.2319
     },
     {
      "band": "30%-40%",
-     "cases": 2360,
+     "cases": 2364,
      "said": 0.3471,
-     "happened": 0.3331
+     "happened": 0.3342
     },
     {
      "band": "40%-50%",
-     "cases": 2222,
+     "cases": 2226,
      "said": 0.4491,
-     "happened": 0.432
+     "happened": 0.4331
     },
     {
      "band": "50%-60%",
-     "cases": 1894,
+     "cases": 1898,
      "said": 0.5481,
-     "happened": 0.5264
+     "happened": 0.5274
     },
     {
      "band": "60%-70%",
-     "cases": 2244,
+     "cases": 2248,
      "said": 0.6518,
-     "happened": 0.6426
+     "happened": 0.6432
     },
     {
      "band": "70%-80%",
-     "cases": 2399,
+     "cases": 2403,
      "said": 0.7504,
-     "happened": 0.7524
+     "happened": 0.7528
     },
     {
      "band": "80%-90%",
-     "cases": 3389,
-     "said": 0.8515,
-     "happened": 0.8601
+     "cases": 3395,
+     "said": 0.8514,
+     "happened": 0.8604
     },
     {
      "band": "90%-100%",
-     "cases": 2308,
+     "cases": 2312,
      "said": 0.926,
-     "happened": 0.9324
+     "happened": 0.9325
     }
    ]
   },
   {
    "market": "Carries",
    "who": "running backs",
-   "games_tested": 2290,
+   "games_tested": 2292,
    "typical_value": 11.3,
-   "model_error": 3.84,
-   "naive_error": 3.95,
+   "model_error": 3.85,
+   "naive_error": 3.96,
    "flat_error": 5.37,
    "ratio": 0.716,
-   "beats_naive_by": 0.111,
+   "beats_naive_by": 0.11,
    "typical_miss": 5.14,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 5237,
+     "cases": 5241,
      "said": 0.0756,
-     "happened": 0.0768
+     "happened": 0.0771
     },
     {
      "band": "10%-20%",
-     "cases": 6853,
+     "cases": 6859,
      "said": 0.1459,
-     "happened": 0.1484
+     "happened": 0.149
     },
     {
      "band": "20%-30%",
-     "cases": 4048,
+     "cases": 4052,
      "said": 0.2493,
-     "happened": 0.254
+     "happened": 0.2547
     },
     {
      "band": "30%-40%",
-     "cases": 3415,
+     "cases": 3419,
      "said": 0.3474,
-     "happened": 0.3549
+     "happened": 0.3557
     },
     {
      "band": "40%-50%",
-     "cases": 2829,
+     "cases": 2831,
      "said": 0.4467,
-     "happened": 0.456
+     "happened": 0.4564
     },
     {
      "band": "50%-60%",
-     "cases": 2420,
+     "cases": 2422,
      "said": 0.5498,
-     "happened": 0.5723
+     "happened": 0.5727
     },
     {
      "band": "60%-70%",
-     "cases": 2674,
+     "cases": 2676,
      "said": 0.65,
-     "happened": 0.6773
+     "happened": 0.6775
     },
     {
      "band": "70%-80%",
-     "cases": 3041,
+     "cases": 3043,
      "said": 0.7488,
-     "happened": 0.7813
+     "happened": 0.7815
     },
     {
      "band": "80%-90%",
-     "cases": 4145,
+     "cases": 4149,
      "said": 0.8543,
-     "happened": 0.8825
+     "happened": 0.8826
     },
     {
      "band": "90%-100%",
-     "cases": 4268,
+     "cases": 4272,
      "said": 0.935,
      "happened": 0.9466
     }
@@ -153,7 +153,7 @@
   {
    "market": "Targets",
    "who": "receivers and backs",
-   "games_tested": 7105,
+   "games_tested": 7117,
    "typical_value": 5.1,
    "model_error": 1.87,
    "naive_error": 1.97,
@@ -164,70 +164,70 @@
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 5124,
-     "said": 0.0751,
-     "happened": 0.0664
+     "cases": 4793,
+     "said": 0.0728,
+     "happened": 0.0649
     },
     {
      "band": "10%-20%",
-     "cases": 5395,
-     "said": 0.1461,
-     "happened": 0.134
+     "cases": 5757,
+     "said": 0.1453,
+     "happened": 0.1291
     },
     {
      "band": "20%-30%",
-     "cases": 3434,
-     "said": 0.2471,
-     "happened": 0.249
+     "cases": 3325,
+     "said": 0.2478,
+     "happened": 0.2442
     },
     {
      "band": "30%-40%",
-     "cases": 2370,
-     "said": 0.3449,
-     "happened": 0.3405
+     "cases": 2440,
+     "said": 0.346,
+     "happened": 0.3328
     },
     {
      "band": "40%-50%",
-     "cases": 2091,
-     "said": 0.4464,
-     "happened": 0.4443
+     "cases": 2120,
+     "said": 0.4472,
+     "happened": 0.4401
     },
     {
      "band": "50%-60%",
-     "cases": 2217,
-     "said": 0.5489,
-     "happened": 0.5683
+     "cases": 2054,
+     "said": 0.549,
+     "happened": 0.5526
     },
     {
      "band": "60%-70%",
-     "cases": 2214,
-     "said": 0.6527,
-     "happened": 0.664
+     "cases": 2373,
+     "said": 0.6524,
+     "happened": 0.6393
     },
     {
      "band": "70%-80%",
-     "cases": 2563,
-     "said": 0.7534,
-     "happened": 0.7569
+     "cases": 2599,
+     "said": 0.7519,
+     "happened": 0.7561
     },
     {
      "band": "80%-90%",
-     "cases": 4049,
+     "cases": 3998,
      "said": 0.8537,
-     "happened": 0.8572
+     "happened": 0.8552
     },
     {
      "band": "90%-100%",
-     "cases": 6539,
-     "said": 0.9455,
-     "happened": 0.9495
+     "cases": 6540,
+     "said": 0.9456,
+     "happened": 0.9514
     }
    ]
   },
   {
    "market": "Receptions",
    "who": "receivers and backs",
-   "games_tested": 7105,
+   "games_tested": 7117,
    "typical_value": 3.4,
    "model_error": 1.5,
    "naive_error": 1.55,
@@ -238,63 +238,63 @@
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 4293,
-     "said": 0.0724,
-     "happened": 0.0643
+     "cases": 4423,
+     "said": 0.0685,
+     "happened": 0.0658
     },
     {
      "band": "10%-20%",
-     "cases": 4204,
-     "said": 0.144,
-     "happened": 0.1425
+     "cases": 4040,
+     "said": 0.1443,
+     "happened": 0.1406
     },
     {
      "band": "20%-30%",
-     "cases": 2543,
-     "said": 0.247,
-     "happened": 0.2414
+     "cases": 2572,
+     "said": 0.2482,
+     "happened": 0.2391
     },
     {
      "band": "30%-40%",
-     "cases": 2116,
-     "said": 0.3505,
-     "happened": 0.3455
+     "cases": 2069,
+     "said": 0.348,
+     "happened": 0.3446
     },
     {
      "band": "40%-50%",
-     "cases": 1825,
-     "said": 0.4493,
-     "happened": 0.4652
+     "cases": 1827,
+     "said": 0.4485,
+     "happened": 0.4505
     },
     {
      "band": "50%-60%",
-     "cases": 1662,
-     "said": 0.5493,
-     "happened": 0.5548
+     "cases": 1602,
+     "said": 0.5501,
+     "happened": 0.5456
     },
     {
      "band": "60%-70%",
-     "cases": 1893,
-     "said": 0.6492,
-     "happened": 0.6878
+     "cases": 1785,
+     "said": 0.6494,
+     "happened": 0.6773
     },
     {
      "band": "70%-80%",
-     "cases": 2293,
-     "said": 0.754,
-     "happened": 0.7776
+     "cases": 2263,
+     "said": 0.7519,
+     "happened": 0.7477
     },
     {
      "band": "80%-90%",
-     "cases": 2663,
-     "said": 0.8539,
-     "happened": 0.8701
+     "cases": 3037,
+     "said": 0.8509,
+     "happened": 0.8775
     },
     {
      "band": "90%-100%",
-     "cases": 4505,
-     "said": 0.9413,
-     "happened": 0.9509
+     "cases": 4376,
+     "said": 0.9401,
+     "happened": 0.9534
     }
    ]
   }
@@ -302,11 +302,11 @@
  "prop_record": {
   "recorded": 366,
   "voided": 16,
-  "settled": 325,
-  "right": 183,
-  "wrong": 142,
+  "settled": 350,
+  "right": 194,
+  "wrong": 156,
   "pushed": 0,
-  "expected_right": 209.9,
+  "expected_right": 224.5,
   "markets": [
    "carries",
    "pass_attempts",
@@ -501,11 +501,11 @@
     "game": "CAR at GB",
     "recorded": 25,
     "voided": 0,
-    "settled": 0,
-    "right": 0,
-    "wrong": 0,
+    "settled": 25,
+    "right": 11,
+    "wrong": 14,
     "pushed": 0,
-    "expected_right": null
+    "expected_right": 14.7
    }
   ],
   "settled_props": [
@@ -5281,6 +5281,356 @@
     "model": 16.2,
     "status": "right",
     "actual": 7,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Bryce Young",
+    "market": "pass_attempts",
+    "underdog_line": 35.5,
+    "our_side": "Lower",
+    "our_probability": 0.591,
+    "model": 33.9,
+    "status": "wrong",
+    "actual": 41,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Christian Watson",
+    "market": "targets",
+    "underdog_line": 7.5,
+    "our_side": "Higher",
+    "our_probability": 0.562,
+    "model": 7.4,
+    "status": "right",
+    "actual": 10,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Christian Watson",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Higher",
+    "our_probability": 0.506,
+    "model": 4.1,
+    "status": "right",
+    "actual": 8,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Chuba Hubbard",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.548,
+    "model": 2.4,
+    "status": "right",
+    "actual": 7,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Chuba Hubbard",
+    "market": "targets",
+    "underdog_line": 3.5,
+    "our_side": "Higher",
+    "our_probability": 0.531,
+    "model": 3.2,
+    "status": "right",
+    "actual": 8,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Chuba Hubbard",
+    "market": "carries",
+    "underdog_line": 15.5,
+    "our_side": "Lower",
+    "our_probability": 0.747,
+    "model": 12.7,
+    "status": "wrong",
+    "actual": 22,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Darren Waller",
+    "market": "targets",
+    "underdog_line": 3.5,
+    "our_side": "Higher",
+    "our_probability": 0.721,
+    "model": 4.7,
+    "status": "wrong",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Darren Waller",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.579,
+    "model": 2.6,
+    "status": "wrong",
+    "actual": 1,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Jalen Coker",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Higher",
+    "our_probability": 0.605,
+    "model": 4.8,
+    "status": "wrong",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Jalen Coker",
+    "market": "targets",
+    "underdog_line": 8.5,
+    "our_side": "Lower",
+    "our_probability": 0.528,
+    "model": 7.6,
+    "status": "right",
+    "actual": 5,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "John Metchie III",
+    "market": "targets",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.872,
+    "model": 5.3,
+    "status": "right",
+    "actual": 3,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "John Metchie III",
+    "market": "receptions",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.762,
+    "model": 2.8,
+    "status": "right",
+    "actual": 3,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Jordan Love",
+    "market": "pass_attempts",
+    "underdog_line": 35.5,
+    "our_side": "Lower",
+    "our_probability": 0.561,
+    "model": 34.8,
+    "status": "wrong",
+    "actual": 41,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Josh Jacobs",
+    "market": "targets",
+    "underdog_line": 3.5,
+    "our_side": "Higher",
+    "our_probability": 0.585,
+    "model": 3.6,
+    "status": "right",
+    "actual": 6,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Josh Jacobs",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.579,
+    "model": 2.6,
+    "status": "right",
+    "actual": 6,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Josh Jacobs",
+    "market": "carries",
+    "underdog_line": 14.5,
+    "our_side": "Lower",
+    "our_probability": 0.569,
+    "model": 15.1,
+    "status": "wrong",
+    "actual": 21,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "MarShawn Lloyd",
+    "market": "carries",
+    "underdog_line": 5.5,
+    "our_side": "Lower",
+    "our_probability": 0.512,
+    "model": 9.2,
+    "status": "right",
+    "actual": 3,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Matthew Golden",
+    "market": "targets",
+    "underdog_line": 8.5,
+    "our_side": "Lower",
+    "our_probability": 0.504,
+    "model": 7.8,
+    "status": "wrong",
+    "actual": 13,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Matthew Golden",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Lower",
+    "our_probability": 0.525,
+    "model": 3.9,
+    "status": "wrong",
+    "actual": 7,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Pierre Strong",
+    "market": "carries",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.634,
+    "model": 8.3,
+    "status": "wrong",
+    "actual": 1,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Tetairoa McMillan",
+    "market": "receptions",
+    "underdog_line": 5.5,
+    "our_side": "Lower",
+    "our_probability": 0.52,
+    "model": 4.9,
+    "status": "wrong",
+    "actual": 6,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Tetairoa McMillan",
+    "market": "targets",
+    "underdog_line": 8.5,
+    "our_side": "Higher",
+    "our_probability": 0.516,
+    "model": 8.0,
+    "status": "right",
+    "actual": 11,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Tommy Tremble",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.563,
+    "model": 2.5,
+    "status": "wrong",
+    "actual": 1,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Tucker Kraft",
+    "market": "targets",
+    "underdog_line": 6.5,
+    "our_side": "Higher",
+    "our_probability": 0.55,
+    "model": 6.3,
+    "status": "wrong",
+    "actual": 6,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-10-29",
+    "game": "CAR at GB",
+    "player": "Tucker Kraft",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Lower",
+    "our_probability": 0.51,
+    "model": 4.0,
+    "status": "wrong",
+    "actual": 6,
     "note": ""
    }
   ]
