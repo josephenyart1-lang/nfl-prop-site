@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30 19:23 UTC",
+ "generated_at": "2026-10-30 21:19 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -5642,5 +5642,9 @@
   "quiet_settled": 307,
   "quiet_right": 166,
   "resolves": false
+ },
+ "counts": {
+  "quiet_receiver_games": 12453,
+  "quiet_back_games": 1949
  }
 }

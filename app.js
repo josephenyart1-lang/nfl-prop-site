@@ -640,6 +640,27 @@ function buildMethod() {
   $("method-seasons").textContent = r.test_seasons;
   const loud = $("method-loud");
   if (loud && r.loud) loud.textContent = loudSentence(r.loud);
+  methodCounts(r);
+}
+
+/* Row counts the Method prose quotes. Each of these was typed in when it was
+   measured and then went stale as the tables grew -- the targets exam was
+   claiming 7,105 while the table directly above it printed 7,100. They are
+   read from results.json now so the prose cannot drift away from the table
+   it sits next to. */
+function methodCounts(r) {
+  const counts = r.counts || {};
+  const targets = (r.markets || []).find((m) => /target/i.test(m.market));
+  const cal = (r.markets || []).find((m) => /attempt/i.test(m.market));
+  const put = (id, value) => {
+    const el = $(id);
+    if (el && value != null) el.textContent = Number(value).toLocaleString();
+  };
+  put("m-quiet-rec", counts.quiet_receiver_games);
+  put("m-quiet-back", counts.quiet_back_games);
+  put("m-targets-exam", targets && targets.games_tested);
+  put("m-cal-cases", cal && cal.calibration
+    && cal.calibration.reduce((n, b) => n + b.cases, 0));
 }
 
 /* The record on loud disagreements, written out here rather than typed into
