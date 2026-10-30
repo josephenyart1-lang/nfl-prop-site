@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30 16:20 UTC",
+ "generated_at": "2026-10-30 19:23 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -5634,5 +5634,13 @@
     "note": ""
    }
   ]
+ },
+ "loud": {
+  "gap": 2.0,
+  "loud_settled": 43,
+  "loud_right": 28,
+  "quiet_settled": 307,
+  "quiet_right": 166,
+  "resolves": false
  }
 }

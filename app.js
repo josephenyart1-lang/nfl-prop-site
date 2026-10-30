@@ -638,6 +638,31 @@ function buildMethod() {
   const r = DATA.results;
   if (!r) return;
   $("method-seasons").textContent = r.test_seasons;
+  const loud = $("method-loud");
+  if (loud && r.loud) loud.textContent = loudSentence(r.loud);
+}
+
+/* The record on loud disagreements, written out here rather than typed into
+   the page. The sentence this replaces said the model was usually the one
+   that was wrong when it disagreed loudly with a line, which no measurement
+   ever supported and which the record contradicts. A number typed into prose
+   is right for a week, so the verdict is derived too, not just the counts. */
+function loudSentence(loud) {
+  const share = (right, n) => Math.round((100 * right) / n) + "%";
+  const seen = "where the model and the line sit " + loud.gap
+    + " or more apart it has gone " + loud.loud_right + " from "
+    + loud.loud_settled + ", against "
+    + share(loud.quiet_right, loud.quiet_settled) + " on the quieter legs";
+  if (!loud.resolves) {
+    return "And a loud disagreement is so far neither a warning nor a "
+      + "recommendation: " + seen + ", on far too few either way to lean on.";
+  }
+  const ahead = loud.loud_right / loud.loud_settled
+    > loud.quiet_right / loud.quiet_settled;
+  return ahead
+    ? "And a loud disagreement has turned out to be the model's better side "
+      + "rather than its worse: " + seen + "."
+    : "And a loud disagreement really is a warning: " + seen + ".";
 }
 
 function tile(into, label, value, foot) {
