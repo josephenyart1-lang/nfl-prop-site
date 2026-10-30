@@ -75,10 +75,17 @@ function buildBoard() {
 
      So the bar now comes only from a payout somebody actually saw on an
      entry screen, which is what seen_on marks. No sighting, no bar, and
-     nothing is marked as clearing one. */
+     nothing is marked as clearing one.
+
+     Sightings are kept in a dated log rather than one per entry size, so
+     there can be several. The most recent one wins; where two were seen
+     on the same day, the STRICTER bar wins, because publishing the softer
+     of two payouts somebody really saw would mark legs green that the
+     other entry would not support. */
   const bar = DATA.selections.entry_bar || [];
   const entryBar_ = bar.filter((b) => b.seen_on).sort((a, b) =>
-    String(b.seen_on).localeCompare(String(a.seen_on)))[0] || null;
+    String(b.seen_on).localeCompare(String(a.seen_on))
+    || num(b.unrelated) - num(a.unrelated))[0] || null;
   legBar = entryBar_ ? num(entryBar_.unrelated) : null;
   entryBar = entryBar_;
 

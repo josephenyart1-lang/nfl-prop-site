@@ -1390,7 +1390,7 @@
   "TEN": "#4495D2",
   "WAS": "#da5656"
  },
- "generated_at": "2026-10-30 04:44 UTC",
+ "generated_at": "2026-10-30 15:33 UTC",
  "as_of": "2026-10-30 04:37",
  "selections": [
   {
@@ -9305,7 +9305,8 @@
    "break_even_entry": 0.5,
    "unrelated": 0.7071,
    "stacked": 0.6691,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9313,7 +9314,8 @@
    "break_even_entry": 0.4,
    "unrelated": 0.6325,
    "stacked": 0.5838,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9321,7 +9323,8 @@
    "break_even_entry": 0.3333,
    "unrelated": 0.5774,
    "stacked": 0.5215,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9329,7 +9332,8 @@
    "break_even_entry": 0.2857,
    "unrelated": 0.5345,
    "stacked": 0.4737,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9337,7 +9341,8 @@
    "break_even_entry": 0.25,
    "unrelated": 0.5,
    "stacked": 0.4357,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9345,7 +9350,8 @@
    "break_even_entry": 0.2,
    "unrelated": 0.4472,
    "stacked": 0.3785,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9353,7 +9359,8 @@
    "break_even_entry": 0.1667,
    "unrelated": 0.4082,
    "stacked": 0.3372,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9361,7 +9368,8 @@
    "break_even_entry": 0.1429,
    "unrelated": 0.378,
    "stacked": 0.3056,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9369,7 +9377,8 @@
    "break_even_entry": 0.125,
    "unrelated": 0.3536,
    "stacked": 0.2806,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9377,7 +9386,8 @@
    "break_even_entry": 0.1212,
    "unrelated": 0.3482,
    "stacked": 0.2752,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9385,7 +9395,8 @@
    "break_even_entry": 0.1111,
    "unrelated": 0.3333,
    "stacked": 0.2602,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9393,7 +9404,8 @@
    "break_even_entry": 0.1,
    "unrelated": 0.3162,
    "stacked": 0.2432,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9401,7 +9413,8 @@
    "break_even_entry": 0.0833,
    "unrelated": 0.2887,
    "stacked": 0.2163,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9409,7 +9422,8 @@
    "break_even_entry": 0.0667,
    "unrelated": 0.2582,
    "stacked": 0.1872,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9417,7 +9431,8 @@
    "break_even_entry": 0.05,
    "unrelated": 0.2236,
    "stacked": 0.1554,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9425,7 +9440,8 @@
    "break_even_entry": 0.04,
    "unrelated": 0.2,
    "stacked": 0.1344,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 2,
@@ -9433,15 +9449,17 @@
    "break_even_entry": 0.0333,
    "unrelated": 0.1826,
    "stacked": 0.1193,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
    "multiplier": 2.0,
    "break_even_entry": 0.5,
    "unrelated": 0.7937,
-   "stacked": 0.7588,
-   "seen_on": null
+   "stacked": 0.7589,
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
@@ -9449,7 +9467,8 @@
    "break_even_entry": 0.4,
    "unrelated": 0.7368,
    "stacked": 0.6901,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
@@ -9457,7 +9476,8 @@
    "break_even_entry": 0.3333,
    "unrelated": 0.6934,
    "stacked": 0.6378,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
@@ -9465,7 +9485,8 @@
    "break_even_entry": 0.2857,
    "unrelated": 0.6586,
    "stacked": 0.5962,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
@@ -9473,7 +9494,8 @@
    "break_even_entry": 0.25,
    "unrelated": 0.63,
    "stacked": 0.5622,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
@@ -9481,7 +9503,8 @@
    "break_even_entry": 0.2,
    "unrelated": 0.5848,
    "stacked": 0.5093,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
@@ -9489,7 +9512,8 @@
    "break_even_entry": 0.1667,
    "unrelated": 0.5503,
    "stacked": 0.4694,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
@@ -9497,15 +9521,17 @@
    "break_even_entry": 0.1429,
    "unrelated": 0.5228,
    "stacked": 0.438,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
    "multiplier": 8.0,
    "break_even_entry": 0.125,
    "unrelated": 0.5,
-   "stacked": 0.4124,
-   "seen_on": null
+   "stacked": 0.4123,
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
@@ -9513,7 +9539,8 @@
    "break_even_entry": 0.1212,
    "unrelated": 0.4949,
    "stacked": 0.4067,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
@@ -9521,7 +9548,8 @@
    "break_even_entry": 0.1111,
    "unrelated": 0.4807,
    "stacked": 0.3909,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
@@ -9529,7 +9557,8 @@
    "break_even_entry": 0.1,
    "unrelated": 0.4642,
    "stacked": 0.3727,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
@@ -9537,7 +9566,8 @@
    "break_even_entry": 0.0833,
    "unrelated": 0.4368,
    "stacked": 0.3429,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
@@ -9545,7 +9575,8 @@
    "break_even_entry": 0.0667,
    "unrelated": 0.4055,
    "stacked": 0.3096,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
@@ -9553,7 +9584,8 @@
    "break_even_entry": 0.05,
    "unrelated": 0.3684,
    "stacked": 0.2712,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
@@ -9561,7 +9593,8 @@
    "break_even_entry": 0.04,
    "unrelated": 0.342,
    "stacked": 0.2446,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 3,
@@ -9569,7 +9602,8 @@
    "break_even_entry": 0.0333,
    "unrelated": 0.3218,
    "stacked": 0.2248,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9577,7 +9611,8 @@
    "break_even_entry": 0.5,
    "unrelated": 0.8409,
    "stacked": 0.812,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9585,7 +9620,8 @@
    "break_even_entry": 0.4,
    "unrelated": 0.7953,
    "stacked": 0.7556,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9593,7 +9629,8 @@
    "break_even_entry": 0.3333,
    "unrelated": 0.7598,
    "stacked": 0.7118,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9601,7 +9638,8 @@
    "break_even_entry": 0.2857,
    "unrelated": 0.7311,
    "stacked": 0.6764,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9609,7 +9647,8 @@
    "break_even_entry": 0.25,
    "unrelated": 0.7071,
    "stacked": 0.6469,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9617,7 +9656,8 @@
    "break_even_entry": 0.2,
    "unrelated": 0.6687,
    "stacked": 0.6001,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9625,7 +9665,8 @@
    "break_even_entry": 0.1667,
    "unrelated": 0.6389,
    "stacked": 0.564,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9633,7 +9674,8 @@
    "break_even_entry": 0.1429,
    "unrelated": 0.6148,
    "stacked": 0.5351,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9641,7 +9683,8 @@
    "break_even_entry": 0.125,
    "unrelated": 0.5946,
    "stacked": 0.5111,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9649,7 +9692,8 @@
    "break_even_entry": 0.1212,
    "unrelated": 0.59,
    "stacked": 0.5058,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9657,7 +9701,8 @@
    "break_even_entry": 0.1111,
    "unrelated": 0.5774,
    "stacked": 0.4908,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9665,7 +9710,8 @@
    "break_even_entry": 0.1,
    "unrelated": 0.5623,
    "stacked": 0.4733,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9673,7 +9719,8 @@
    "break_even_entry": 0.0833,
    "unrelated": 0.5373,
    "stacked": 0.4443,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9681,7 +9728,8 @@
    "break_even_entry": 0.0667,
    "unrelated": 0.5081,
    "stacked": 0.4111,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9689,7 +9737,8 @@
    "break_even_entry": 0.05,
    "unrelated": 0.4729,
    "stacked": 0.3717,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9697,7 +9746,8 @@
    "break_even_entry": 0.04,
    "unrelated": 0.4472,
    "stacked": 0.3436,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 4,
@@ -9705,7 +9755,8 @@
    "break_even_entry": 0.0333,
    "unrelated": 0.4273,
    "stacked": 0.3222,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9713,7 +9764,8 @@
    "break_even_entry": 0.5,
    "unrelated": 0.8706,
    "stacked": 0.8466,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9721,7 +9773,8 @@
    "break_even_entry": 0.4,
    "unrelated": 0.8326,
    "stacked": 0.7992,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9729,7 +9782,8 @@
    "break_even_entry": 0.3333,
    "unrelated": 0.8027,
    "stacked": 0.7618,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9737,7 +9791,8 @@
    "break_even_entry": 0.2857,
    "unrelated": 0.7784,
    "stacked": 0.7313,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9745,7 +9800,8 @@
    "break_even_entry": 0.25,
    "unrelated": 0.7579,
    "stacked": 0.7057,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9753,7 +9809,8 @@
    "break_even_entry": 0.2,
    "unrelated": 0.7248,
    "stacked": 0.6644,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9761,7 +9818,8 @@
    "break_even_entry": 0.1667,
    "unrelated": 0.6988,
    "stacked": 0.6323,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9769,7 +9827,8 @@
    "break_even_entry": 0.1429,
    "unrelated": 0.6776,
    "stacked": 0.6062,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9777,7 +9836,8 @@
    "break_even_entry": 0.125,
    "unrelated": 0.6598,
    "stacked": 0.5844,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9785,7 +9845,8 @@
    "break_even_entry": 0.1212,
    "unrelated": 0.6557,
    "stacked": 0.5794,
-   "seen_on": "2026-10-29"
+   "seen_on": "2026-10-29",
+   "times_seen": 1
   },
   {
    "legs": 5,
@@ -9793,7 +9854,8 @@
    "break_even_entry": 0.1111,
    "unrelated": 0.6444,
    "stacked": 0.5657,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9801,7 +9863,8 @@
    "break_even_entry": 0.1,
    "unrelated": 0.631,
    "stacked": 0.5494,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9809,7 +9872,8 @@
    "break_even_entry": 0.0833,
    "unrelated": 0.6084,
    "stacked": 0.5223,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9817,7 +9881,8 @@
    "break_even_entry": 0.0667,
    "unrelated": 0.5818,
    "stacked": 0.4908,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9825,7 +9890,8 @@
    "break_even_entry": 0.05,
    "unrelated": 0.5493,
    "stacked": 0.4528,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9833,7 +9899,8 @@
    "break_even_entry": 0.04,
    "unrelated": 0.5253,
    "stacked": 0.4252,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   },
   {
    "legs": 5,
@@ -9841,7 +9908,8 @@
    "break_even_entry": 0.0333,
    "unrelated": 0.5065,
    "stacked": 0.4038,
-   "seen_on": null
+   "seen_on": null,
+   "times_seen": 0
   }
  ]
 }
