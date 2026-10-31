@@ -176,12 +176,14 @@ function clearsBar(leg, doubt) {
    scroll past and this number is the one being read. It still says where
    the raw claim sits against the bar: the claim is kept out of the green,
    not hidden. */
-function doubtTitle(doubt, aboveBar, barName) {
-  return doubt.name + " claims have been landing "
-    + (doubt.shortfall * 100).toFixed(0) + " points below what they claimed, "
-    + "over " + doubt.settled + " settled legs, so this number is not worth "
-    + "what it says. The raw claim is " + (aboveBar ? "above" : "below")
-    + " the bar " + barName + " needs.";
+function doubtTitle(doubt) {
+  /* Whole percents: this is read in a hurry, beside a number that
+     already carries the decimal. */
+  const pct = (x) => Math.round(x * 100) + "%";
+  return "The model is too optimistic when it says " + doubt.name + ". "
+    + "Across " + doubt.settled + " finished " + doubt.name + " calls it "
+    + "gave " + pct(doubt.claimed) + " on average, and " + pct(doubt.landed)
+    + " actually came in. So this number is worth less than it looks.";
 }
 
 function buildBoard() {
@@ -676,7 +678,7 @@ function drawWeek(root, games) {
           pct.title = noView
             ? "The model gives this side less than an even chance."
             : doubted
-              ? doubtTitle(doubt, aboveBar, barName)
+              ? doubtTitle(doubt)
               : (aboveBar
                 ? "Clears the bar " + barName + " needs."
                 : "Below the bar " + barName + " needs.");
