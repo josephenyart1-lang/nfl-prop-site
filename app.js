@@ -66,6 +66,41 @@ function show(name) {
 
 /* ------------------------------------------------------------- board --- */
 
+/* One plain sentence for the colour, where it is first seen. The
+   figures stay in the note above the legs: repeating them here would be
+   two places to go stale and one more number to read before the board
+   makes sense.
+
+   It also gives both swatches a tooltip. They had none, so the sentence
+   looked like it had more to say on hover and then said nothing. A
+   `title` never appears on a touch screen at all, which is the other
+   reason the sentence has to stand up without one. */
+function amberKey(doubt) {
+  const host = $("amber-key");
+  if (host) {
+    if (doubt) {
+      host.innerHTML = "A percentage in <b class=\"pct doubted\">amber</b> "
+        + "is a " + doubt.name + " call. " + doubt.name + " calls have been "
+        + "landing well short of the chance they claim, so they are never "
+        + "shown in green, however high they read. The note above the legs "
+        + "has the numbers.";
+    } else {
+      /* No side is failing, so no leg is amber and the key would be
+         describing a colour that is not on the board. */
+      host.textContent = "";
+    }
+  }
+  /* After the rewrite, not before: writing the sentence replaces the
+     amber swatch with a fresh element, and the first version of this
+     titled the one it had just thrown away. */
+  [...document.querySelectorAll(".lede b.pct")].forEach((b) => {
+    b.title = b.classList.contains("clears")
+      ? "Clears the bar one leg of an entry has to beat."
+      : "The record says claims on this side land short of what they say.";
+    b.style.cursor = "help";
+  });
+}
+
 /* Which side of the line the record says not to trust, if either.
 
    The board prints a claimed chance per leg and marks the ones above the
@@ -136,6 +171,8 @@ function buildBoard() {
      on the same day, the STRICTER bar wins, because publishing the softer
      of two payouts somebody really saw would mark legs green that the
      other entry would not support. */
+  amberKey(doubtedSide(DATA.results));
+
   const bar = DATA.selections.entry_bar || [];
   const entryBar_ = bar.filter((b) => b.seen_on).sort((a, b) =>
     String(b.seen_on).localeCompare(String(a.seen_on))
