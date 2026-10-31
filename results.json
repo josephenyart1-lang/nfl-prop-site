@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30 23:34 UTC",
+ "generated_at": "2026-10-31 03:18 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -5709,5 +5709,56 @@
   "fold_low": 0.283,
   "fold_high": 0.527,
   "shipped_inside": true
+ },
+ "board_population": {
+  "targets": {
+   "floor": 2,
+   "floor_of": "targets",
+   "shown_at": 3.0,
+   "exam": {
+    "games": 7100,
+    "miss": 1.87,
+    "lean": -0.54
+   },
+   "board": {
+    "games": 5696,
+    "miss": 2.19,
+    "lean": 0.14
+   },
+   "under_floor": 0.108
+  },
+  "receptions": {
+   "floor": 2,
+   "floor_of": "targets",
+   "shown_at": 3.0,
+   "exam": {
+    "games": 7100,
+    "miss": 1.5,
+    "lean": -0.45
+   },
+   "board": {
+    "games": 5696,
+    "miss": 1.68,
+    "lean": -0.02
+   },
+   "under_floor": null
+  },
+  "carries": {
+   "floor": 2,
+   "floor_of": "carries",
+   "shown_at": 5.0,
+   "exam": {
+    "games": 2275,
+    "miss": 3.85,
+    "lean": -0.08
+   },
+   "board": {
+    "games": 2166,
+    "miss": 4.06,
+    "lean": 0.19
+   },
+   "under_floor": 0.037
+  },
+  "clean": "Pass attempts"
  }
 }

@@ -689,6 +689,84 @@ function buildResults() {
     Math.max(...r.markets.map((m) => m.beats_naive_by)).toFixed(2) +
     " per game, which is small against misses of " +
     r.markets.map((m) => m.typical_miss.toFixed(1)).join(", ") + ".";
+
+  populationNote(r.board_population);
+}
+
+/* The table above is scored on games chosen partly by how they turned
+   out: a receiver's row survives only if he drew two targets, a back's
+   only if he took two carries. Those are facts about the game being
+   predicted, and nobody has them on Saturday, so the board cannot apply
+   either. It uses a floor on its own prediction instead and therefore
+   meets a population the table never measured.
+
+   Written from `board_population`, which scores one unchanged fit on
+   both pools, so every figure here moves with the data. */
+function populationNote(board) {
+  const host = $("population-note");
+  if (!host) return;
+  const order = ["targets", "receptions", "carries"];
+  const rows = order.filter((k) => board && board[k] && board[k].exam
+    && board[k].board);
+  if (!rows.length) { host.hidden = true; return; }
+  host.hidden = false;
+
+  const name = (k) => k.charAt(0).toUpperCase() + k.slice(1);
+  const moves = rows.map((k) => name(k).toLowerCase() + " "
+    + board[k].exam.miss.toFixed(2) + " to " + board[k].board.miss.toFixed(2));
+
+  /* Whichever market the population moves most, rather than the one that
+     happened to move most when this was written. */
+  const swung = rows.slice().sort((a, b) =>
+    Math.abs(board[b].board.lean - board[b].exam.lean)
+    - Math.abs(board[a].board.lean - board[a].exam.lean))[0];
+  const s = board[swung];
+  const asks = (lean) => Math.abs(lean).toFixed(2) + " " + swung
+    + (lean > 0 ? " too many" : " too few");
+
+  const floors = [...new Set(rows.map((k) =>
+    board[k].floor + " " + board[k].floor_of))];
+  const shown = [...new Set(rows.map((k) =>
+    board[k].shown_at + " predicted " + board[k].floor_of))];
+
+  /* Whether every miss really does grow is a fact about today's data,
+     not a thing to assert once and leave standing. */
+  const allWorse = rows.every((k) => board[k].board.miss > board[k].exam.miss);
+  const reverses = (s.exam.lean < 0) !== (s.board.lean < 0);
+
+  /* Named by market, since the floors differ: it is the receiver games
+     that go quiet, not the board as a whole. */
+  const WHOSE = { targets: "receiver", receptions: "receiver",
+                  carries: "running back" };
+  const quiet = rows.map((k) => ({ k, share: board[k].under_floor }))
+    .filter((x) => x.share != null)
+    .sort((a, b) => b.share - a.share)[0];
+
+  host.innerHTML =
+    "<strong>Those games were chosen partly by how they turned out.</strong> "
+    + "A row survives the exam above only if the player reached "
+    + floors.join(" or ") + " in the very game being predicted, which "
+    + "nobody knows on Saturday. The board cannot wait for it, so it "
+    + "shows a player at " + shown.join(" or ") + " and meets a population "
+    + "the table never measured. "
+    + (allWorse ? "Every miss there is larger" : "The misses there move")
+    + " &mdash; " + moves.join(", ") + " &mdash; and the lean "
+    + (reverses ? "reverses" : "shifts") + ": on its own exam the model "
+    + "asks for " + asks(s.exam.lean) + ", on the board's games "
+    + asks(s.board.lean) + "."
+    + (quiet
+      ? " " + (quiet.share * 100).toFixed(1) + "% of the board's "
+        + (WHOSE[quiet.k] || quiet.k) + " games fall under that floor "
+        + "and are absent from the "
+        + "figures above."
+      : "")
+    + (board.clean
+      ? " " + board.clean + " is the control: its pool has no such filter, "
+        + "so its row already describes what the board prices."
+      : "")
+    + " There is no fix here, only a disclosure. The exam floor is what "
+    + "the volume half is fitted on, and lifting it is a change to the "
+    + "model rather than to this page.";
 }
 
 function drawByGame(games) {
