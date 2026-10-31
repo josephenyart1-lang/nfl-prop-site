@@ -983,11 +983,40 @@ function buildCalibration() {
     "<strong>Worst band is off by " + (worst.off * 100).toFixed(1) +
     " points</strong> (" + worst.market.toLowerCase() + ", claims of " +
     worst.band + "), measured over " + cases.toLocaleString() +
-    " priced cases. That is close enough to take the probabilities at face " +
-    "value &mdash; but being honest about its own uncertainty is not an " +
-    "edge. A sportsbook is well calibrated too, and charges for the " +
-    "privilege. Beating one needs the model to be right where the book is " +
-    "wrong, which this has not shown.";
+    " priced cases. " + sweepCaveat(DATA.results) +
+    " And being honest about its own uncertainty would not be an edge "
+    + "anyway. A sportsbook is well calibrated too, and charges for the "
+    + "privilege. Beating one needs the model to be right where the book "
+    + "is wrong, which this has not shown.";
+}
+
+/* What this chart can and cannot see.
+   It used to end "close enough to take the probabilities at face value",
+   which was published next to a record showing one side's claims failing
+   by fourteen points. The chart is not wrong; it answers a narrower
+   question than its heading suggests. Every line in it is invented and
+   placed around the model's OWN number, so a prediction that runs high
+   carries its lines up with it and the bands never move. The board faces
+   lines set by somebody else, and takes a side BECAUSE it disagrees with
+   one -- which is the case this sweep cannot construct. The record can,
+   so the caveat points there and repeats what it currently says. */
+function sweepCaveat(results) {
+  const plain = "Read that narrowly. Every line swept here is invented and "
+    + "sits around the model's own number, so a prediction that runs high "
+    + "lifts its own lines with it and these bands never notice. The board "
+    + "meets lines set by somebody else and takes a side because it "
+    + "disagrees with one, which is a case this chart cannot build.";
+  const sides = (results || {}).sides;
+  if (!sides || !sides.higher || !sides.lower) return plain;
+  const worst = sides.higher.sd <= sides.lower.sd ? sides.higher : sides.lower;
+  const name = worst === sides.higher ? "Higher" : "Lower";
+  if (Math.abs(worst.sd) < 2) {
+    return plain + " The record above can, and so far it agrees.";
+  }
+  const miss = ((worst.claimed - worst.landed) * 100).toFixed(0);
+  return plain + " The record above can, and it disagrees: on the " + name
+    + " side a claim has been running about " + miss
+    + " points higher than it has landed.";
 }
 
 function pct(p) { return (p * 100).toFixed(0) + "%"; }
