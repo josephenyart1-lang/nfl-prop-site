@@ -390,17 +390,16 @@ function drawTiles(legs) {
   sideNote.hidden = !hit;
   if (!hit) return;
   sideNote.innerHTML =
-    "<strong>The " + doubt.name + " claims below are not worth what they "
-    + "say.</strong> On the record so far, " + doubt.name + " legs claimed "
-    + (doubt.claimed * 100).toFixed(1) + "% and landed "
-    + (doubt.landed * 100).toFixed(1) + "% over " + doubt.settled
-    + " settled legs, short by " + Math.abs(doubt.sd).toFixed(1)
-    + " standard deviations. The model's own number is still what is "
-    + "printed, because that is what it says, but no " + doubt.name
-    + " leg is marked green for clearing the bar while its side reads like "
-    + "that. What the gap is not is a correction to subtract: it is one "
-    + "average over every " + doubt.name + " leg, and it is not level "
-    + "across the claims it is drawn from.";
+    "<strong>The model is too optimistic when it says " + doubt.name
+    + ".</strong> Across " + doubt.settled + " finished " + doubt.name
+    + " calls it gave " + (doubt.claimed * 100).toFixed(1)
+    + "% on average, and " + (doubt.landed * 100).toFixed(1)
+    + "% actually came in &mdash; too big a gap, over too many calls, to be "
+    + "bad luck. The numbers below are still the model's own, because that "
+    + "is what it says. What changes is that no " + doubt.name
+    + " call is marked green, however high it reads. Do not simply knock "
+    + "the difference off each one: it is an average, and on some calls the "
+    + "gap is much bigger than on others.";
 }
 
 function chipFor(into, kind, value, label) {
