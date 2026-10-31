@@ -65,6 +65,60 @@ function show(name) {
 }
 
 /* ------------------------------------------------------------- board --- */
+
+/* Which side of the line the record says not to trust, if either.
+
+   The board prints a claimed chance per leg and marks the ones above the
+   entry bar, which reads a Higher claim and a Lower claim as the same
+   kind of statement. The record says they are not the same: `sideSplit`
+   has the measurement. Only a shortfall is acted on -- a side landing
+   MORE often than it claimed is not a reason to withhold anything -- and
+   only one worth believing, at the two-standard-deviation cut used
+   elsewhere on the page. Read from the data, so it follows the shortfall
+   if it moves, shrinks, or changes sides. */
+function doubtedSide(results) {
+  const sides = (results || {}).sides;
+  if (!sides) return null;
+  let worst = null;
+  ["higher", "lower"].forEach((key) => {
+    const s = sides[key];
+    if (!s || !(s.sd <= -2)) return;
+    if (!worst || s.sd < worst.sd) {
+      worst = Object.assign({}, s, {
+        name: key === "higher" ? "Higher" : "Lower",
+        shortfall: s.claimed - s.landed,
+      });
+    }
+  });
+  return worst;
+}
+
+function legOpen(leg) { return !(leg.status && leg.status !== "open"); }
+
+/* One rule for the green mark, shared by the legs and by the tile that
+   counts them, so the tile cannot report four legs clearing the bar
+   beside two green ones. A settled leg is history and is judged on what
+   happened, the same reason "no view" is withheld once a game is played. */
+function clearsBar(leg, doubt) {
+  const chance = num(leg.our_probability);
+  if (chance == null || !legBar || chance < legBar) return false;
+  if (chance < 0.5) return false;
+  if (!legOpen(leg)) return true;
+  return !(doubt && leg.our_side === doubt.name);
+}
+
+/* Said on the leg itself, because the note above the legs is easy to
+   scroll past and this number is the one being read. It still says where
+   the raw claim sits against the bar: the claim is kept out of the green,
+   not hidden. */
+function doubtTitle(doubt, aboveBar, barName) {
+  return doubt.name + " claims have been landing "
+    + (doubt.shortfall * 100).toFixed(0) + " points below what they claimed, "
+    + "over " + doubt.settled + " settled legs, so this number is not worth "
+    + "what it says. The raw claim is " + (aboveBar ? "above" : "below")
+    + " the bar " + barName + " needs.";
+}
+
 function buildBoard() {
   const legs = DATA.selections.selections || [];
   /* Underdog's multiplier is NOT fixed by entry size. It varies with the
@@ -207,11 +261,14 @@ function drawTiles(legs) {
      entry bar for an entry that cannot be built. */
   if (!legs.length) {
     $("board-warning").hidden = true;
+    const empty = $("board-side-note");
+    if (empty) empty.hidden = true;
     return;
   }
   const sides = new Set(legs.map((l) => l.our_side));
   const priced = legs.filter((l) => num(l.our_probability) != null);
-  const clearing = priced.filter((l) => legBar && num(l.our_probability) >= legBar);
+  const doubt = doubtedSide(DATA.results);
+  const clearing = priced.filter((l) => clearsBar(l, doubt));
   const noView = priced.filter((l) => num(l.our_probability) < 0.5);
   const settled = legs.filter((l) => l.status === "right" || l.status === "wrong");
   const right = settled.filter((l) => l.status === "right").length;
@@ -254,6 +311,27 @@ function drawTiles(legs) {
   } else {
     warning.hidden = true;
   }
+
+  /* The shortfall said once, in full, with the counts behind it. Only
+     when a leg on this board is actually on that side, so a week with
+     nothing there does not carry a warning about nothing. */
+  const sideNote = $("board-side-note");
+  if (!sideNote) return;
+  const hit = doubt && legs.some((l) => l.our_side === doubt.name && legOpen(l));
+  sideNote.hidden = !hit;
+  if (!hit) return;
+  sideNote.innerHTML =
+    "<strong>The " + doubt.name + " claims below are not worth what they "
+    + "say.</strong> On the record so far, " + doubt.name + " legs claimed "
+    + (doubt.claimed * 100).toFixed(1) + "% and landed "
+    + (doubt.landed * 100).toFixed(1) + "% over " + doubt.settled
+    + " settled legs, short by " + Math.abs(doubt.sd).toFixed(1)
+    + " standard deviations. The model's own number is still what is "
+    + "printed, because that is what it says, but no " + doubt.name
+    + " leg is marked green for clearing the bar while its side reads like "
+    + "that. What the gap is not is a correction to subtract: it is one "
+    + "average over every " + doubt.name + " leg, and it is not level "
+    + "across the claims it is drawn from.";
 }
 
 function chipFor(into, kind, value, label) {
@@ -383,6 +461,7 @@ function drawUnavailable(root) {
 }
 
 function drawWeek(root, games) {
+  const doubt = doubtedSide(DATA.results);
   [...games.keys()].sort().forEach((key) => {
     const parts = key.split("|");
     const box = document.createElement("div");
@@ -496,8 +575,12 @@ function drawWeek(root, games) {
         /* Only for a leg still to be played. "No view" exists so a weak
            call is not dressed as a recommendation; once a game is over the
            leg is history, and history should say what was actually graded. */
-        const settledLeg = l.status && l.status !== "open";
+        const settledLeg = !legOpen(l);
         const noView = !settledLeg && chance != null && chance < 0.5;
+        /* The same claim is worth less on the side whose record has
+           failed, so it is not dressed the same way. */
+        const doubted = !settledLeg && !noView && !!doubt
+          && l.our_side === doubt.name;
 
         const side = document.createElement("div");
         side.className = "side " + (noView ? "noview"
@@ -509,7 +592,9 @@ function drawWeek(root, games) {
         model.className = "model";
         if (chance != null) {
           const pct = document.createElement("span");
-          pct.className = "pct" + (!noView && legBar && chance >= legBar ? " clears" : "");
+          const aboveBar = !noView && legBar && chance >= legBar;
+          pct.className = "pct" + (clearsBar(l, doubt) ? " clears" : "")
+            + (doubted ? " doubted" : "");
           /* One decimal, to match the bar it is being compared against. A
              leg at 57.70% rounded to "58%" sitting unmarked beside a bar of
              "57.7%" looks like a mistake rather than a near miss. */
@@ -520,9 +605,11 @@ function drawWeek(root, games) {
             : "an entry";
           pct.title = noView
             ? "The model gives this side less than an even chance."
-            : (legBar && chance >= legBar
-              ? "Clears the bar " + barName + " needs."
-              : "Below the bar " + barName + " needs.");
+            : doubted
+              ? doubtTitle(doubt, aboveBar, barName)
+              : (aboveBar
+                ? "Clears the bar " + barName + " needs."
+                : "Below the bar " + barName + " needs.");
           model.appendChild(pct);
           model.appendChild(document.createTextNode(" · "));
         }

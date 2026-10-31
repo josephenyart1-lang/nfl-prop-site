@@ -234,6 +234,14 @@ h2 { font-size: 1.02rem; margin: 2rem 0 .7rem; font-weight: 600; letter-spacing:
 /* Clears the bar one leg of a 2-pick entry has to clear. Also used inline
    in the prose above the board to show the reader what green means. */
 .pct.clears { color: var(--accent); font-weight: 600; }
+/* A claim on the side whose record has fallen short. Amber for the same
+   reason the injury note is amber: worth seeing before the number is
+   read, and not the same statement as a miss. */
+.pct.doubted {
+  color: var(--warn);
+  text-decoration: underline dotted var(--warn);
+  text-underline-offset: 2px;
+}
 
 /* ------------------------------------------------------------ tables --- */
 .scroll { overflow-x: auto; }
