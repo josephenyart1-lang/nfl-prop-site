@@ -243,6 +243,33 @@ h2 { font-size: 1.02rem; margin: 2rem 0 .7rem; font-weight: 600; letter-spacing:
   text-underline-offset: 2px;
 }
 
+/* The tapped-open explanation. The row wraps only while one is open, so
+   an ordinary leg lays out exactly as it did before this existed. */
+.leg.open { flex-wrap: wrap; }
+.leg-note {
+  flex-basis: 100%;
+  margin: .5rem 0 .1rem;
+  padding: .5rem .65rem;
+  border-left: 2px solid var(--line);
+  border-radius: .25rem;
+  background: var(--bg);
+  font-size: .76rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.leg-note.doubted { border-left-color: var(--warn); }
+/* Nothing about a number says it can be tapped, and the one mark
+   that hints at it -- the dotted underline -- already means
+   something else. So the board says so in words. */
+.hint {
+  font-size: .74rem; color: var(--dim);
+  margin: -.2rem 0 .6rem; max-width: 46ch;
+}
+.pct[role="button"] { cursor: pointer; }
+.pct[role="button"]:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px; border-radius: .15rem;
+}
+
 /* ------------------------------------------------------------ tables --- */
 .scroll { overflow-x: auto; }
 table { border-collapse: collapse; width: 100%; font-size: .85rem; }

@@ -130,6 +130,36 @@ function doubtedSide(results) {
 
 function legOpen(leg) { return !(leg.status && leg.status !== "open"); }
 
+/* Every percentage carries its own explanation in a `title`, which a
+   desktop shows on hover and a touch screen never shows at all. This
+   puts the same words one tap away, under the leg they belong to.
+
+   One at a time: a column of legs each with its own paragraph pushed
+   open is harder to read than the board it is explaining. Tapping the
+   open one closes it. */
+function toggleLegNote(row, pct) {
+  const wasOpen = !!row.querySelector(".leg-note");
+  closeLegNotes();
+  if (wasOpen) return;
+  const note = document.createElement("div");
+  note.className = "leg-note"
+    + (pct.classList.contains("doubted") ? " doubted" : "");
+  /* The title is the single source: there is no second copy of this
+     sentence to go stale against the one on hover. */
+  note.textContent = pct.title;
+  row.appendChild(note);
+  row.classList.add("open");
+  pct.setAttribute("aria-expanded", "true");
+}
+
+function closeLegNotes(within) {
+  const root = within || document;
+  root.querySelectorAll(".leg-note").forEach((n) => n.remove());
+  root.querySelectorAll(".leg.open").forEach((l) => l.classList.remove("open"));
+  root.querySelectorAll('.pct[aria-expanded="true"]')
+    .forEach((p) => p.setAttribute("aria-expanded", "false"));
+}
+
 /* One rule for the green mark, shared by the legs and by the tile that
    counts them, so the tile cannot report four legs clearing the bar
    beside two green ones. A settled leg is history and is judged on what
@@ -498,6 +528,9 @@ function drawUnavailable(root) {
 }
 
 function drawWeek(root, games) {
+  /* The board is rebuilt on every filter change, so anything left open
+     belongs to legs that no longer exist. */
+  closeLegNotes();
   const doubt = doubtedSide(DATA.results);
   [...games.keys()].sort().forEach((key) => {
     const parts = key.split("|");
@@ -647,6 +680,18 @@ function drawWeek(root, games) {
               : (aboveBar
                 ? "Clears the bar " + barName + " needs."
                 : "Below the bar " + barName + " needs.");
+          /* A real control now, not just a hoverable number, so it
+             takes focus and answers the keyboard as well as a tap. */
+          pct.setAttribute("role", "button");
+          pct.setAttribute("tabindex", "0");
+          pct.setAttribute("aria-expanded", "false");
+          pct.addEventListener("click", () => toggleLegNote(row, pct));
+          pct.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              toggleLegNote(row, pct);
+            }
+          });
           model.appendChild(pct);
           model.appendChild(document.createTextNode(" · "));
         }
