@@ -1390,7 +1390,7 @@
   "TEN": "#4495D2",
   "WAS": "#da5656"
  },
- "generated_at": "2026-11-01 02:49 UTC",
+ "generated_at": "2026-11-01 03:00 UTC",
  "as_of": "2026-11-01 02:42",
  "selections": [
   {
@@ -13017,9 +13017,9 @@
    "injury": "Did Not Practise",
    "depth": "WR1",
    "team": "TEN",
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "Ruled out on the week 8 injury report; flagged by props.py recheck on 2026-10-31, before kickoff"
   },
   {
    "week": "8",
