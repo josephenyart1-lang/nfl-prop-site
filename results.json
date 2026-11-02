@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02 03:11 UTC",
+ "generated_at": "2026-11-02 03:18 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -301,7 +301,7 @@
  ],
  "prop_record": {
   "recorded": 653,
-  "voided": 27,
+  "voided": 28,
   "settled": 582,
   "right": 311,
   "wrong": 271,
@@ -536,7 +536,7 @@
     "gameday": "2026-11-01",
     "game": "BAL at BUF",
     "recorded": 22,
-    "voided": 0,
+    "voided": 1,
     "settled": 21,
     "right": 9,
     "wrong": 12,
@@ -6642,6 +6642,20 @@
     "status": "right",
     "actual": 5,
     "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-01",
+    "game": "BAL at BUF",
+    "player": "Lamar Jackson",
+    "market": "pass_attempts",
+    "underdog_line": 31.5,
+    "our_side": "Lower",
+    "our_probability": 0.573,
+    "model": 30.4,
+    "status": "void",
+    "actual": null,
+    "note": "Underdog voids a player injured before halftime; threw 1 pass, Fagnano and Huntley finished"
    },
    {
     "week": "8",

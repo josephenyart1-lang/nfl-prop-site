@@ -1390,7 +1390,7 @@
   "TEN": "#4495D2",
   "WAS": "#da5656"
  },
- "generated_at": "2026-11-02 03:11 UTC",
+ "generated_at": "2026-11-02 03:19 UTC",
  "as_of": "2026-11-01 02:42",
  "selections": [
   {
@@ -9521,9 +9521,9 @@
    "injury": null,
    "depth": null,
    "team": "BAL",
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "Underdog voids a player injured before halftime; threw 1 pass, Fagnano and Huntley finished"
   },
   {
    "week": "8",
