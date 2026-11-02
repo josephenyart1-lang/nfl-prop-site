@@ -186,6 +186,52 @@ function doubtTitle(doubt) {
     + " actually came in. So this number is worth less than it looks.";
 }
 
+/* Why a back's row can say Lower while the model's number sits above the
+   line. There are two reasons and they are not the same thing, and the
+   board used to draw them identically — so a reader could only guess, and
+   the obvious guess is wrong about half the time.
+
+   THE CHANCE HE PLAYS. A back who does not play clears no line, so the
+   over is multiplied by the chance he is out there. He would beat the
+   line; he might not get the carries.
+
+   THE AVERAGE AGAINST THE NIGHT. The model's number is an average, and
+   the bet settles on one game. Carries lean right — a back can get
+   fifteen more than expected when a script opens up, never fifteen fewer
+   without getting hurt — so the median game comes in under the average,
+   and a number above the line can still clear it less than half the time.
+
+   Both numbers are published for exactly this, and `clears_if_he_plays`
+   is the one that separates them: above a half he would clear it and the
+   play chance is what moved him; below it he would not, whatever his play
+   chance says. Returns null where there is nothing to explain. */
+function sideReason(leg) {
+  const clears = num(leg.clears_if_he_plays);
+  const model = num(leg.model);
+  const line = num(leg.underdog_line);
+  if (clears == null || model == null || line == null) return null;
+  if (leg.our_side !== "Lower" || model <= line) return null;
+  const pct = (x) => Math.round(x * 100) + "%";
+  const plays = num(leg.plays);
+  const head = "The model has him at " + model + " against " + line + ", "
+    + "so why Lower? ";
+  if (clears > 0.5) {
+    return head + "He clears that line " + pct(clears) + " of the time he "
+      + "plays — but he is " + (plays == null ? "not certain" : pct(plays))
+      + " to play at all, and a back who does not play clears nothing. "
+      + "That is what puts this on Lower.";
+  }
+  return head + "Because " + model + " is an average and the bet settles "
+    + "on one game. He clears " + line + " only " + pct(clears) + " of the "
+    + "time he plays"
+    + (plays != null && plays > 0.95
+      ? ", and he is " + pct(plays) + " to play, so this is not about "
+        + "availability at all."
+      : ". The play chance deepens it; it is not the cause.")
+    + " Big games pull the average up further than quiet ones pull it down, "
+    + "so the typical night comes in under it.";
+}
+
 function buildBoard() {
   const legs = DATA.selections.selections || [];
   /* Underdog's multiplier is NOT fixed by entry size. It varies with the
@@ -681,6 +727,12 @@ function drawWeek(root, games) {
               : (aboveBar
                 ? "Clears the bar " + barName + " needs."
                 : "Below the bar " + barName + " needs.");
+          /* Appended rather than replacing, because the bar is still the
+             thing the number is being read against. This only answers the
+             question the row raises on its own: a model number above the
+             line and a side of Lower. */
+          const reason = sideReason(l);
+          if (reason) pct.title += " " + reason;
           /* A real control now, not just a hoverable number, so it
              takes focus and answers the keyboard as well as a tap. */
           pct.setAttribute("role", "button");
