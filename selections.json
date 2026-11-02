@@ -1390,7 +1390,7 @@
   "TEN": "#4495D2",
   "WAS": "#da5656"
  },
- "generated_at": "2026-11-02 03:03 UTC",
+ "generated_at": "2026-11-02 03:11 UTC",
  "as_of": "2026-11-01 02:42",
  "selections": [
   {
@@ -8552,9 +8552,9 @@
    "injury": null,
    "depth": "TE1",
    "team": "DAL",
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: never took the field"
   },
   {
    "week": "8",
@@ -8571,9 +8571,9 @@
    "injury": null,
    "depth": "TE1",
    "team": "DAL",
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: never took the field"
   },
   {
    "week": "8",
@@ -8970,9 +8970,9 @@
    "injury": null,
    "depth": "TE1",
    "team": "TB",
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: never took the field"
   },
   {
    "week": "8",
@@ -8989,9 +8989,9 @@
    "injury": null,
    "depth": "TE1",
    "team": "TB",
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: never took the field"
   },
   {
    "week": "8",
@@ -10908,9 +10908,9 @@
    "injury": "Did Not Practise",
    "depth": "TE2",
    "team": "LA",
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row; Questionable, rib, did not practise"
   },
   {
    "week": "8",
@@ -10927,9 +10927,9 @@
    "injury": "Did Not Practise",
    "depth": "TE2",
    "team": "LA",
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row; Questionable, rib, did not practise"
   },
   {
    "week": "8",
@@ -11839,9 +11839,9 @@
    "injury": null,
    "depth": "WR3",
    "team": "DET",
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: never took the field"
   },
   {
    "week": "8",
@@ -11858,9 +11858,9 @@
    "injury": null,
    "depth": "WR3",
    "team": "DET",
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: never took the field"
   },
   {
    "week": "8",
@@ -13226,9 +13226,9 @@
    "injury": null,
    "depth": "RB5",
    "team": "TEN",
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: never took the field"
   },
   {
    "week": "8",
@@ -13245,9 +13245,9 @@
    "injury": null,
    "depth": "RB5",
    "team": "TEN",
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: never took the field"
   },
   {
    "week": "8",
