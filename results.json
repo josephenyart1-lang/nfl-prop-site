@@ -1,159 +1,159 @@
 {
- "generated_at": "2026-11-02 15:02 UTC",
+ "generated_at": "2026-11-03 17:46 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
    "market": "Pass attempts",
    "who": "quarterbacks",
-   "games_tested": 1099,
+   "games_tested": 1101,
    "typical_value": 32.7,
    "model_error": 6.09,
-   "naive_error": 6.34,
-   "flat_error": 6.61,
+   "naive_error": 6.33,
+   "flat_error": 6.6,
    "ratio": 0.923,
-   "beats_naive_by": 0.246,
+   "beats_naive_by": 0.247,
    "typical_miss": 7.7,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 3817,
+     "cases": 3824,
      "said": 0.072,
-     "happened": 0.0757
+     "happened": 0.0756
     },
     {
      "band": "10%-20%",
-     "cases": 3973,
+     "cases": 3980,
      "said": 0.1462,
-     "happened": 0.147
+     "happened": 0.1467
     },
     {
      "band": "20%-30%",
-     "cases": 2531,
+     "cases": 2536,
      "said": 0.2509,
-     "happened": 0.2323
+     "happened": 0.2319
     },
     {
      "band": "30%-40%",
-     "cases": 2407,
+     "cases": 2412,
      "said": 0.3472,
-     "happened": 0.3324
+     "happened": 0.3321
     },
     {
      "band": "40%-50%",
-     "cases": 2266,
+     "cases": 2270,
      "said": 0.4491,
-     "happened": 0.4316
+     "happened": 0.4322
     },
     {
      "band": "50%-60%",
-     "cases": 1935,
+     "cases": 1938,
      "said": 0.5482,
-     "happened": 0.5256
+     "happened": 0.5263
     },
     {
      "band": "60%-70%",
-     "cases": 2288,
+     "cases": 2292,
      "said": 0.6518,
-     "happened": 0.6407
+     "happened": 0.6414
     },
     {
      "band": "70%-80%",
-     "cases": 2446,
+     "cases": 2451,
      "said": 0.7505,
-     "happened": 0.7498
+     "happened": 0.7503
     },
     {
      "band": "80%-90%",
-     "cases": 3456,
+     "cases": 3462,
      "said": 0.8515,
-     "happened": 0.8576
+     "happened": 0.8579
     },
     {
      "band": "90%-100%",
-     "cases": 2356,
+     "cases": 2360,
      "said": 0.9261,
-     "happened": 0.9325
+     "happened": 0.9326
     }
    ]
   },
   {
    "market": "Carries",
    "who": "running backs",
-   "games_tested": 2319,
+   "games_tested": 2322,
    "typical_value": 11.4,
    "model_error": 3.86,
    "naive_error": 3.98,
-   "flat_error": 5.37,
+   "flat_error": 5.38,
    "ratio": 0.719,
    "beats_naive_by": 0.114,
    "typical_miss": 5.14,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 5404,
+     "cases": 5411,
      "said": 0.0759,
-     "happened": 0.077
+     "happened": 0.0773
     },
     {
      "band": "10%-20%",
-     "cases": 6812,
+     "cases": 6821,
      "said": 0.1463,
-     "happened": 0.1512
+     "happened": 0.1514
     },
     {
      "band": "20%-30%",
-     "cases": 4091,
+     "cases": 4096,
      "said": 0.2493,
-     "happened": 0.2564
+     "happened": 0.2566
     },
     {
      "band": "30%-40%",
-     "cases": 3462,
+     "cases": 3466,
      "said": 0.348,
-     "happened": 0.3579
+     "happened": 0.3578
     },
     {
      "band": "40%-50%",
-     "cases": 2897,
+     "cases": 2902,
      "said": 0.4469,
-     "happened": 0.4567
+     "happened": 0.4566
     },
     {
      "band": "50%-60%",
-     "cases": 2417,
+     "cases": 2420,
      "said": 0.55,
-     "happened": 0.571
+     "happened": 0.5711
     },
     {
      "band": "60%-70%",
-     "cases": 2734,
+     "cases": 2737,
      "said": 0.6499,
      "happened": 0.6785
     },
     {
      "band": "70%-80%",
-     "cases": 3058,
+     "cases": 3062,
      "said": 0.7491,
-     "happened": 0.7816
+     "happened": 0.7815
     },
     {
      "band": "80%-90%",
-     "cases": 4205,
+     "cases": 4211,
      "said": 0.8551,
      "happened": 0.882
     },
     {
      "band": "90%-100%",
-     "cases": 4343,
+     "cases": 4348,
      "said": 0.9352,
-     "happened": 0.9475
+     "happened": 0.9476
     }
    ]
   },
   {
    "market": "Targets",
    "who": "receivers and backs",
-   "games_tested": 7225,
+   "games_tested": 7235,
    "typical_value": 5.1,
    "model_error": 1.87,
    "naive_error": 1.97,
@@ -164,70 +164,70 @@
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 4617,
-     "said": 0.0743,
-     "happened": 0.0663
+     "cases": 5301,
+     "said": 0.0722,
+     "happened": 0.0677
     },
     {
      "band": "10%-20%",
-     "cases": 5718,
-     "said": 0.1446,
-     "happened": 0.132
+     "cases": 5301,
+     "said": 0.1455,
+     "happened": 0.1354
     },
     {
      "band": "20%-30%",
-     "cases": 3570,
-     "said": 0.2471,
-     "happened": 0.2459
+     "cases": 3308,
+     "said": 0.2469,
+     "happened": 0.2437
     },
     {
      "band": "30%-40%",
-     "cases": 2529,
-     "said": 0.3456,
-     "happened": 0.3452
+     "cases": 2403,
+     "said": 0.3436,
+     "happened": 0.3396
     },
     {
      "band": "40%-50%",
-     "cases": 2150,
-     "said": 0.4482,
-     "happened": 0.4516
+     "cases": 2208,
+     "said": 0.4477,
+     "happened": 0.4443
     },
     {
      "band": "50%-60%",
-     "cases": 2052,
-     "said": 0.5501,
-     "happened": 0.5726
+     "cases": 2109,
+     "said": 0.5477,
+     "happened": 0.5661
     },
     {
      "band": "60%-70%",
-     "cases": 2229,
-     "said": 0.6514,
-     "happened": 0.6505
+     "cases": 2359,
+     "said": 0.6492,
+     "happened": 0.6448
     },
     {
      "band": "70%-80%",
-     "cases": 2648,
-     "said": 0.7538,
-     "happened": 0.7644
+     "cases": 2660,
+     "said": 0.7531,
+     "happened": 0.7639
     },
     {
      "band": "80%-90%",
-     "cases": 3875,
-     "said": 0.8535,
-     "happened": 0.8578
+     "cases": 3831,
+     "said": 0.8534,
+     "happened": 0.8507
     },
     {
      "band": "90%-100%",
-     "cases": 6604,
-     "said": 0.945,
-     "happened": 0.9529
+     "cases": 6517,
+     "said": 0.9455,
+     "happened": 0.9498
     }
    ]
   },
   {
    "market": "Receptions",
    "who": "receivers and backs",
-   "games_tested": 7225,
+   "games_tested": 7235,
    "typical_value": 3.4,
    "model_error": 1.5,
    "naive_error": 1.55,
@@ -238,63 +238,63 @@
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 4083,
-     "said": 0.0713,
-     "happened": 0.0691
+     "cases": 4605,
+     "said": 0.0692,
+     "happened": 0.068
     },
     {
      "band": "10%-20%",
-     "cases": 4663,
-     "said": 0.1431,
-     "happened": 0.1439
+     "cases": 4129,
+     "said": 0.1459,
+     "happened": 0.1487
     },
     {
      "band": "20%-30%",
-     "cases": 2502,
-     "said": 0.248,
-     "happened": 0.2546
+     "cases": 2553,
+     "said": 0.2472,
+     "happened": 0.2397
     },
     {
      "band": "30%-40%",
-     "cases": 2100,
-     "said": 0.3502,
-     "happened": 0.369
+     "cases": 2062,
+     "said": 0.349,
+     "happened": 0.3657
     },
     {
      "band": "40%-50%",
-     "cases": 1736,
-     "said": 0.4492,
-     "happened": 0.4706
+     "cases": 1799,
+     "said": 0.4517,
+     "happened": 0.4619
     },
     {
      "band": "50%-60%",
-     "cases": 1646,
-     "said": 0.5492,
-     "happened": 0.5595
+     "cases": 1743,
+     "said": 0.5496,
+     "happened": 0.5686
     },
     {
      "band": "60%-70%",
-     "cases": 1757,
-     "said": 0.6474,
-     "happened": 0.6875
+     "cases": 1681,
+     "said": 0.6497,
+     "happened": 0.6829
     },
     {
      "band": "70%-80%",
-     "cases": 2250,
-     "said": 0.7506,
-     "happened": 0.7591
+     "cases": 2297,
+     "said": 0.7533,
+     "happened": 0.7736
     },
     {
      "band": "80%-90%",
-     "cases": 3043,
-     "said": 0.8527,
-     "happened": 0.8768
+     "cases": 2983,
+     "said": 0.8544,
+     "happened": 0.8797
     },
     {
      "band": "90%-100%",
-     "cases": 4209,
-     "said": 0.9407,
-     "happened": 0.953
+     "cases": 4148,
+     "said": 0.9404,
+     "happened": 0.9455
     }
    ]
   }
@@ -302,11 +302,11 @@
  "prop_record": {
   "recorded": 653,
   "voided": 28,
-  "settled": 604,
-  "right": 322,
-  "wrong": 282,
+  "settled": 625,
+  "right": 336,
+  "wrong": 289,
   "pushed": 0,
-  "expected_right": 378.4,
+  "expected_right": 390.7,
   "markets": [
    "carries",
    "pass_attempts",
@@ -657,11 +657,11 @@
     "game": "CHI at SEA",
     "recorded": 21,
     "voided": 0,
-    "settled": 0,
-    "right": 0,
-    "wrong": 0,
+    "settled": 21,
+    "right": 14,
+    "wrong": 7,
     "pushed": 0,
-    "expected_right": null
+    "expected_right": 12.4
    }
   ],
   "settled_props": [
@@ -9512,39 +9512,333 @@
     "status": "wrong",
     "actual": 6,
     "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "AJ Barner",
+    "market": "receptions",
+    "underdog_line": 3.5,
+    "our_side": "Lower",
+    "our_probability": 0.591,
+    "model": 2.5,
+    "status": "right",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "AJ Barner",
+    "market": "targets",
+    "underdog_line": 5.5,
+    "our_side": "Lower",
+    "our_probability": 0.662,
+    "model": 3.6,
+    "status": "right",
+    "actual": 5,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Caleb Williams",
+    "market": "pass_attempts",
+    "underdog_line": 32.5,
+    "our_side": "Higher",
+    "our_probability": 0.522,
+    "model": 34.1,
+    "status": "right",
+    "actual": 34,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Colston Loveland",
+    "market": "targets",
+    "underdog_line": 7.5,
+    "our_side": "Higher",
+    "our_probability": 0.55,
+    "model": 7.3,
+    "status": "right",
+    "actual": 9,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Colston Loveland",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Higher",
+    "our_probability": 0.562,
+    "model": 4.5,
+    "status": "right",
+    "actual": 7,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Cooper Kupp",
+    "market": "targets",
+    "underdog_line": 5.5,
+    "our_side": "Higher",
+    "our_probability": 0.534,
+    "model": 5.2,
+    "status": "wrong",
+    "actual": 3,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Cooper Kupp",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.669,
+    "model": 3.2,
+    "status": "wrong",
+    "actual": 1,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "D'Andre Swift",
+    "market": "receptions",
+    "underdog_line": 3.5,
+    "our_side": "Lower",
+    "our_probability": 0.591,
+    "model": 2.5,
+    "status": "right",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "D'Andre Swift",
+    "market": "targets",
+    "underdog_line": 5.5,
+    "our_side": "Lower",
+    "our_probability": 0.713,
+    "model": 3.1,
+    "status": "right",
+    "actual": 3,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "D'Andre Swift",
+    "market": "carries",
+    "underdog_line": 17.5,
+    "our_side": "Lower",
+    "our_probability": 0.67,
+    "model": 16.3,
+    "status": "wrong",
+    "actual": 27,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Jaxon Smith-Njigba",
+    "market": "receptions",
+    "underdog_line": 7.5,
+    "our_side": "Lower",
+    "our_probability": 0.528,
+    "model": 6.8,
+    "status": "right",
+    "actual": 6,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Jaxon Smith-Njigba",
+    "market": "targets",
+    "underdog_line": 11.5,
+    "our_side": "Lower",
+    "our_probability": 0.562,
+    "model": 10.2,
+    "status": "right",
+    "actual": 11,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Kalif Raymond",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.685,
+    "model": 3.3,
+    "status": "wrong",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Kalif Raymond",
+    "market": "targets",
+    "underdog_line": 3.5,
+    "our_side": "Higher",
+    "our_probability": 0.648,
+    "model": 4.1,
+    "status": "wrong",
+    "actual": 3,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Luther Burden III",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Higher",
+    "our_probability": 0.505,
+    "model": 4.1,
+    "status": "right",
+    "actual": 7,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Luther Burden III",
+    "market": "targets",
+    "underdog_line": 7.5,
+    "our_side": "Lower",
+    "our_probability": 0.591,
+    "model": 6.1,
+    "status": "wrong",
+    "actual": 9,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Rome Odunze",
+    "market": "targets",
+    "underdog_line": 5.5,
+    "our_side": "Higher",
+    "our_probability": 0.595,
+    "model": 5.7,
+    "status": "right",
+    "actual": 6,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Rome Odunze",
+    "market": "receptions",
+    "underdog_line": 3.5,
+    "our_side": "Lower",
+    "our_probability": 0.515,
+    "model": 3.0,
+    "status": "wrong",
+    "actual": 4,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Sam Darnold",
+    "market": "pass_attempts",
+    "underdog_line": 29.5,
+    "our_side": "Higher",
+    "our_probability": 0.568,
+    "model": 32.3,
+    "status": "right",
+    "actual": 34,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Tory Horton",
+    "market": "targets",
+    "underdog_line": 3.5,
+    "our_side": "Higher",
+    "our_probability": 0.53,
+    "model": 3.2,
+    "status": "right",
+    "actual": 6,
+    "note": ""
+   },
+   {
+    "week": "8",
+    "gameday": "2026-11-02",
+    "game": "CHI at SEA",
+    "player": "Tory Horton",
+    "market": "receptions",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.562,
+    "model": 1.5,
+    "status": "right",
+    "actual": 3,
+    "note": ""
    }
   ]
  },
  "loud": {
   "gap": 2.0,
-  "loud_settled": 80,
-  "loud_right": 48,
-  "quiet_settled": 524,
-  "quiet_right": 274,
-  "loud_higher": 47,
-  "quiet_higher": 292,
+  "loud_settled": 82,
+  "loud_right": 50,
+  "quiet_settled": 543,
+  "quiet_right": 286,
+  "loud_higher": 48,
+  "quiet_higher": 303,
   "resolves": false
  },
  "counts": {
-  "quiet_receiver_games": 12537,
-  "quiet_back_games": 1958
+  "quiet_receiver_games": 12543,
+  "quiet_back_games": 1959
  },
  "steadiness": {
   "receiver_share": {
-   "correlation": 0.721,
-   "games": 13156
+   "correlation": 0.722,
+   "games": 13174
   },
   "back_share": {
-   "correlation": 0.756,
-   "games": 3365
+   "correlation": 0.757,
+   "games": 3370
   },
   "qb_attempts": {
    "correlation": 0.239,
-   "games": 1099
+   "games": 1101
   }
  },
  "run_tendency": {
-  "team_games": 4662,
+  "team_games": 4664,
   "correlation": 0.286,
   "typical_miss": 0.082
  },
@@ -9557,39 +9851,39 @@
  "injury": {
   "told": {
    "off_report": -0.59,
-   "on_report": -0.33,
+   "on_report": -0.34,
    "gap": 0.25
   },
   "untold": {
    "off_report": -0.61,
-   "on_report": -0.23,
+   "on_report": -0.24,
    "gap": 0.38
   },
-  "games_on_report": 1485,
-  "games_off_report": 5740
+  "games_on_report": 1488,
+  "games_off_report": 5747
  },
  "sides": {
   "higher": {
-   "settled": 339,
-   "claimed": 0.635,
-   "landed": 0.487,
-   "sd": -5.8
+   "settled": 351,
+   "claimed": 0.633,
+   "landed": 0.493,
+   "sd": -5.6
   },
   "lower": {
-   "settled": 265,
+   "settled": 274,
    "claimed": 0.616,
-   "landed": 0.592,
-   "sd": -0.8
+   "landed": 0.595,
+   "sd": -0.7
   }
  },
  "line_weight": {
-  "settled": 604,
+  "settled": 625,
   "shipped": 0.7,
-  "fitted": 0.258,
-  "low": 0.001,
-  "high": 0.52,
-  "fold_low": 0.159,
-  "fold_high": 0.313,
+  "fitted": 0.26,
+  "low": 0.006,
+  "high": 0.514,
+  "fold_low": 0.163,
+  "fold_high": 0.314,
   "shipped_inside": false
  },
  "board_population": {
@@ -9598,12 +9892,12 @@
    "floor_of": "targets",
    "shown_at": 3.0,
    "exam": {
-    "games": 7225,
+    "games": 7235,
     "miss": 1.87,
     "lean": -0.53
    },
    "board": {
-    "games": 5807,
+    "games": 5816,
     "miss": 2.18,
     "lean": 0.15
    },
@@ -9614,12 +9908,12 @@
    "floor_of": "targets",
    "shown_at": 3.0,
    "exam": {
-    "games": 7225,
+    "games": 7235,
     "miss": 1.5,
     "lean": -0.45
    },
    "board": {
-    "games": 5807,
+    "games": 5816,
     "miss": 1.68,
     "lean": -0.01
    },
@@ -9630,13 +9924,13 @@
    "floor_of": "carries",
    "shown_at": 5.0,
    "exam": {
-    "games": 2319,
+    "games": 2322,
     "miss": 3.86,
     "lean": -0.1
    },
    "board": {
-    "games": 2203,
-    "miss": 4.08,
+    "games": 2206,
+    "miss": 4.09,
     "lean": 0.17
    },
    "under_floor": 0.037
