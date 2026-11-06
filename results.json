@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06 00:44 UTC",
+ "generated_at": "2026-11-06 01:14 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -300,7 +300,7 @@
   }
  ],
  "prop_record": {
-  "recorded": 719,
+  "recorded": 722,
   "voided": 28,
   "settled": 625,
   "right": 336,
@@ -667,7 +667,7 @@
     "week": "9",
     "gameday": "2026-11-05",
     "game": "JAX at BAL",
-    "recorded": 15,
+    "recorded": 18,
     "voided": 0,
     "settled": 0,
     "right": 0,
