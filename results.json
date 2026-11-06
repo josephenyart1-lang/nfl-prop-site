@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03 17:46 UTC",
+ "generated_at": "2026-11-06 00:44 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -300,7 +300,7 @@
   }
  ],
  "prop_record": {
-  "recorded": 653,
+  "recorded": 719,
   "voided": 28,
   "settled": 625,
   "right": 336,
@@ -313,7 +313,7 @@
    "receptions",
    "targets"
   ],
-  "weeks": 3,
+  "weeks": 4,
   "games": [
    {
     "week": "6",
@@ -662,6 +662,186 @@
     "wrong": 7,
     "pushed": 0,
     "expected_right": 12.4
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "recorded": 15,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-08",
+    "game": "ARI at SEA",
+    "recorded": 1,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-08",
+    "game": "CIN at ATL",
+    "recorded": 4,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-08",
+    "game": "CLE at NO",
+    "recorded": 3,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-08",
+    "game": "DAL at IND",
+    "recorded": 6,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-08",
+    "game": "DEN at CAR",
+    "recorded": 2,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-08",
+    "game": "DET at MIA",
+    "recorded": 3,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-08",
+    "game": "GB at NE",
+    "recorded": 6,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-08",
+    "game": "HOU at LAC",
+    "recorded": 4,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-08",
+    "game": "LA at WAS",
+    "recorded": 3,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-08",
+    "game": "LV at SF",
+    "recorded": 4,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-08",
+    "game": "NYG at PHI",
+    "recorded": 2,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-08",
+    "game": "NYJ at KC",
+    "recorded": 5,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-08",
+    "game": "TB at CHI",
+    "recorded": 4,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-09",
+    "game": "BUF at MIN",
+    "recorded": 4,
+    "voided": 0,
+    "settled": 0,
+    "right": 0,
+    "wrong": 0,
+    "pushed": 0,
+    "expected_right": null
    }
   ],
   "settled_props": [
