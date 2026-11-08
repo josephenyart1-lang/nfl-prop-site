@@ -221,6 +221,24 @@ function sideReason(leg) {
       + " to play at all, and a back who does not play clears nothing. "
       + "That is what puts this on Lower.";
   }
+  /* Only a back's leg carries a play chance. A receiver's or a
+     quarterback's has none, so it gets the same reason without the clause
+     about playing -- it used to say "the play chance deepens it" on rows
+     that have no play chance. Their misses lean the same way: on the games
+     the board prices, the typical receiver game comes in under the model's
+     number (median miss -0.39 targets against a mean of -0.08) and so does
+     the typical quarterback game (-0.72 against -0.28). FIXES item 3a. */
+  if (plays == null && leg.market !== "carries") {
+    const backtested = leg.market === "targets" || leg.market === "receptions";
+    return head + "Because " + model + " is an average and the bet settles "
+      + "on one game. He goes over " + line + " only " + pct(clears)
+      + " of the time. Big games pull the average up further than quiet ones "
+      + "pull it down, so the typical game comes in under it."
+      + (backtested
+        ? " Backtested, rows like this land on Lower about as often as they "
+          + "claim."
+        : "");
+  }
   return head + "Because " + model + " is an average and the bet settles "
     + "on one game. He clears " + line + " only " + pct(clears) + " of the "
     + "time he plays"
@@ -627,6 +645,19 @@ function drawWeek(root, games) {
           slot.title = "Listed " + l.depth + " on the depth chart";
           mkt.appendChild(document.createTextNode(" · "));
           mkt.appendChild(slot);
+        }
+        /* A quarterback with fewer than ten full starts of his own, priced
+           from his team's recent pass attempts instead. Backtested before
+           it went up: about half an attempt noisier than a regular
+           starter's number, and priced as honestly near the line. */
+        if (l.priced_from === "team form") {
+          const form = document.createElement("span");
+          form.className = "slot";
+          form.textContent = "team form";
+          form.title = "Fewer than ten full starts of his own, so priced from " +
+            "his team's pass attempts over its last eight games";
+          mkt.appendChild(document.createTextNode(" · "));
+          mkt.appendChild(form);
         }
         /* The team sits in its own fixed-width column down the left of the
            board, so every player name starts at the same place however
