@@ -313,21 +313,21 @@
    "gameday": "2026-11-08",
    "kickoff": "13:00",
    "game": "CLE at NO",
-   "played": false
+   "played": true
   },
   {
    "week": 9,
    "gameday": "2026-11-08",
    "kickoff": "13:00",
    "game": "DAL at IND",
-   "played": false
+   "played": true
   },
   {
    "week": 9,
    "gameday": "2026-11-08",
    "kickoff": "13:00",
    "game": "DEN at CAR",
-   "played": false
+   "played": true
   },
   {
    "week": 9,
@@ -341,56 +341,56 @@
    "gameday": "2026-11-08",
    "kickoff": "13:00",
    "game": "LA at WAS",
-   "played": false
+   "played": true
   },
   {
    "week": 9,
    "gameday": "2026-11-08",
    "kickoff": "13:00",
    "game": "NYG at PHI",
-   "played": false
+   "played": true
   },
   {
    "week": 9,
    "gameday": "2026-11-08",
    "kickoff": "13:00",
    "game": "NYJ at KC",
-   "played": false
+   "played": true
   },
   {
    "week": 9,
    "gameday": "2026-11-08",
    "kickoff": "16:05",
    "game": "HOU at LAC",
-   "played": false
+   "played": true
   },
   {
    "week": 9,
    "gameday": "2026-11-08",
    "kickoff": "16:05",
    "game": "LV at SF",
-   "played": false
+   "played": true
   },
   {
    "week": 9,
    "gameday": "2026-11-08",
    "kickoff": "16:25",
    "game": "ARI at SEA",
-   "played": false
+   "played": true
   },
   {
    "week": 9,
    "gameday": "2026-11-08",
    "kickoff": "16:25",
    "game": "GB at NE",
-   "played": false
+   "played": true
   },
   {
    "week": 9,
    "gameday": "2026-11-08",
    "kickoff": "20:20",
    "game": "TB at CHI",
-   "played": false
+   "played": true
   },
   {
    "week": 9,
@@ -1390,7 +1390,7 @@
   "TEN": "#4495D2",
   "WAS": "#da5656"
  },
- "generated_at": "2026-11-09 02:55 UTC",
+ "generated_at": "2026-11-09 15:03 UTC",
  "as_of": "2026-11-07 16:05",
  "selections": [
   {
@@ -16173,8 +16173,8 @@
    "clears_if_he_plays": 0.374,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -16195,8 +16195,8 @@
    "clears_if_he_plays": 0.457,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -16217,8 +16217,8 @@
    "clears_if_he_plays": 0.513,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -16239,8 +16239,8 @@
    "clears_if_he_plays": 0.593,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -16261,8 +16261,8 @@
    "clears_if_he_plays": 0.409,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -16283,8 +16283,8 @@
    "clears_if_he_plays": 0.403,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 30,
    "note": null
   },
   {
@@ -16305,8 +16305,8 @@
    "clears_if_he_plays": 0.381,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -16327,8 +16327,8 @@
    "clears_if_he_plays": 0.378,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 10,
    "note": null
   },
   {
@@ -16349,8 +16349,8 @@
    "clears_if_he_plays": 0.523,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 7,
    "note": null
   },
   {
@@ -16371,8 +16371,8 @@
    "clears_if_he_plays": 0.493,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -16393,8 +16393,8 @@
    "clears_if_he_plays": 0.536,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -16415,8 +16415,8 @@
    "clears_if_he_plays": 0.425,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 8,
    "note": null
   },
   {
@@ -16437,8 +16437,8 @@
    "clears_if_he_plays": 0.491,
    "plays": 0.734,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 17,
    "note": null
   },
   {
@@ -16459,8 +16459,8 @@
    "clears_if_he_plays": 0.489,
    "plays": 0.681,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 16,
    "note": null
   },
   {
@@ -16481,8 +16481,8 @@
    "clears_if_he_plays": 0.446,
    "plays": 0.995,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 19,
    "note": null
   },
   {
@@ -16503,8 +16503,8 @@
    "clears_if_he_plays": 0.541,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -16525,8 +16525,8 @@
    "clears_if_he_plays": 0.418,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -16569,8 +16569,8 @@
    "clears_if_he_plays": 0.406,
    "plays": 0.952,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 9,
    "note": null
   },
   {
@@ -16591,8 +16591,8 @@
    "clears_if_he_plays": 0.577,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 3,
    "note": null
   },
   {
@@ -16613,8 +16613,8 @@
    "clears_if_he_plays": 0.423,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -16635,8 +16635,8 @@
    "clears_if_he_plays": 0.583,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -16657,8 +16657,8 @@
    "clears_if_he_plays": 0.409,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -16679,8 +16679,8 @@
    "clears_if_he_plays": 0.31,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -16701,8 +16701,8 @@
    "clears_if_he_plays": 0.317,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -16723,8 +16723,8 @@
    "clears_if_he_plays": 0.425,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 12,
    "note": null
   },
   {
@@ -16745,8 +16745,8 @@
    "clears_if_he_plays": 0.477,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 10,
    "note": null
   },
   {
@@ -16767,8 +16767,8 @@
    "clears_if_he_plays": 0.535,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -16789,8 +16789,8 @@
    "clears_if_he_plays": 0.523,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -16811,8 +16811,8 @@
    "clears_if_he_plays": 0.566,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 29,
    "note": null
   },
   {
@@ -16833,8 +16833,8 @@
    "clears_if_he_plays": 0.344,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -16855,8 +16855,8 @@
    "clears_if_he_plays": 0.456,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -16877,8 +16877,8 @@
    "clears_if_he_plays": 0.421,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 31,
    "note": null
   },
   {
@@ -16899,8 +16899,8 @@
    "clears_if_he_plays": 0.43,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -16921,8 +16921,8 @@
    "clears_if_he_plays": 0.324,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -16943,8 +16943,8 @@
    "clears_if_he_plays": 0.514,
    "plays": 0.637,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 11,
    "note": null
   },
   {
@@ -16965,8 +16965,8 @@
    "clears_if_he_plays": 0.409,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -16987,8 +16987,8 @@
    "clears_if_he_plays": 0.341,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -17009,8 +17009,8 @@
    "clears_if_he_plays": 0.72,
    "plays": 0.837,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -17031,8 +17031,8 @@
    "clears_if_he_plays": 0.418,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -17053,8 +17053,8 @@
    "clears_if_he_plays": 0.431,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -17075,8 +17075,8 @@
    "clears_if_he_plays": 0.564,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -17097,8 +17097,8 @@
    "clears_if_he_plays": 0.425,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 12,
    "note": null
   },
   {
@@ -17119,8 +17119,8 @@
    "clears_if_he_plays": 0.5,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -17141,8 +17141,8 @@
    "clears_if_he_plays": 0.394,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -17163,8 +17163,8 @@
    "clears_if_he_plays": 0.577,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -17185,8 +17185,8 @@
    "clears_if_he_plays": 0.537,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -17207,8 +17207,8 @@
    "clears_if_he_plays": 0.471,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -17229,8 +17229,8 @@
    "clears_if_he_plays": 0.45,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -17251,8 +17251,8 @@
    "clears_if_he_plays": 0.625,
    "plays": 0.645,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 8,
    "note": null
   },
   {
@@ -17273,8 +17273,8 @@
    "clears_if_he_plays": 0.448,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -17295,8 +17295,8 @@
    "clears_if_he_plays": 0.42,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -17317,8 +17317,8 @@
    "clears_if_he_plays": 0.545,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -17339,8 +17339,8 @@
    "clears_if_he_plays": 0.568,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -17361,8 +17361,8 @@
    "clears_if_he_plays": 0.481,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -17383,8 +17383,8 @@
    "clears_if_he_plays": 0.483,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -17405,8 +17405,8 @@
    "clears_if_he_plays": 0.312,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -17427,8 +17427,8 @@
    "clears_if_he_plays": 0.373,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -17471,8 +17471,8 @@
    "clears_if_he_plays": 0.372,
    "plays": 0.932,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 15,
    "note": null
   },
   {
@@ -17493,8 +17493,8 @@
    "clears_if_he_plays": 0.643,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 1,
    "note": null
   },
   {
@@ -17515,8 +17515,8 @@
    "clears_if_he_plays": 0.56,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 1,
    "note": null
   },
   {
@@ -17537,8 +17537,8 @@
    "clears_if_he_plays": 0.436,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 35,
    "note": null
   },
   {
@@ -17559,8 +17559,8 @@
    "clears_if_he_plays": 0.434,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 10,
    "note": null
   },
   {
@@ -17581,8 +17581,8 @@
    "clears_if_he_plays": 0.408,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 16,
    "note": null
   },
   {
@@ -17603,8 +17603,8 @@
    "clears_if_he_plays": 0.566,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 34,
    "note": null
   },
   {
@@ -17625,8 +17625,8 @@
    "clears_if_he_plays": 0.535,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 34,
    "note": null
   },
   {
@@ -17691,8 +17691,8 @@
    "clears_if_he_plays": 0.368,
    "plays": 0.995,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 20,
    "note": null
   },
   {
@@ -17713,8 +17713,8 @@
    "clears_if_he_plays": 0.583,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -17735,8 +17735,8 @@
    "clears_if_he_plays": 0.509,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -17757,8 +17757,8 @@
    "clears_if_he_plays": 0.453,
    "plays": 0.861,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 13,
    "note": null
   },
   {
@@ -17779,8 +17779,8 @@
    "clears_if_he_plays": 0.505,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -17801,8 +17801,8 @@
    "clears_if_he_plays": 0.471,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 5,
    "note": null
   },
   {
@@ -17823,8 +17823,8 @@
    "clears_if_he_plays": 0.443,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 3,
    "note": null
   },
   {
@@ -17845,8 +17845,8 @@
    "clears_if_he_plays": 0.5,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -17867,8 +17867,8 @@
    "clears_if_he_plays": 0.443,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -17889,8 +17889,8 @@
    "clears_if_he_plays": 0.48,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 8,
    "note": null
   },
   {
@@ -17911,8 +17911,8 @@
    "clears_if_he_plays": 0.443,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -17933,8 +17933,8 @@
    "clears_if_he_plays": 0.431,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -17955,8 +17955,8 @@
    "clears_if_he_plays": 0.508,
    "plays": 0.708,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 12,
    "note": null
   },
   {
@@ -17977,8 +17977,8 @@
    "clears_if_he_plays": 0.424,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -17999,8 +17999,8 @@
    "clears_if_he_plays": 0.357,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -18021,8 +18021,8 @@
    "clears_if_he_plays": 0.451,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 37,
    "note": null
   },
   {
@@ -18043,8 +18043,8 @@
    "clears_if_he_plays": 0.469,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 39,
    "note": null
   },
   {
@@ -18065,8 +18065,8 @@
    "clears_if_he_plays": 0.431,
    "plays": 0.995,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 16,
    "note": null
   },
   {
@@ -18087,8 +18087,8 @@
    "clears_if_he_plays": 0.365,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 5,
    "note": null
   },
   {
@@ -18109,8 +18109,8 @@
    "clears_if_he_plays": 0.5,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -18131,8 +18131,8 @@
    "clears_if_he_plays": 0.395,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 9,
    "note": null
   },
   {
@@ -18153,8 +18153,8 @@
    "clears_if_he_plays": 0.348,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 5,
    "note": null
   },
   {
@@ -18175,8 +18175,8 @@
    "clears_if_he_plays": 0.535,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 10,
    "note": null
   },
   {
@@ -18197,8 +18197,8 @@
    "clears_if_he_plays": 0.606,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 8,
    "note": null
   },
   {
@@ -18219,8 +18219,8 @@
    "clears_if_he_plays": 0.352,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -18241,8 +18241,8 @@
    "clears_if_he_plays": 0.43,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 5,
    "note": null
   },
   {
@@ -18263,8 +18263,8 @@
    "clears_if_he_plays": 0.784,
    "plays": 0.799,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -18285,8 +18285,8 @@
    "clears_if_he_plays": 0.456,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -18307,8 +18307,8 @@
    "clears_if_he_plays": 0.414,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -18329,8 +18329,8 @@
    "clears_if_he_plays": 0.364,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 1,
    "note": null
   },
   {
@@ -18351,8 +18351,8 @@
    "clears_if_he_plays": 0.332,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 1,
    "note": null
   },
   {
@@ -18373,8 +18373,8 @@
    "clears_if_he_plays": 0.656,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -18395,8 +18395,8 @@
    "clears_if_he_plays": 0.669,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -18417,8 +18417,8 @@
    "clears_if_he_plays": 0.669,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 1,
    "note": null
   },
   {
@@ -18439,8 +18439,8 @@
    "clears_if_he_plays": 0.6,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -18461,8 +18461,8 @@
    "clears_if_he_plays": 0.391,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -18483,8 +18483,8 @@
    "clears_if_he_plays": 0.366,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -18505,8 +18505,8 @@
    "clears_if_he_plays": 0.43,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -18527,8 +18527,8 @@
    "clears_if_he_plays": 0.421,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -18549,8 +18549,8 @@
    "clears_if_he_plays": 0.477,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 8,
    "note": null
   },
   {
@@ -18571,8 +18571,8 @@
    "clears_if_he_plays": 0.417,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 10,
    "note": null
   },
   {
@@ -18593,8 +18593,8 @@
    "clears_if_he_plays": 0.505,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 1,
    "note": null
   },
   {
@@ -18615,8 +18615,8 @@
    "clears_if_he_plays": 0.375,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 0,
    "note": null
   },
   {
@@ -18637,8 +18637,8 @@
    "clears_if_he_plays": 0.431,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -18659,8 +18659,8 @@
    "clears_if_he_plays": 0.368,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -18681,8 +18681,8 @@
    "clears_if_he_plays": 0.577,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 0,
    "note": null
   },
   {
@@ -18703,8 +18703,8 @@
    "clears_if_he_plays": 0.471,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 1,
    "note": null
   },
   {
@@ -18725,8 +18725,8 @@
    "clears_if_he_plays": 0.358,
    "plays": 0.995,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 20,
    "note": null
   },
   {
@@ -18747,8 +18747,8 @@
    "clears_if_he_plays": 0.469,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 1,
    "note": null
   },
   {
@@ -18769,8 +18769,8 @@
    "clears_if_he_plays": 0.471,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -18791,8 +18791,8 @@
    "clears_if_he_plays": 0.605,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 25,
    "note": null
   },
   {
@@ -18835,8 +18835,8 @@
    "clears_if_he_plays": 0.404,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -18857,8 +18857,8 @@
    "clears_if_he_plays": 0.343,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -18879,8 +18879,8 @@
    "clears_if_he_plays": 0.441,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 25,
    "note": null
   },
   {
@@ -18901,8 +18901,8 @@
    "clears_if_he_plays": 0.341,
    "plays": 0.992,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 16,
    "note": null
   },
   {
@@ -18923,8 +18923,8 @@
    "clears_if_he_plays": 0.536,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -18945,8 +18945,8 @@
    "clears_if_he_plays": 0.448,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -18967,8 +18967,8 @@
    "clears_if_he_plays": 0.508,
    "plays": 0.657,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -18989,8 +18989,8 @@
    "clears_if_he_plays": 0.333,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 8,
    "note": null
   },
   {
@@ -19011,8 +19011,8 @@
    "clears_if_he_plays": 0.456,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 7,
    "note": null
   },
   {
@@ -19033,8 +19033,8 @@
    "clears_if_he_plays": 0.465,
    "plays": 0.714,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 8,
    "note": null
   },
   {
@@ -19055,8 +19055,8 @@
    "clears_if_he_plays": 0.447,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 38,
    "note": null
   },
   {
@@ -19077,8 +19077,8 @@
    "clears_if_he_plays": 0.358,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 29,
    "note": null
   },
   {
@@ -19099,8 +19099,8 @@
    "clears_if_he_plays": 0.472,
    "plays": 0.995,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -19121,8 +19121,8 @@
    "clears_if_he_plays": 0.369,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 0,
    "note": null
   },
   {
@@ -19143,8 +19143,8 @@
    "clears_if_he_plays": 0.384,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 0,
    "note": null
   },
   {
@@ -19165,8 +19165,8 @@
    "clears_if_he_plays": 0.432,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 10,
    "note": null
   },
   {
@@ -19187,8 +19187,8 @@
    "clears_if_he_plays": 0.327,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 10,
    "note": null
   },
   {
@@ -19209,8 +19209,8 @@
    "clears_if_he_plays": 0.394,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 3,
    "note": null
   },
   {
@@ -19231,8 +19231,8 @@
    "clears_if_he_plays": 0.374,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -19253,8 +19253,8 @@
    "clears_if_he_plays": 0.381,
    "plays": 0.843,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -19275,8 +19275,8 @@
    "clears_if_he_plays": 0.42,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 1,
    "note": null
   },
   {
@@ -19297,8 +19297,8 @@
    "clears_if_he_plays": 0.431,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -19319,8 +19319,8 @@
    "clears_if_he_plays": 0.413,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 35,
    "note": null
   },
   {
@@ -19341,8 +19341,8 @@
    "clears_if_he_plays": 0.495,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -19363,8 +19363,8 @@
    "clears_if_he_plays": 0.316,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -19385,8 +19385,8 @@
    "clears_if_he_plays": 0.401,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 23,
    "note": null
   },
   {
@@ -19407,8 +19407,8 @@
    "clears_if_he_plays": 0.552,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -19429,8 +19429,8 @@
    "clears_if_he_plays": 0.646,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -19451,8 +19451,8 @@
    "clears_if_he_plays": 0.531,
    "plays": 0.65,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 7,
    "note": null
   },
   {
@@ -19473,8 +19473,8 @@
    "clears_if_he_plays": 0.673,
    "plays": 0.793,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -19539,8 +19539,8 @@
    "clears_if_he_plays": 0.457,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -19561,8 +19561,8 @@
    "clears_if_he_plays": 0.483,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -19583,8 +19583,8 @@
    "clears_if_he_plays": 0.373,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -19605,8 +19605,8 @@
    "clears_if_he_plays": 0.256,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -19627,8 +19627,8 @@
    "clears_if_he_plays": 0.455,
    "plays": 0.734,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 13,
    "note": null
   },
   {
@@ -19649,8 +19649,8 @@
    "clears_if_he_plays": 0.439,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -19671,8 +19671,8 @@
    "clears_if_he_plays": 0.583,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -19693,8 +19693,8 @@
    "clears_if_he_plays": 0.472,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -19715,8 +19715,8 @@
    "clears_if_he_plays": 0.457,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 1,
    "note": null
   },
   {
@@ -19737,8 +19737,8 @@
    "clears_if_he_plays": 0.795,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 9,
    "note": null
   },
   {
@@ -19759,8 +19759,8 @@
    "clears_if_he_plays": 0.719,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -19781,8 +19781,8 @@
    "clears_if_he_plays": 0.422,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 7,
    "note": null
   },
   {
@@ -19803,8 +19803,8 @@
    "clears_if_he_plays": 0.471,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 3,
    "note": null
   },
   {
@@ -19825,8 +19825,8 @@
    "clears_if_he_plays": 0.33,
    "plays": 0.982,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 18,
    "note": null
   },
   {
@@ -19847,8 +19847,8 @@
    "clears_if_he_plays": 0.5,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -19869,8 +19869,8 @@
    "clears_if_he_plays": 0.677,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -19891,8 +19891,8 @@
    "clears_if_he_plays": 0.368,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -19913,8 +19913,8 @@
    "clears_if_he_plays": 0.406,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -19935,8 +19935,8 @@
    "clears_if_he_plays": 0.427,
    "plays": 0.769,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 11,
    "note": null
   },
   {
@@ -19957,8 +19957,8 @@
    "clears_if_he_plays": 0.418,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -19979,8 +19979,8 @@
    "clears_if_he_plays": 0.431,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 7,
    "note": null
   },
   {
@@ -20001,8 +20001,8 @@
    "clears_if_he_plays": 0.461,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 35,
    "note": null
   },
   {
@@ -20023,8 +20023,8 @@
    "clears_if_he_plays": 0.606,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -20045,8 +20045,8 @@
    "clears_if_he_plays": 0.524,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -20067,8 +20067,8 @@
    "clears_if_he_plays": 0.478,
    "plays": 0.911,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 15,
    "note": null
   },
   {
@@ -20089,8 +20089,8 @@
    "clears_if_he_plays": 0.615,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 43,
    "note": null
   },
   {
@@ -20111,8 +20111,8 @@
    "clears_if_he_plays": 0.403,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 14,
    "note": null
   },
   {
@@ -20133,8 +20133,8 @@
    "clears_if_he_plays": 0.35,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 19,
    "note": null
   },
   {
@@ -20155,8 +20155,8 @@
    "clears_if_he_plays": 0.342,
    "plays": 0.658,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -20177,8 +20177,8 @@
    "clears_if_he_plays": 0.373,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -20199,8 +20199,8 @@
    "clears_if_he_plays": 0.348,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -20265,8 +20265,8 @@
    "clears_if_he_plays": 0.683,
    "plays": 0.736,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -20287,8 +20287,8 @@
    "clears_if_he_plays": 0.431,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 7,
    "note": null
   },
   {
@@ -20309,8 +20309,8 @@
    "clears_if_he_plays": 0.362,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 5,
    "note": null
   },
   {
@@ -20331,8 +20331,8 @@
    "clears_if_he_plays": 0.341,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 7,
    "note": null
   },
   {
@@ -20353,8 +20353,8 @@
    "clears_if_he_plays": 0.385,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 8,
    "note": null
   },
   {
@@ -20375,8 +20375,8 @@
    "clears_if_he_plays": 0.535,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 25,
    "note": null
   },
   {
@@ -20397,8 +20397,8 @@
    "clears_if_he_plays": 0.366,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -20419,8 +20419,8 @@
    "clears_if_he_plays": 0.439,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -20441,8 +20441,8 @@
    "clears_if_he_plays": 0.344,
    "plays": 0.727,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 18,
    "note": null
   },
   {
@@ -20463,8 +20463,8 @@
    "clears_if_he_plays": 0.351,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -20485,8 +20485,8 @@
    "clears_if_he_plays": 0.409,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -20507,8 +20507,8 @@
    "clears_if_he_plays": 0.523,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 1,
    "note": null
   },
   {
@@ -20529,8 +20529,8 @@
    "clears_if_he_plays": 0.57,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -20551,8 +20551,8 @@
    "clears_if_he_plays": 0.524,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -20573,8 +20573,8 @@
    "clears_if_he_plays": 0.523,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -20595,8 +20595,8 @@
    "clears_if_he_plays": 0.586,
    "plays": 0.871,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 11,
    "note": null
   },
   {
@@ -20617,8 +20617,8 @@
    "clears_if_he_plays": 0.419,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 32,
    "note": null
   },
   {
@@ -20639,8 +20639,8 @@
    "clears_if_he_plays": 0.577,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 3,
    "note": null
   },
   {
@@ -20661,8 +20661,8 @@
    "clears_if_he_plays": 0.5,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 3,
    "note": null
   },
   {
@@ -20683,8 +20683,8 @@
    "clears_if_he_plays": 0.657,
    "plays": 0.995,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -20705,8 +20705,8 @@
    "clears_if_he_plays": 0.443,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -20727,8 +20727,8 @@
    "clears_if_he_plays": 0.49,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 8,
    "note": null
   },
   {
@@ -20749,8 +20749,8 @@
    "clears_if_he_plays": 0.699,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -20771,8 +20771,8 @@
    "clears_if_he_plays": 0.49,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 3,
    "note": null
   },
   {
@@ -20793,8 +20793,8 @@
    "clears_if_he_plays": 0.407,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -20815,8 +20815,8 @@
    "clears_if_he_plays": 0.355,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -20837,8 +20837,8 @@
    "clears_if_he_plays": 0.498,
    "plays": null,
    "priced_from": "team form",
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 19,
    "note": "priced from team form"
   },
   {
@@ -20859,8 +20859,8 @@
    "clears_if_he_plays": 0.391,
    "plays": null,
    "priced_from": "team form",
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 34,
    "note": "priced from team form"
   },
   {
@@ -20881,8 +20881,8 @@
    "clears_if_he_plays": 0.505,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -20903,8 +20903,8 @@
    "clears_if_he_plays": 0.403,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 3,
    "note": null
   },
   {
@@ -20925,8 +20925,8 @@
    "clears_if_he_plays": 0.466,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -20947,8 +20947,8 @@
    "clears_if_he_plays": 0.368,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 8,
    "note": null
   },
   {
@@ -20969,8 +20969,8 @@
    "clears_if_he_plays": 0.619,
    "plays": 0.875,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 13,
    "note": null
   },
   {
@@ -20991,8 +20991,8 @@
    "clears_if_he_plays": 0.313,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 0,
    "note": null
   },
   {
@@ -21013,8 +21013,8 @@
    "clears_if_he_plays": 0.481,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 0,
    "note": null
   },
   {
@@ -21035,8 +21035,8 @@
    "clears_if_he_plays": 0.507,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -21057,8 +21057,8 @@
    "clears_if_he_plays": 0.752,
    "plays": 0.995,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 8,
    "note": null
   },
   {
@@ -21101,8 +21101,8 @@
    "clears_if_he_plays": 0.465,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 32,
    "note": null
   },
   {
@@ -21123,8 +21123,8 @@
    "clears_if_he_plays": 0.513,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -21145,8 +21145,8 @@
    "clears_if_he_plays": 0.516,
    "plays": 0.995,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 18,
    "note": null
   },
   {
@@ -21167,8 +21167,8 @@
    "clears_if_he_plays": 0.535,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -21189,8 +21189,8 @@
    "clears_if_he_plays": 0.59,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -21211,8 +21211,8 @@
    "clears_if_he_plays": 0.416,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -21233,8 +21233,8 @@
    "clears_if_he_plays": 0.603,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -21255,8 +21255,8 @@
    "clears_if_he_plays": 0.615,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 31,
    "note": null
   },
   {
@@ -21277,8 +21277,8 @@
    "clears_if_he_plays": 0.409,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -21299,8 +21299,8 @@
    "clears_if_he_plays": 0.366,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -21321,8 +21321,8 @@
    "clears_if_he_plays": 0.388,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -21343,8 +21343,8 @@
    "clears_if_he_plays": 0.343,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -21365,8 +21365,8 @@
    "clears_if_he_plays": 0.38,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -21387,8 +21387,8 @@
    "clears_if_he_plays": 0.431,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -21409,8 +21409,8 @@
    "clears_if_he_plays": 0.482,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 32,
    "note": null
   },
   {
@@ -21431,8 +21431,8 @@
    "clears_if_he_plays": 0.372,
    "plays": 0.858,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 20,
    "note": null
   },
   {
@@ -21453,8 +21453,8 @@
    "clears_if_he_plays": 0.443,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -21475,8 +21475,8 @@
    "clears_if_he_plays": 0.4,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 5,
    "note": null
   },
   {
@@ -21497,8 +21497,8 @@
    "clears_if_he_plays": 0.513,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -21519,8 +21519,8 @@
    "clears_if_he_plays": 0.422,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 8,
    "note": null
   },
   {
@@ -21541,8 +21541,8 @@
    "clears_if_he_plays": 0.564,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 37,
    "note": null
   },
   {
@@ -21563,8 +21563,8 @@
    "clears_if_he_plays": 0.431,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -21585,8 +21585,8 @@
    "clears_if_he_plays": 0.423,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -21607,8 +21607,8 @@
    "clears_if_he_plays": 0.382,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -21629,8 +21629,8 @@
    "clears_if_he_plays": 0.308,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -21651,8 +21651,8 @@
    "clears_if_he_plays": 0.466,
    "plays": 0.995,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 12,
    "note": null
   },
   {
@@ -21673,8 +21673,8 @@
    "clears_if_he_plays": 0.443,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 0,
    "note": null
   },
   {
@@ -21695,8 +21695,8 @@
    "clears_if_he_plays": 0.304,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 1,
    "note": null
   },
   {
@@ -21717,8 +21717,8 @@
    "clears_if_he_plays": 0.456,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -21739,8 +21739,8 @@
    "clears_if_he_plays": 0.361,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -21761,8 +21761,8 @@
    "clears_if_he_plays": 0.708,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -21783,8 +21783,8 @@
    "clears_if_he_plays": 0.514,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -21805,8 +21805,8 @@
    "clears_if_he_plays": 0.474,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -21827,8 +21827,8 @@
    "clears_if_he_plays": 0.606,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -21849,8 +21849,8 @@
    "clears_if_he_plays": 0.56,
    "plays": 0.734,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -21871,8 +21871,8 @@
    "clears_if_he_plays": 0.338,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 7,
    "note": null
   },
   {
@@ -21893,8 +21893,8 @@
    "clears_if_he_plays": 0.355,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 9,
    "note": null
   },
   {
@@ -21915,8 +21915,8 @@
    "clears_if_he_plays": 0.531,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -21937,8 +21937,8 @@
    "clears_if_he_plays": 0.394,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -21959,8 +21959,8 @@
    "clears_if_he_plays": 0.459,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 0,
    "note": null
   },
   {
