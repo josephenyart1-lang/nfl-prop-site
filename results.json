@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07 13:28 UTC",
+ "generated_at": "2026-11-09 02:55 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -10,33 +10,33 @@
    "model_error": 6.04,
    "naive_error": 6.33,
    "flat_error": 6.6,
-   "ratio": 0.915,
-   "beats_naive_by": 0.293,
+   "ratio": 0.916,
+   "beats_naive_by": 0.292,
    "typical_miss": 7.62,
    "calibration": [
     {
      "band": "0%-10%",
-     "cases": 2816,
+     "cases": 2815,
      "said": 0.0783,
-     "happened": 0.0788
+     "happened": 0.0785
     },
     {
      "band": "10%-20%",
-     "cases": 3881,
-     "said": 0.146,
-     "happened": 0.1407
+     "cases": 3884,
+     "said": 0.1461,
+     "happened": 0.1406
     },
     {
      "band": "20%-30%",
-     "cases": 2675,
+     "cases": 2671,
      "said": 0.2494,
-     "happened": 0.2389
+     "happened": 0.2392
     },
     {
      "band": "30%-40%",
-     "cases": 2347,
+     "cases": 2349,
      "said": 0.3491,
-     "happened": 0.3289
+     "happened": 0.3287
     },
     {
      "band": "40%-50%",
@@ -48,25 +48,25 @@
      "band": "50%-60%",
      "cases": 2119,
      "said": 0.549,
-     "happened": 0.5267
+     "happened": 0.5262
     },
     {
      "band": "60%-70%",
-     "cases": 2172,
+     "cases": 2170,
      "said": 0.6511,
-     "happened": 0.6317
+     "happened": 0.6323
     },
     {
      "band": "70%-80%",
-     "cases": 2258,
-     "said": 0.7514,
-     "happened": 0.7453
+     "cases": 2259,
+     "said": 0.7513,
+     "happened": 0.745
     },
     {
      "band": "80%-90%",
-     "cases": 3524,
-     "said": 0.8524,
-     "happened": 0.8507
+     "cases": 3525,
+     "said": 0.8523,
+     "happened": 0.8508
     },
     {
      "band": "90%-100%",
@@ -300,13 +300,13 @@
   }
  ],
  "prop_record": {
-  "recorded": 953,
+  "recorded": 955,
   "voided": 31,
-  "settled": 622,
-  "right": 337,
-  "wrong": 285,
+  "settled": 640,
+  "right": 342,
+  "wrong": 298,
   "pushed": 0,
-  "expected_right": 388.3,
+  "expected_right": 399.8,
   "markets": [
    "carries",
    "pass_attempts",
@@ -669,11 +669,11 @@
     "game": "JAX at BAL",
     "recorded": 18,
     "voided": 0,
-    "settled": 0,
-    "right": 0,
-    "wrong": 0,
+    "settled": 18,
+    "right": 5,
+    "wrong": 13,
     "pushed": 0,
-    "expected_right": null
+    "expected_right": 11.5
    },
    {
     "week": "9",
@@ -799,7 +799,7 @@
     "week": "9",
     "gameday": "2026-11-08",
     "game": "NYG at PHI",
-    "recorded": 10,
+    "recorded": 12,
     "voided": 0,
     "settled": 0,
     "right": 0,
@@ -9986,17 +9986,269 @@
     "status": "right",
     "actual": 3,
     "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Bhayshul Tuten",
+    "market": "carries",
+    "underdog_line": 14.5,
+    "our_side": "Lower",
+    "our_probability": 0.707,
+    "model": 13.5,
+    "status": "right",
+    "actual": 12,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Brenton Strange",
+    "market": "receptions",
+    "underdog_line": 3.5,
+    "our_side": "Higher",
+    "our_probability": 0.578,
+    "model": 3.6,
+    "status": "wrong",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Brenton Strange",
+    "market": "targets",
+    "underdog_line": 5.5,
+    "our_side": "Lower",
+    "our_probability": 0.502,
+    "model": 4.9,
+    "status": "right",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Brian Thomas Jr.",
+    "market": "targets",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.792,
+    "model": 4.3,
+    "status": "wrong",
+    "actual": 0,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Brian Thomas Jr.",
+    "market": "receptions",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.712,
+    "model": 2.4,
+    "status": "wrong",
+    "actual": 0,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Chris Rodriguez Jr.",
+    "market": "carries",
+    "underdog_line": 11.5,
+    "our_side": "Lower",
+    "our_probability": 0.767,
+    "model": 9.5,
+    "status": "right",
+    "actual": 10,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Derrick Henry",
+    "market": "carries",
+    "underdog_line": 17.5,
+    "our_side": "Lower",
+    "our_probability": 0.634,
+    "model": 16.4,
+    "status": "right",
+    "actual": 17,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Jakobi Meyers",
+    "market": "receptions",
+    "underdog_line": 3.5,
+    "our_side": "Higher",
+    "our_probability": 0.516,
+    "model": 3.2,
+    "status": "right",
+    "actual": 4,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Jakobi Meyers",
+    "market": "targets",
+    "underdog_line": 5.5,
+    "our_side": "Lower",
+    "our_probability": 0.541,
+    "model": 4.6,
+    "status": "wrong",
+    "actual": 6,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Mark Andrews",
+    "market": "targets",
+    "underdog_line": 4.5,
+    "our_side": "Higher",
+    "our_probability": 0.657,
+    "model": 5.2,
+    "status": "wrong",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Mark Andrews",
+    "market": "receptions",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.685,
+    "model": 3.3,
+    "status": "wrong",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Parker Washington",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Higher",
+    "our_probability": 0.534,
+    "model": 4.3,
+    "status": "wrong",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Parker Washington",
+    "market": "targets",
+    "underdog_line": 7.5,
+    "our_side": "Higher",
+    "our_probability": 0.525,
+    "model": 7.1,
+    "status": "wrong",
+    "actual": 7,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Rashod Bateman",
+    "market": "receptions",
+    "underdog_line": 1.5,
+    "our_side": "Higher",
+    "our_probability": 0.681,
+    "model": 2.2,
+    "status": "wrong",
+    "actual": 1,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Rashod Bateman",
+    "market": "targets",
+    "underdog_line": 2.5,
+    "our_side": "Higher",
+    "our_probability": 0.717,
+    "model": 3.6,
+    "status": "wrong",
+    "actual": 2,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Trevor Lawrence",
+    "market": "pass_attempts",
+    "underdog_line": 29.5,
+    "our_side": "Higher",
+    "our_probability": 0.558,
+    "model": 32.1,
+    "status": "wrong",
+    "actual": 26,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Zay Flowers",
+    "market": "receptions",
+    "underdog_line": 4.5,
+    "our_side": "Higher",
+    "our_probability": 0.646,
+    "model": 5.1,
+    "status": "wrong",
+    "actual": 3,
+    "note": ""
+   },
+   {
+    "week": "9",
+    "gameday": "2026-11-05",
+    "game": "JAX at BAL",
+    "player": "Zay Flowers",
+    "market": "targets",
+    "underdog_line": 7.5,
+    "our_side": "Higher",
+    "our_probability": 0.71,
+    "model": 8.8,
+    "status": "wrong",
+    "actual": 6,
+    "note": ""
    }
   ]
  },
  "loud": {
   "gap": 2.0,
-  "loud_settled": 80,
-  "loud_right": 50,
-  "quiet_settled": 542,
-  "quiet_right": 287,
-  "loud_higher": 46,
-  "quiet_higher": 301,
+  "loud_settled": 82,
+  "loud_right": 51,
+  "quiet_settled": 558,
+  "quiet_right": 291,
+  "loud_higher": 47,
+  "quiet_higher": 313,
   "resolves": false
  },
  "counts": {
@@ -10044,26 +10296,26 @@
  },
  "sides": {
   "higher": {
-   "settled": 347,
-   "claimed": 0.631,
-   "landed": 0.499,
-   "sd": -5.2
+   "settled": 360,
+   "claimed": 0.632,
+   "landed": 0.483,
+   "sd": -6.0
   },
   "lower": {
-   "settled": 275,
-   "claimed": 0.615,
-   "landed": 0.596,
-   "sd": -0.7
+   "settled": 280,
+   "claimed": 0.616,
+   "landed": 0.6,
+   "sd": -0.5
   }
  },
  "line_weight": {
-  "settled": 622,
+  "settled": 640,
   "shipped": 0.7,
-  "fitted": 0.302,
-  "low": 0.034,
-  "high": 0.566,
-  "fold_low": 0.205,
-  "fold_high": 0.359,
+  "fitted": 0.289,
+  "low": 0.025,
+  "high": 0.552,
+  "fold_low": 0.192,
+  "fold_high": 0.344,
   "shipped_inside": false
  },
  "board_population": {
