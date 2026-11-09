@@ -1390,7 +1390,7 @@
   "TEN": "#4495D2",
   "WAS": "#da5656"
  },
- "generated_at": "2026-11-09 15:03 UTC",
+ "generated_at": "2026-11-09 17:06 UTC",
  "as_of": "2026-11-07 16:05",
  "selections": [
   {
@@ -16547,9 +16547,9 @@
    "clears_if_he_plays": null,
    "plays": null,
    "priced_from": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: on reserve (Out, hamstring; week roster RES). Voided 2026-11-09 on Joe's call."
   },
   {
    "week": "9",
@@ -17449,9 +17449,9 @@
    "clears_if_he_plays": 0.454,
    "plays": 0.846,
    "priced_from": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: released by New Orleans (week roster CUT). Voided 2026-11-09 on Joe's call."
   },
   {
    "week": "9",
@@ -17647,9 +17647,9 @@
    "clears_if_he_plays": 0.456,
    "plays": null,
    "priced_from": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: inactive (Questionable, hamstring; week roster INA; ESPN marked him not playing 88 min before kickoff). Voided 2026-11-09 on Joe's call."
   },
   {
    "week": "9",
@@ -17669,9 +17669,9 @@
    "clears_if_he_plays": 0.489,
    "plays": null,
    "priced_from": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: inactive (Questionable, hamstring; week roster INA; ESPN marked him not playing 88 min before kickoff). Voided 2026-11-09 on Joe's call."
   },
   {
    "week": "9",
@@ -18813,9 +18813,9 @@
    "clears_if_he_plays": 0.644,
    "plays": 0.563,
    "priced_from": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: inactive (Questionable, quadricep; week roster INA; ESPN marked him not playing 88 min before kickoff). Voided 2026-11-09 on Joe's call."
   },
   {
    "week": "9",
@@ -20221,9 +20221,9 @@
    "clears_if_he_plays": null,
    "plays": null,
    "priced_from": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: inactive (Out, foot; week roster INA). Voided 2026-11-09 on Joe's call."
   },
   {
    "week": "9",
@@ -20243,9 +20243,9 @@
    "clears_if_he_plays": null,
    "plays": null,
    "priced_from": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: inactive (Out, foot; week roster INA). Voided 2026-11-09 on Joe's call."
   },
   {
    "week": "9",
@@ -21079,9 +21079,9 @@
    "clears_if_he_plays": null,
    "plays": null,
    "priced_from": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "game final, no stat row: inactive (Out, concussion; week roster INA). Voided 2026-11-09 on Joe's call."
   },
   {
    "week": "9",
