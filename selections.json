@@ -397,7 +397,7 @@
    "gameday": "2026-11-09",
    "kickoff": "20:15",
    "game": "BUF at MIN",
-   "played": false
+   "played": true
   },
   {
    "week": 10,
@@ -1390,7 +1390,7 @@
   "TEN": "#4495D2",
   "WAS": "#da5656"
  },
- "generated_at": "2026-11-09 17:06 UTC",
+ "generated_at": "2026-11-10 15:02 UTC",
  "as_of": "2026-11-07 16:05",
  "selections": [
   {
@@ -21981,8 +21981,8 @@
    "clears_if_he_plays": 0.646,
    "plays": 0.807,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 5,
    "note": null
   },
   {
@@ -22003,8 +22003,8 @@
    "clears_if_he_plays": 0.59,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 1,
    "note": null
   },
   {
@@ -22025,8 +22025,8 @@
    "clears_if_he_plays": 0.583,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 1,
    "note": null
   },
   {
@@ -22047,8 +22047,8 @@
    "clears_if_he_plays": 0.354,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -22069,8 +22069,8 @@
    "clears_if_he_plays": 0.443,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -22091,8 +22091,8 @@
    "clears_if_he_plays": 0.35,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -22113,8 +22113,8 @@
    "clears_if_he_plays": 0.431,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -22135,8 +22135,8 @@
    "clears_if_he_plays": 0.358,
    "plays": 0.918,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 31,
    "note": null
   },
   {
@@ -22157,8 +22157,8 @@
    "clears_if_he_plays": 0.302,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -22179,8 +22179,8 @@
    "clears_if_he_plays": 0.386,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -22201,8 +22201,8 @@
    "clears_if_he_plays": 0.478,
    "plays": 0.774,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -22223,8 +22223,8 @@
    "clears_if_he_plays": 0.406,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 31,
    "note": null
   },
   {
@@ -22245,8 +22245,8 @@
    "clears_if_he_plays": 0.254,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -22267,8 +22267,8 @@
    "clears_if_he_plays": 0.385,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 11,
    "note": null
   },
   {
@@ -22289,8 +22289,8 @@
    "clears_if_he_plays": 0.416,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 3,
    "note": null
   },
   {
@@ -22311,8 +22311,8 @@
    "clears_if_he_plays": 0.439,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -22333,8 +22333,8 @@
    "clears_if_he_plays": 0.596,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -22355,8 +22355,8 @@
    "clears_if_he_plays": 0.481,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -22377,8 +22377,8 @@
    "clears_if_he_plays": 0.397,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -22399,8 +22399,8 @@
    "clears_if_he_plays": 0.361,
    "plays": null,
    "priced_from": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 7,
    "note": null
   }
  ],
