@@ -221,6 +221,17 @@ h2 { font-size: 1.02rem; margin: 2rem 0 .7rem; font-weight: 600; letter-spacing:
   content: ""; width: .35rem; height: .35rem; border-radius: 50%;
   background: var(--warn); flex: none;
 }
+/* A role that may have shrunk under him (FIXES 37). The same amber dot as
+   the report, as a hollow ring, because it comes from his snaps rather
+   than from his team. */
+.leg .caution {
+  font-size: .72rem; color: var(--warn); margin-top: .15rem;
+  display: flex; align-items: center; gap: .3rem;
+}
+.leg .caution::before {
+  content: ""; width: .35rem; height: .35rem; border-radius: 50%;
+  border: 1px solid var(--warn); flex: none; box-sizing: border-box;
+}
 .leg .nums { text-align: right; white-space: nowrap; }
 .leg .side { font-size: .95rem; font-variant-numeric: tabular-nums; }
 .leg .model { font-size: .73rem; color: var(--dim); font-variant-numeric: tabular-nums; }

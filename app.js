@@ -677,6 +677,19 @@ function drawWeek(root, games) {
           flag.textContent = l.injury;
           lines.appendChild(flag);
         }
+        /* Two or more of his last four games cut short. The model leaves
+           those games out of his form, which is right after a knock and
+           wrong after a demotion: then it prices the role he had. Measured
+           on the backtest, such a man comes in 1.2 targets under his
+           number. Said, not priced in. FIXES item 37. */
+        if (l.caution) {
+          const warn = document.createElement("div");
+          warn.className = "caution";
+          warn.textContent = l.caution;
+          warn.title = "His form leaves out games he played far fewer snaps " +
+            "than usual in. After a demotion that is the role he no longer has.";
+          lines.appendChild(warn);
+        }
         /* Who he plays for, in his team's colour. The colours arrive
            already lifted to stay readable on this background, so a navy
            like Chicago's is published as a blue you can actually see.
