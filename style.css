@@ -172,8 +172,9 @@ h2 { font-size: 1.02rem; margin: 2rem 0 .7rem; font-weight: 600; letter-spacing:
    heading included: measured on all 1,211 priced legs on 2026-11-15, the
    widest left side (a caution note, 276px) and the widest numbers (153px)
    still share one line at that width, and nothing narrower would hold
-   them. A phone never reaches the cap. */
-#board { max-width: 36rem; }
+   them. Centred in the page beside the rail, so on a wide screen it does
+   not hug the left edge. A phone never reaches the cap. */
+#board { max-width: 36rem; margin-inline: auto; }
 .fixture {
   background: var(--panel); border: 1px solid var(--line);
   border-radius: .5rem; margin-bottom: .7rem; overflow: hidden;
