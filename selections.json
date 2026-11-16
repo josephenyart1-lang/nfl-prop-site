@@ -1390,7 +1390,7 @@
   "TEN": "#4495D2",
   "WAS": "#da5656"
  },
- "generated_at": "2026-11-16 16:30 UTC",
+ "generated_at": "2026-11-16 19:09 UTC",
  "as_of": "2026-11-15 14:03",
  "selections": [
   {
@@ -28501,7 +28501,7 @@
    "last_played": null,
    "injury": null,
    "depth": null,
-   "team": "MIN",
+   "team": "LV",
    "clears_if_he_plays": 0.49,
    "plays": null,
    "priced_from": null,

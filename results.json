@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16 16:29 UTC",
+ "generated_at": "2026-11-16 19:08 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -18046,6 +18046,61 @@
     }
    }
   }
+ },
+ "shade": {
+  "markets": {
+   "carries": {
+    "settled": 126,
+    "line_miss": 3.92,
+    "model_miss": 4.66,
+    "over": 0.476
+   },
+   "pass_attempts": {
+    "settled": 101,
+    "line_miss": 6.32,
+    "model_miss": 6.42,
+    "over": 0.436
+   },
+   "receptions": {
+    "settled": 494,
+    "line_miss": 1.53,
+    "model_miss": 1.53,
+    "over": 0.464
+   },
+   "targets": {
+    "settled": 434,
+    "line_miss": 2.05,
+    "model_miss": 2.04,
+    "over": 0.396
+   }
+  },
+  "targets_by_week": [
+   {
+    "week": 6,
+    "settled": 4,
+    "over": 0.75
+   },
+   {
+    "week": 7,
+    "settled": 108,
+    "over": 0.38
+   },
+   {
+    "week": 8,
+    "settled": 109,
+    "over": 0.44
+   },
+   {
+    "week": 9,
+    "settled": 111,
+    "over": 0.387
+   },
+   {
+    "week": 10,
+    "settled": 102,
+    "over": 0.363
+   }
+  ]
  },
  "board_population": {
   "targets": {
