@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16 15:02 UTC",
+ "generated_at": "2026-11-16 16:29 UTC",
  "test_seasons": "2024-2026",
  "markets": [
   {
@@ -301,7 +301,7 @@
  ],
  "prop_record": {
   "recorded": 1211,
-  "voided": 42,
+  "voided": 44,
   "settled": 1155,
   "right": 634,
   "wrong": 521,
@@ -944,7 +944,7 @@
     "gameday": "2026-11-15",
     "game": "MIN at GB",
     "recorded": 14,
-    "voided": 0,
+    "voided": 2,
     "settled": 12,
     "right": 7,
     "wrong": 5,
@@ -16510,6 +16510,34 @@
     "status": "right",
     "actual": 5,
     "note": ""
+   },
+   {
+    "week": "10",
+    "gameday": "2026-11-15",
+    "game": "MIN at GB",
+    "player": "Jordan Addison",
+    "market": "targets",
+    "underdog_line": 6.5,
+    "our_side": "Lower",
+    "our_probability": 0.71,
+    "model": 4.8,
+    "status": "void",
+    "actual": null,
+    "note": "inactive: nflverse week-10 roster INA, questionable (thumb), no box-score row and no snap row (MIN week-10 snaps have landed, 47 rows); never took the field. Voided 2026-11-16 on Joe's call."
+   },
+   {
+    "week": "10",
+    "gameday": "2026-11-15",
+    "game": "MIN at GB",
+    "player": "Jordan Addison",
+    "market": "receptions",
+    "underdog_line": 3.5,
+    "our_side": "Lower",
+    "our_probability": 0.712,
+    "model": 2.2,
+    "status": "void",
+    "actual": null,
+    "note": "inactive: nflverse week-10 roster INA, questionable (thumb), no box-score row and no snap row (MIN week-10 snaps have landed, 47 rows); never took the field. Voided 2026-11-16 on Joe's call."
    },
    {
     "week": "10",

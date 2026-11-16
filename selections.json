@@ -1390,7 +1390,7 @@
   "TEN": "#4495D2",
   "WAS": "#da5656"
  },
- "generated_at": "2026-11-16 15:02 UTC",
+ "generated_at": "2026-11-16 16:30 UTC",
  "as_of": "2026-11-15 14:03",
  "selections": [
   {
@@ -26873,9 +26873,9 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "inactive: nflverse week-10 roster INA, questionable (thumb), no box-score row and no snap row (MIN week-10 snaps have landed, 47 rows); never took the field. Voided 2026-11-16 on Joe's call."
   },
   {
    "week": "10",
@@ -26896,9 +26896,9 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "inactive: nflverse week-10 roster INA, questionable (thumb), no box-score row and no snap row (MIN week-10 snaps have landed, 47 rows); never took the field. Voided 2026-11-16 on Joe's call."
   },
   {
    "week": "10",
