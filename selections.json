@@ -495,7 +495,7 @@
    "gameday": "2026-11-16",
    "kickoff": "20:15",
    "game": "LAC at BAL",
-   "played": false
+   "played": true
   },
   {
    "week": 11,
@@ -1390,7 +1390,7 @@
   "TEN": "#4495D2",
   "WAS": "#da5656"
  },
- "generated_at": "2026-11-16 19:09 UTC",
+ "generated_at": "2026-11-17 15:03 UTC",
  "as_of": "2026-11-15 14:03",
  "selections": [
   {
@@ -28989,8 +28989,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 49,
    "note": null
   },
   {
@@ -29012,8 +29012,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 5,
    "note": null
   },
   {
@@ -29035,8 +29035,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 7,
    "note": null
   },
   {
@@ -29058,8 +29058,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 18,
    "note": null
   },
   {
@@ -29104,8 +29104,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 8,
    "note": null
   },
   {
@@ -29127,8 +29127,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 8,
    "note": null
   },
   {
@@ -29150,8 +29150,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 1,
    "note": null
   },
   {
@@ -29173,8 +29173,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 3,
    "note": null
   },
   {
@@ -29196,8 +29196,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 5,
    "note": null
   },
   {
@@ -29219,8 +29219,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -29242,8 +29242,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   }
  ],
