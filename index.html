@@ -75,7 +75,7 @@
         with the picks themselves, so read it off your own entry screen.</p>
       <p class="lede">An amber note under a player means he is on this
         week's injury report. Most players listed there do play, which is
-        why it is worth seeing rather than hiding: <span id="m-injury">the model asks for about 0.25 of a target more for a player carrying something than for one who is not, even after being told he is on the report</span>, and for running backs it is not told at all. The report is filed a few days
+        why it is worth seeing rather than hiding: <span id="m-injury">the model asks for about 0.26 of a target more for a player carrying something than for one who is not, even after being told he is on the report</span>, and for running backs it is not told at all. The report is filed a few days
         before kickoff, so early in the week it will be empty.</p>
 
       <div class="tiles" id="board-tiles"></div>
@@ -208,7 +208,7 @@
 
         <p><strong>Volume splits into role and pace.</strong> A receiver's
           share of his team's targets is stable; his team's passing volume is
-          not. <span id="m-steady">Share correlates 0.72 with his next game, against 0.23 for a quarterback's attempts and 0.76 for a back's share of carries.</span> So
+          not. <span id="m-steady">Share correlates 0.72 with his next game, against 0.24 for a quarterback's attempts and 0.75 for a back's share of carries.</span> So
           share and volume are predicted apart and multiplied.</p>
 
         <p><strong>Probabilities come from real misses, not a bell curve.</strong>
@@ -222,12 +222,12 @@
           model was fitted and scored only on afternoons where somebody was
           targeted. It lifted the quiet end as a result, over-predicting a
           man it put at two catches or fewer by about three quarters of a
-          catch. Those games are carried now &mdash; <span id="m-quiet-rec">12,767</span>
+          catch. Those games are carried now &mdash; <span id="m-quiet-rec">12,772</span>
           of them, each one proved by a snap count or by a carry, because a
           man who ran the ball was on the field whatever the snap file says
           &mdash; which makes the table above both larger and harder:
           targets went from 6,879 games to
-          <span id="m-targets-exam">7,693</span> as marginal players became
+          <span id="m-targets-exam">7,706</span> as marginal players became
           predictable at all. So the model's own error rises a little on the bigger
           exam while its margin over a player's recent average widens. On
           identical rows it is clearly better.</p>
@@ -237,13 +237,13 @@
           mattered twice: the carry model never met the quiet end, and the
           estimate of whether a back carries AT ALL &mdash; which goes
           straight onto every carries price &mdash; was fitted on a pool
-          where everyone had played. <span id="m-quiet-back">1,989</span> of those games are carried now.
+          where everyone had played. <span id="m-quiet-back">1,990</span> of those games are carried now.
           The carry number barely moves; what moves is that chance, whose
           useful range widens from 0.66-0.91 out to 0.48-0.99, so a
           near-certain starter and a rotational back are no longer told
           apart by almost nothing.</p>
 
-        <p><strong>What it cannot see.</strong> <span id="m-tendency">Not a coach's intentions: a team's own run-pass mix over its last eight games barely predicts its next, correlating 0.283 across 4,746 team-games and missing the real rate by 8 points of it.</span> And the board is priced
+        <p><strong>What it cannot see.</strong> <span id="m-tendency">Not a coach's intentions: a team's own run-pass mix over its last eight games barely predicts its next, correlating 0.284 across 4,748 team-games and missing the real rate by 8 points of it.</span> And the board is priced
           days before kickoff and not looked at again, so a Saturday ruling
           can land after a Thursday price. It does read the weekly injury
           report, the depth chart and snap counts, and a player his team has
@@ -263,7 +263,7 @@
         <p><strong>A lean it still has.</strong> On pass attempts the model
           claims a shade too much on the over: through the middle of the
           chart above, a stated 45% happens about 43% of the time. That was
-          measured over <span id="m-cal-cases">26,818</span> priced cases and
+          measured over <span id="m-cal-cases">26,864</span> priced cases and
           chased down. It is not the
           prediction, which runs only a third of an attempt high, and it
           cannot be fixed by nudging the prediction down &mdash; the pool of

@@ -586,7 +586,7 @@
    "gameday": "2026-11-23",
    "kickoff": "20:15",
    "game": "CIN at WAS",
-   "played": false
+   "played": true
   },
   {
    "week": 12,
@@ -1390,7 +1390,7 @@
   "TEN": "#4495D2",
   "WAS": "#da5656"
  },
- "generated_at": "2026-11-23 15:02 UTC",
+ "generated_at": "2026-11-24 15:03 UTC",
  "as_of": "2026-11-21 16:06",
  "selections": [
   {
@@ -29725,9 +29725,9 @@
    "plays": null,
    "priced_from": "team form",
    "caution": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": "priced from team form"
+   "note": "did not play: inactive with a back injury (Cardinals site; nflverse roster INA; no snaps) (recorded: priced from team form)"
   },
   {
    "week": "11",
@@ -31036,9 +31036,9 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "did not play: inactive with an ankle injury (Raiders site; nflverse roster INA; no snaps)"
   },
   {
    "week": "11",
@@ -31473,9 +31473,9 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "did not play: inactive with a thumb injury (Bills site; nflverse roster INA; no snaps)"
   },
   {
    "week": "11",
@@ -31496,9 +31496,9 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "did not play: inactive with a thumb injury (Bills site; nflverse roster INA; no snaps)"
   },
   {
    "week": "11",
@@ -34003,9 +34003,9 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "did not play: placed on injured reserve 2026-11-21, after recording (Titans site; nflverse roster RES; no snaps)"
   },
   {
    "week": "11",
@@ -34026,9 +34026,9 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
+   "status": "void",
    "actual": null,
-   "note": null
+   "note": "did not play: placed on injured reserve 2026-11-21, after recording (Titans site; nflverse roster RES; no snaps)"
   },
   {
    "week": "11",
@@ -34049,8 +34049,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 9,
    "note": null
   },
   {
@@ -34072,8 +34072,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 11,
    "note": null
   },
   {
@@ -34095,8 +34095,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 5,
    "note": null
   },
   {
@@ -34118,8 +34118,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 8,
    "note": null
   },
   {
@@ -34141,8 +34141,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -34164,8 +34164,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 4,
    "note": null
   },
   {
@@ -34187,8 +34187,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -34210,8 +34210,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 9,
    "note": null
   },
   {
@@ -34233,8 +34233,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 35,
    "note": null
   },
   {
@@ -34256,8 +34256,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 40,
    "note": null
   },
   {
@@ -34279,8 +34279,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 5,
    "note": null
   },
   {
@@ -34302,8 +34302,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -34325,8 +34325,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -34348,8 +34348,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -34371,8 +34371,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -34394,8 +34394,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -34417,8 +34417,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 3,
    "note": null
   },
   {
@@ -34440,8 +34440,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   }
  ],
