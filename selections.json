@@ -1390,7 +1390,7 @@
   "TEN": "#4495D2",
   "WAS": "#da5656"
  },
- "generated_at": "2026-11-27 18:06 UTC",
+ "generated_at": "2026-11-27 18:08 UTC",
  "as_of": "2026-11-27 18:06",
  "selections": [
   {
@@ -35337,8 +35337,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -35360,8 +35360,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -35383,8 +35383,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -35406,8 +35406,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 21,
    "note": null
   },
   {
@@ -35429,8 +35429,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": "role may have shrunk (FIXES 37)"
   },
   {
@@ -35452,8 +35452,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 1,
    "note": "role may have shrunk (FIXES 37)"
   },
   {
@@ -35475,8 +35475,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 0,
    "note": null
   },
   {
@@ -35498,8 +35498,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 1,
    "note": null
   },
   {
@@ -35521,8 +35521,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -35544,8 +35544,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 6,
    "note": null
   },
   {
@@ -35567,8 +35567,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 29,
    "note": null
   },
   {
@@ -35590,8 +35590,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -35613,8 +35613,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -35636,8 +35636,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 7,
    "note": null
   },
   {
@@ -35659,8 +35659,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 4,
    "note": null
   },
   {
@@ -35682,8 +35682,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 2,
    "note": null
   },
   {
@@ -35705,8 +35705,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -35728,8 +35728,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 0,
    "note": null
   },
   {
@@ -35751,8 +35751,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 3,
    "note": null
   },
   {
@@ -35774,8 +35774,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 7,
    "note": null
   },
   {
@@ -35797,8 +35797,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 10,
    "note": null
   },
   {
@@ -35820,8 +35820,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 28,
    "note": null
   },
   {
@@ -35843,8 +35843,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 1,
    "note": null
   },
   {
@@ -35866,8 +35866,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -35889,8 +35889,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 2,
    "note": null
   },
   {
@@ -35912,8 +35912,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 1,
    "note": null
   },
   {
@@ -35935,8 +35935,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 14,
    "note": null
   },
   {
@@ -35958,8 +35958,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 11,
    "note": null
   },
   {
@@ -35981,8 +35981,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 5,
    "note": null
   },
   {
@@ -36004,8 +36004,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 9,
    "note": null
   },
   {
@@ -36027,8 +36027,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 3,
    "note": null
   },
   {
@@ -36050,8 +36050,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 31,
    "note": "priced from team form"
   },
   {
@@ -36073,8 +36073,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 5,
    "note": null
   },
   {
@@ -36096,8 +36096,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "wrong",
+   "actual": 6,
    "note": null
   },
   {
@@ -36119,8 +36119,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 0,
    "note": null
   },
   {
@@ -36142,8 +36142,8 @@
    "plays": null,
    "priced_from": null,
    "caution": null,
-   "status": "open",
-   "actual": null,
+   "status": "right",
+   "actual": 0,
    "note": null
   },
   {
